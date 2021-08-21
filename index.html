@@ -453,6 +453,17 @@
           ></textarea>
         </div>
         <div>
+          <input
+            type="email"
+            name="enterEmail"
+            id="enterEmail"
+            aria-label="enterEmail"
+            placeholder="Укажите  электронную почту"
+            pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+            required
+          />
+        </div>
+        <div>
           <input type="checkbox" id="persData" required />
           <label for="persData"
             >Я согласен на обработку персональных данных</label
