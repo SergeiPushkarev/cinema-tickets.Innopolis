@@ -1,0 +1,94 @@
+body{
+    max-width: 1124px;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.basefont{
+    font-family: 'IBM_Plex_Sans', sans-serif; 
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
+    color: #ffffff;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 44px 0 0 44px;
+    
+}
+.head{
+    width: 1124px;
+    height: 728px;
+    background: url(/img/background.jpg) no-repeat center/cover;
+    background-color: rgba(22, 22, 22, 0.8);
+    background-blend-mode: darken
+}
+
+.innologo {
+    margin-right: 3px;
+    padding: 7px 0 0 45px;
+    width: 156px; 
+    height: 40px;
+  }
+.headcontacts, .headlinks {
+    margin: 0;
+    display: flex;
+    color:  #ffffff;
+    list-style: none;
+}
+
+.headcontacts {
+    margin-top: 3px;
+}
+.headcontacts li {
+    padding-right: 52px;
+}
+.headlinks {
+    margin-top: 15px;
+}
+
+.headlinks li {
+    padding-right: 74px;
+}
+.table1{
+      table-layout: fixed;
+      border-collapse: collapse;
+      width: 849px;
+  }
+thead {
+    background-color: #a3cc40;
+    border-spacing: 0;
+    height: 45px;
+    
+  }
+thead > .col1{
+      border-radius: 10px 0 0 0;
+  }
+thead > .col4{
+    border-radius: 0 10px 0 0;
+}
+tbody{
+
+}
+tr{
+    height: 45px;
+    
+}
+tbody .col1
+tbody .even{
+    background-color: #373737;
+
+}
+tbody .odd{
+    background-color: #4c4d4f;
+
+}
+tbody .col1{
+    border-radius: 0 0 0 10px;
+}
+tbody .col4{
+    border-radius: 0 0 10px 0;
+}

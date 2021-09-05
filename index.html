@@ -30,54 +30,57 @@
         font-style: normal;
         font-weight: 600;
       }
-      nav {
-        font-size: 12px;
-        line-height: 1.33;
-        font-weight: 500;
-        color: #ffffff;
-      }
-      .innologo {
-        width: 156px;
-        height: 40px;
-      }
     </style>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <head>
-      <nav style="font-family: 'IBM_Plex_Sans', sans-serif; font-weight: 500">
-        <ul>
-          <li>
+      <div class="head">
+        <nav class="basefont">
+          <div class="innologo">
             <a target="_blank" href="http://university.innopolis.ru">
-              <svg class="innologo">
+              <svg>
                 <use xlink:href="#inno_logo"></use>
               </svg>
             </a>
-          </li>
-          <li>+7(800)355 12-56</li>
-          <li><a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a></li>
-          <li>ул.Спортивная д.1</li>
-          <li>
-            <a href="#feedback"> Заказать звонок</a>
-          </li>
-          <li><a href="#timelist"> EVENT DETAILS</a></li>
-          <li><a href="#chosefilm">SPEAKERS</a></li>
-          <li><a href="#review">SPONSORS</a></li>
-          <li><a href="#feedback">PAST EVENTS</a></li>
-          <li><a href="#location">CONTACT</a></li>
-        </ul>
-      </nav>
-      <h1 style="font-family: 'IBM_Plex_Sans', sans-serif; font-weight: 100">
-        Закажите билет в кино
-      </h1>
-      <h2 style="font-family: 'IBM_Plex_Sans', sans-serif; font-weight: 400">
-        <b>Всем покупателям подарок!</b>
-      </h2>
-      <div>
-        Добро пожаловать!
+          </div>
+          <div>
+            <div>
+              <ul class="headcontacts">
+                <li>+7 (800) 355 12-56</li>
+                <li>
+                  <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
+                </li>
+                <li>ул.Спортивная д.1</li>
+                <li>
+                  <a href="#feedback"> Заказать звонок</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="headlinks">
+                <li><a href="#timelist"> EVENT DETAILS</a></li>
+                <li><a href="#chosefilm">SPEAKERS</a></li>
+                <li><a href="#review">SPONSORS</a></li>
+                <li><a href="#feedback">PAST EVENTS</a></li>
+                <li><a href="#location">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h1 style="font-family: 'IBM_Plex_Sans', sans-serif; font-weight: 100">
+          Закажите билет в кино
+        </h1>
+        <h2 style="font-family: 'IBM_Plex_Sans', sans-serif; font-weight: 400">
+          <b>Всем покупателям подарок!</b>
+        </h2>
         <div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam.
+          Добро пожаловать!
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </div>
         </div>
       </div>
     </head>
@@ -159,37 +162,61 @@
     <section id="timelist">
       <h1>Выберите фильм</h1>
       <div>
-        <table style="border-spacing: 0">
-          <thead style="background-color: #a3cc40">
-            <th></th>
-            <th>Начало сеанса</th>
-            <th>Название фильма</th>
-            <th>Жанр</th>
+        <table class="table1">
+          <thead>
+            <th class="col1"></th>
+            <th class="col2">Начало сеанса</th>
+            <th class="col3">Название фильма</th>
+            <th class="col4">Жанр</th>
           </thead>
           <tbody>
-            <tr style="background-color: #373737">
-              <td><img src="img/Rectangle 2 (Stroke).png" alt="" /></td>
-              <td>10:00</td>
-              <td>Человек-паук</td>
-              <td>Фантастика, боевик, приключения</td>
+            <tr class="even">
+              <td class="col1">
+                <img
+                  src="img/Rectangle 2 (Stroke).png"
+                  width="10px"
+                  height="8px"
+                />
+              </td>
+              <td class="col2">10:00</td>
+              <td class="col3">Человек-паук</td>
+              <td class="col4">Фантастика, боевик, приключения</td>
             </tr>
-            <tr style="background-color: #4c4d4f">
-              <td><img src="img/Rectangle 2 (Stroke).png" alt="" /></td>
-              <td>12:00</td>
-              <td>Собачья жизнь 2</td>
-              <td>Фэнтэзи, драма, комедия</td>
+            <tr class="odd">
+              <td class="col1">
+                <img
+                  src="img/Rectangle 2 (Stroke).png"
+                  width="10px"
+                  height="8px"
+                />
+              </td>
+              <td class="col2">12:00</td>
+              <td class="col3">Собачья жизнь 2</td>
+              <td class="col4">Фэнтэзи, драма, комедия</td>
             </tr>
-            <tr style="background-color: #373737">
-              <td><img src="img/Rectangle 2 (Stroke).png" alt="" /></td>
-              <td>14:00</td>
-              <td>История игрушек 4</td>
-              <td>Мультфильм, фэнтэзи, комедия</td>
+            <tr class="even">
+              <td class="col1">
+                <img
+                  src="img/Rectangle 2 (Stroke).png"
+                  width="10px"
+                  height="8px"
+                />
+              </td>
+              <td class="col2">14:00</td>
+              <td class="col3">История игрушек 4</td>
+              <td class="col4">Мультфильм, фэнтэзи, комедия</td>
             </tr>
-            <tr style="background-color: #4c4d4f">
-              <td><img src="img/Rectangle 2 (Stroke).png" alt="" /></td>
-              <td>16:00</td>
-              <td>Люди в чёрном: Интэрнэшнл</td>
-              <td>Фантастика, боевик, комедия</td>
+            <tr class="odd">
+              <td class="col1">
+                <img
+                  src="img/Rectangle 2 (Stroke).png"
+                  width="10px"
+                  height="8px"
+                />
+              </td>
+              <td class="col2">16:00</td>
+              <td class="col3">Люди в чёрном: Интэрнэшнл</td>
+              <td class="col4">Фантастика, боевик, комедия</td>
             </tr>
           </tbody>
         </table>
