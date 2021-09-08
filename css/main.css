@@ -53,42 +53,48 @@ nav {
 .headlinks li {
     padding-right: 74px;
 }
-.table1{
-      table-layout: fixed;
-      border-collapse: collapse;
-      width: 849px;
-  }
-thead {
-    background-color: #a3cc40;
-    border-spacing: 0;
+.table {
+    font-family: 'IBM_Plex_Sans', sans-serif; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.33;
+    color: #ffffff;
+    height: 225px;
+    width: 849px;
+    border-collapse: collapse;
+    text-align: left;
+}
+.timelistHead{
+    font-family: 'IBM_Plex_Sans', sans-serif; 
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.33;
+    color: #ffffff;
+    background-color: #A3CC40;
     height: 45px;
-    
-  }
-thead > .col1{
-      border-radius: 10px 0 0 0;
-  }
-thead > .col4{
+}
+.timelistHead th:nth-child(1){
+    width: 76px;
+    border-radius: 10px 0 0 0;
+}
+.timelistHead th:nth-child(2){
+    width: 236px;
+}
+.timelistHead th:nth-child(3){
+    width: 238px;
+}
+.timelistHead th:nth-child(4){
     border-radius: 0 10px 0 0;
 }
-tbody{
-
-}
-tr{
-    height: 45px;
-    
-}
-tbody .col1
-tbody .even{
+.timelistBody tr:nth-child(even){
     background-color: #373737;
-
-}
-tbody .odd{
-    background-color: #4c4d4f;
-
-}
-tbody .col1{
-    border-radius: 0 0 0 10px;
-}
-tbody .col4{
+ }
+.timelistBody tr:nth-child(odd){
+    background-color: #4C4D4F;
+ }
+ .timelistBody tr:last-child :first-child{
+     border-radius: 0 0 0 10px;
+ }
+ .timelistBody tr:last-child :last-child{
     border-radius: 0 0 10px 0;
 }
