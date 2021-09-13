@@ -64,6 +64,9 @@ nav {
     border-collapse: collapse;
     text-align: left;
 }
+tbody svg{
+    margin-left: 22px;
+}
 .timelistHead{
     font-family: 'IBM_Plex_Sans', sans-serif; 
     font-weight: 600;
