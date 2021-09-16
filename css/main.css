@@ -7,7 +7,7 @@ a {
     color: white;
 }
 .basefont{
-    font-family: 'IBM_Plex_Sans', sans-serif; 
+    font-family: 'IBM Plex Sans', sans-serif; 
     font-weight: 500;
     font-size: 12px;
     line-height: 1.33;
@@ -54,7 +54,7 @@ nav {
     padding-right: 74px;
 }
 .table {
-    font-family: 'IBM_Plex_Sans', sans-serif; 
+    font-family: 'IBM Plex Sans', sans-serif; 
     font-weight: 400;
     font-size: 14px;
     line-height: 1.33;
@@ -68,7 +68,7 @@ tbody svg{
     margin-left: 22px;
 }
 .timelistHead{
-    font-family: 'IBM_Plex_Sans', sans-serif; 
+    font-family: 'IBM Plex Sans', sans-serif; 
     font-weight: 600;
     font-size: 20px;
     line-height: 1.33;
