@@ -1,0 +1,54 @@
+h1{
+    font-size: 30px;
+    color: lawngreen;
+}
+
+.sel1 {
+    color: red;
+}
+
+.sel2 {
+    color: green;
+}
+
+.sel3{
+    text-decoration: underline;
+}
+
+#error {
+    color: red;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.list li a {
+    text-transform: uppercase;
+}
+
+.list__women > li a {
+    text-transform: lowercase;
+}
+
+h2 + .test {
+    color: hotpink;
+}
+h2 ~ .block {
+    text-decoration: underline;
+}
+
+h1, 
+.sel2 {
+    text-decoration: underline;
+}
+
+input[type="text"] {
+    background-color: blue;
+}
+
+input[type="button"] {
+    background-color: lightseagreen;
+}
+
+.buttonRed[type="button1"] {
+    background-color: red;
+}

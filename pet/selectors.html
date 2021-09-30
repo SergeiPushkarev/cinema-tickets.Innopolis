@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Селекторы</title>
+    <link rel="stylesheet" href="/pet/css/selectors.css" />
+  </head>
+  <body>
+    <h1>Селектор типа</h1>
+    <!-- Изменен цвет и размер h1-->
+    <div class="sel1">Селектор класса 1</div>
+    <div class="sel2">Селектор класса 2</div>
+    <!-- Классы sel1 и sel2 устанавливают цвет контента, sel 3 - подчеркивание-->
+    <div class="sel1 sel3">Селектор класса 3</div>
+    <!-- В "Селектор класса 3" использованы 2 класса  -->
+    <div id="error">Идентификатор</div>
+    <!-- Стилизован id -->
+    <div class="list">
+      <ul class="list__men">
+        Селектор потомков
+        <ul>
+          <li><a href="#">Саша</a></li>
+          <li>Александр</li>
+        </ul>
+        <li><a href="#">Леша</a></li>
+        <li>Дима</li>
+      </ul>
+      <ol class="list__women">
+        Дочерний селектор
+        <ol>
+          <li>Екатерина</li>
+          <li><a href="#">Катя</a></li>
+        </ol>
+        <li><a href="#">Таня</a></li>
+        <li>Оля</li>
+      </ol>
+    </div>
+    <div>
+      Сестринский и смежный селекторы
+      <h2>Заголовок</h2>
+      <div class="block">
+        Блок
+        <div class="test">Блок1</div>
+      </div>
+      <h2>Заголовок2</h2>
+      <div class="test">
+        Блок1
+        <div class="block">Блок2</div>
+      </div>
+    </div>
+    <div>
+      Селектор атрибутов
+      <form action="">
+        <input type="text" name="text" id="" />
+        <input class="buttonRed" type="button" value="Отправить" />
+        <input class="buttonRed" type="button1" value="Send" />
+      </form>
+    </div>
+  </body>
+</html>
