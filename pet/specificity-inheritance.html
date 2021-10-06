@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Наследование и специфичность</title>
+    <link rel="stylesheet" href="/pet/css/specificity-inheritance.css" />
+  </head>
+  <body>
+    <div style="border: 1px solid red">
+      <p class="paragraph">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis
+        blanditiis nesciunt culpa harum aut ad eligendi optio eaque, similique
+        quia reprehenderit et fuga amet dolores velit fugiat! Debitis, facilis
+        distinctio.
+      </p>
+    </div>
+    <h1>Заголовок1</h1>
+    <div id="pagewrapper">
+      <div class="content">
+        <p>This is the main <b>paragraph</b>.</p>
+      </div>
+      <div class="secondary">
+        <p>This is the secondary paragraph.</p>
+      </div>
+      <div id="id1" style="color: violet">
+        <p>This is the third paragraph.</p>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- Ответы на вопросы
+{} 0000
+li {} 0001
+li:first-line {} 0002
+ul li {} 0002
+ul ol+li {} 0003
+h1+*[rel=up] {} 0002 (правильно 0011)
+ul ol li.red {} 0012 (правильно 0013)
+li.red.level {} 0003 (правильно 0021)
+p {} 0001
+div p {} 0002
+.sith 0010
+div p.sith {} 0011 (правильно 0012)
+#sith 100 (one id selector)
+body #darkside .sith p {} 0112 -->

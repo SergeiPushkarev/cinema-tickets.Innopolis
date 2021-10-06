@@ -1,0 +1,49 @@
+/* body{
+    font-size: 9px;
+    color: red;
+    font-weight: normal;
+}
+
+.paragraph{
+    border: inherit;
+    font-size: initial;
+}
+
+h1{
+    font-size: 4em;
+    color: initial;
+    font-weight: revert;
+}
+/* Специфичность */
+/* #pagewrapper{
+    color: green;
+}
+.content{
+    color: royalblue;
+    font-size: 30px;
+}
+.secondary{
+    color: grey !important;
+    font-size: 60px;
+}
+
+#pagewrapper > .content{
+    color: red;
+}
+
+#pagewrapper .secondary{
+    font-size: 10px;
+    color: red;
+}
+
+b{
+    color: cyan;
+}
+
+#pagewrapper > .content b{
+    color: red;
+} */
+
+#id1 {
+    color:red
+}
