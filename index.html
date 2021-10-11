@@ -5,140 +5,148 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/layouts.css" />
   </head>
   <body>
-    <head>
+    <header class="header">
       <div class="head">
-        <nav class="basefont">
-          <div class="innologo">
-            <a target="_blank" href="http://university.innopolis.ru">
-              <svg style="height: 41px; width: 157px">
-                <use xlink:href="#inno_logo"></use>
-              </svg>
-            </a>
+        <div class="head__logo">
+          <a target="_blank" href="http://university.innopolis.ru">
+            <svg style="height: 41px; width: 157px">
+              <use xlink:href="#inno_logo"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="head__nav">
+          <div>
+            <ul class="head__contacts">
+              <li class="head__contacts-tel">+7 (800) 355 12-56</li>
+              <li class="head__contacts-email">
+                <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
+              </li>
+              <li class="head__contacts-add">ул.Спортивная д.1</li>
+              <li class="head__contacts-call">
+                <a href="#feedback"> Заказать звонок</a>
+              </li>
+            </ul>
           </div>
           <div>
-            <div>
-              <ul class="headcontacts">
-                <li>+7 (800) 355 12-56</li>
-                <li>
-                  <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
-                </li>
-                <li>ул.Спортивная д.1</li>
-                <li>
-                  <a href="#feedback"> Заказать звонок</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul class="headlinks">
-                <li><a href="#timelist"> EVENT DETAILS</a></li>
-                <li><a href="#chosefilm">SPEAKERS</a></li>
-                <li><a href="#review">SPONSORS</a></li>
-                <li><a href="#feedback">PAST EVENTS</a></li>
-                <li><a href="#location">CONTACT</a></li>
-              </ul>
-            </div>
+            <ul class="head__links">
+              <li class="head__links-timelist">
+                <a href="#timelist"> EVENT DETAILS</a>
+              </li>
+              <li class="head__links-film">
+                <a href="#chosefilm">SPEAKERS</a>
+              </li>
+              <li class="head__links-review"><a href="#review">SPONSORS</a></li>
+              <li class="head__links-feedback">
+                <a href="#feedback">PAST EVENTS</a>
+              </li>
+              <li class="head__links-location">
+                <a href="#location">CONTACT</a>
+              </li>
+            </ul>
           </div>
         </nav>
+        <div class="head__langswitch">RU</div>
+      </div>
+      <div class="intro">
         <h1>Закажите билет в кино</h1>
         <h2>
           <b>Всем покупателям подарок!</b>
         </h2>
+      </div>
+    </header>
+    <div class="greeting">
+      <div class="greeting__head">Добро пожаловать!</div>
+      <div class="greeting__foot">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam.
+      </div>
+    </div>
+    <section class="basealign">
+      <h1 class="blockname">Почему мы?</h1>
+      <div class="advantages">
         <div>
-          Добро пожаловать!
+          <img src="img/big_screen.jpg" alt="Большие экраны" />
+          <p><b>Большие экраны</b></p>
           <div>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam.
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              eius optio alias aspernatur a numquam suscipit excepturi harum
+              exercitationem ab amet maxime rerum esse nobis, possimus enim
+              maiores provident quaerat!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="img/surround.jpg" alt="Объёмный звук" />
+          <p><b>Объёмный звук</b></p>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              eius optio alias aspernatur a numquam suscipit excepturi harum
+              exercitationem ab amet maxime rerum esse nobis, possimus enim
+              maiores provident quaerat!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="img/comfort_sit.jpg" alt="Удобные кресла" />
+          <p><b>Удобные кресла</b></p>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              eius optio alias aspernatur a numquam suscipit excepturi harum
+              exercitationem ab amet maxime rerum esse nobis, possimus enim
+              maiores provident quaerat!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="img/cosy_vibe.jpg" alt="Уютная атмосфера" />
+          <p><b>Уютная атмосфера</b></p>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              eius optio alias aspernatur a numquam suscipit excepturi harum
+              exercitationem ab amet maxime rerum esse nobis, possimus enim
+              maiores provident quaerat!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="img/full_immersion.jpg" alt="Полное погружение" />
+          <p><b>Полное погружение</b></p>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              eius optio alias aspernatur a numquam suscipit excepturi harum
+              exercitationem ab amet maxime rerum esse nobis, possimus enim
+              maiores provident quaerat!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="img/cinema_kiss.jpg" alt="Поцелуи на заднем ряду" />
+          <p><b>Поцелуи на заднем ряду</b></p>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              eius optio alias aspernatur a numquam suscipit excepturi harum
+              exercitationem ab amet maxime rerum esse nobis, possimus enim
+              maiores provident quaerat!
+            </p>
           </div>
         </div>
       </div>
-    </head>
-    <section>
-      <h1>Почему мы?</h1>
-      <div>
-        <img src="img/big_screen.jpg" alt="Большие экраны" />
-        <p><b>Большие экраны</b></p>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius
-            optio alias aspernatur a numquam suscipit excepturi harum
-            exercitationem ab amet maxime rerum esse nobis, possimus enim
-            maiores provident quaerat!
-          </p>
-        </div>
-      </div>
-      <div>
-        <img src="img/surround.jpg" alt="Объёмный звук" />
-        <p><b>Объёмный звук</b></p>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius
-            optio alias aspernatur a numquam suscipit excepturi harum
-            exercitationem ab amet maxime rerum esse nobis, possimus enim
-            maiores provident quaerat!
-          </p>
-        </div>
-      </div>
-      <div>
-        <img src="img/comfort_sit.jpg" alt="Удобные кресла" />
-        <p><b>Удобные кресла</b></p>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius
-            optio alias aspernatur a numquam suscipit excepturi harum
-            exercitationem ab amet maxime rerum esse nobis, possimus enim
-            maiores provident quaerat!
-          </p>
-        </div>
-      </div>
-      <div>
-        <img src="img/cosy_vibe.jpg" alt="Уютная атмосфера" />
-        <p><b>Уютная атмосфера</b></p>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius
-            optio alias aspernatur a numquam suscipit excepturi harum
-            exercitationem ab amet maxime rerum esse nobis, possimus enim
-            maiores provident quaerat!
-          </p>
-        </div>
-      </div>
-      <div>
-        <img src="img/full_immersion.jpg" alt="Полное погружение" />
-        <p><b>Полное погружение</b></p>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius
-            optio alias aspernatur a numquam suscipit excepturi harum
-            exercitationem ab amet maxime rerum esse nobis, possimus enim
-            maiores provident quaerat!
-          </p>
-        </div>
-      </div>
-      <div>
-        <img src="img/cinema_kiss.jpg" alt="Поцелуи на заднем ряду" />
-        <p><b>Поцелуи на заднем ряду</b></p>
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius
-            optio alias aspernatur a numquam suscipit excepturi harum
-            exercitationem ab amet maxime rerum esse nobis, possimus enim
-            maiores provident quaerat!
-          </p>
-        </div>
-      </div>
     </section>
-    <section id="timelist">
-      <h1>Выберите фильм</h1>
+    <section id="timelist" class="basealign">
+      <h1 class="blockname">Выберите фильм</h1>
       <div>
         <table class="table">
           <thead class="timelistHead">
@@ -267,15 +275,15 @@
         blanditiis?
       </div>
     </section>
-    <section id="gift">
+    <section id="gift" class="basealign">
       <img src="img/present.jpg" alt="Подарок" width="302" height="303" />
-      <h1>Подарок каждому</h1>
+      <h1 class="blockname">Подарок каждому</h1>
       <div>
         <p>Получить<span>подарок</span></p>
       </div>
     </section>
-    <section id="films">
-      <h1>Фильмы</h1>
+    <section id="films" class="basealign">
+      <h1 class="blockname">Фильмы</h1>
       <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cum
         architecto iste quibusdam veritatis saepe nobis. Voluptatum unde
@@ -441,8 +449,8 @@
         </div>
       </div>
     </section>
-    <section id="souvenirs">
-      <h1>Товары</h1>
+    <section id="souvenirs" class="basealign">
+      <h1 class="blockname">Товары</h1>
       <div>
         <img src="img/coca_cola.jpg" alt="Кока-кола" width="245" height="331" />
         <p>Coca-cola</p>
@@ -466,8 +474,8 @@
         <p>Постер “Мстители”</p>
       </div>
     </section>
-    <section id="review">
-      <h1>Отзывы</h1>
+    <section id="review" class="basealign">
+      <h1 class="blockname">Отзывы</h1>
       <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi
         incidunt a ipsam animi recusandae, placeat et aliquam expedita
@@ -520,8 +528,8 @@
         </div>
       </div>
     </section>
-    <section id="feedback">
-      <h1>Обратная связь</h1>
+    <section id="feedback" class="basealign">
+      <h1 class="blockname">Обратная связь</h1>
       <form action="/order.php" id="reviewForm">
         <div>
           <input
@@ -582,7 +590,7 @@
         <button form="reviewForm" type="submit">послать</button>
       </div>
     </section>
-    <section id="location">
+    <section id="location" class="basealign">
       <img
         src="img/location.jpg"
         alt="Местонахождение кинотеатра"

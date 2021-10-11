@@ -1,103 +1,22 @@
 body{
-    max-width: 1124px;
-    margin: 0;
+    font-family: 'IBM_Plex_Sans', sans-serif;
+    color: #fff;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
-.basefont{
-    font-family: 'IBM Plex Sans', sans-serif; 
+
+.blockname {
+    font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 500;
-    font-size: 12px;
+    font-size: 48px;
     line-height: 1.33;
-    color: #ffffff;
-}
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 44px 0 0 44px;
-    
-}
-.head{
-    width: 1124px;
-    height: 728px;
-    background: url(/img/background.jpg) no-repeat center/cover;
-    background-color: rgba(22, 22, 22, 0.8);
-    background-blend-mode: darken
-}
-
-.innologo {
-    margin-right: 3px;
-    padding: 7px 0 0 45px;
-    width: 156px; 
-    height: 40px;
-  }
-.headcontacts, .headlinks {
-    margin: 0;
-    display: flex;
-    color:  #ffffff;
-    list-style: none;
-}
-
-.headcontacts {
-    margin-top: 3px;
-}
-.headcontacts li {
-    padding-right: 52px;
-}
-.headlinks {
-    margin-top: 15px;
-}
-
-.headlinks li {
-    padding-right: 74px;
-}
-.table {
-    font-family: 'IBM Plex Sans', sans-serif; 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.33;
-    color: #ffffff;
-    height: 225px;
-    width: 849px;
-    border-collapse: collapse;
+    color: #A3CC40;
     text-align: left;
 }
-tbody svg{
-    margin-left: 22px;
-}
-.timelistHead{
-    font-family: 'IBM Plex Sans', sans-serif; 
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.33;
-    color: #ffffff;
-    background-color: #A3CC40;
-    height: 45px;
-}
-.timelistHead th:nth-child(1){
-    width: 76px;
-    border-radius: 10px 0 0 0;
-}
-.timelistHead th:nth-child(2){
-    width: 236px;
-}
-.timelistHead th:nth-child(3){
-    width: 238px;
-}
-.timelistHead th:nth-child(4){
-    border-radius: 0 10px 0 0;
-}
-.timelistBody tr:nth-child(even){
-    background-color: #373737;
- }
-.timelistBody tr:nth-child(odd){
-    background-color: #4C4D4F;
- }
- .timelistBody tr:last-child :first-child{
-     border-radius: 0 0 0 10px;
- }
- .timelistBody tr:last-child :last-child{
-    border-radius: 0 0 10px 0;
+
+.basealign{
+    padding-left: 135px;
 }
