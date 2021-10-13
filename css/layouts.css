@@ -1,152 +1,30 @@
-.header {
-    min-width: 100vh;
-    height: 697px;
-    background: url(/img/background.jpg) no-repeat center/cover;
-    background-color: rgba(22, 22, 22, 0.8);
-    background-blend-mode: darken;
+body{
+    font-family: 'IBM_Plex_Sans', sans-serif;
+    color: #fff;
 }
 
-.head{
-    padding: 44px 0 0 89px;
-    max-width: 920px;
-    max-height: 147px;
-    display: inline-block;
+.blockname {
     font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 500;
-    font-size: 12px;
+    font-size: 48px;
     line-height: 1.33;
-}
-
-.head__logo {
-    padding-top: 6px;
-    display: inline-block;
-  }
-
-/* .head__contacts-tel,
-.head__contacts-email,
-.head__contacts-add,
-.head__contacts-call,
-.head__langswitch
-.head__links-timelist,
-.head__links-film,
-.head__links-review,
-.head__links-feedback,
-.head__links-location */
-.head__contacts>li{
-    display: inline-block;
-    padding: 0 0 0 0;
-    float: left;
-    margin: 0;
-}
-.head__links>li{
-    display: inline-block;
-    float: left;
-}
-.head__nav{
-    display: inline-block;
-}
-
-.head__contacts{
-    display: inline-block;
-}
-
-.head__langswitch{
-    display: inline-block;
-}
-
-.intro{
-    margin-right: auto;
-}
-
-.greeting {
-    position: absolute;
-    width: 426px;
-    height: 221px;
-    margin: -172px 0 0 562px;
-    padding: 30px 0 0 47px;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    color: #333333;
-    box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
-}
-
-.greeting__head{
-    max-width: 332px;
-    display: inline;
-    font-family: "IBM_Plex_Sans", sans-serif; 
-    font-weight: 600;
-    font-size: 33px;
-    line-height: 1.33;
-}
-
-.greeting__foot{
-    padding-top: 22px;
-    display: inline-block;
-    max-width: 332px;
-    font-family: "IBM_Plex_Sans", sans-serif; 
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 1.33;
-}
-
-.advantages{
-    max-height: 845px;
-    color: black;
-    display: flex;
-    flex-flow: row wrap;
-    
-}
-
-.advantages>div{
-    width: 338px;
-    height: 245px;
-}
-
-.table {
-    font-family: "IBM_Plex_Sans", sans-serif; 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.33;
-    color: #ffffff;
-    height: 225px;
-    width: 849px;
-    border-collapse: collapse;
+    color: #A3CC40;
     text-align: left;
 }
-tbody svg{
-    margin-left: 22px;
+
+.basealign{
+    margin-left: 135px;
+    margin-right: 135px;
 }
-.timelistHead{
-    font-family: 'IBM_Plex_Sans', sans-serif; 
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.33;
-    color: #ffffff;
-    background-color: #A3CC40;
-    height: 45px;
+
+.link__white{
+    text-decoration: none;
+    color: #FFFF;
 }
-.timelistHead th:nth-child(1){
-    width: 76px;
-    border-radius: 10px 0 0 0;
+.button__call {
+    color: black;
 }
-.timelistHead th:nth-child(2){
-    width: 236px;
-}
-.timelistHead th:nth-child(3){
-    width: 238px;
-}
-.timelistHead th:nth-child(4){
-    border-radius: 0 10px 0 0;
-}
-.timelistBody tr:nth-child(even){
-    background-color: #373737;
- }
-.timelistBody tr:nth-child(odd){
-    background-color: #4C4D4F;
- }
- .timelistBody tr:last-child :first-child{
-     border-radius: 0 0 0 10px;
- }
- .timelistBody tr:last-child :last-child{
-    border-radius: 0 0 10px 0;
+
+.relative{
+    position: relative;
 }

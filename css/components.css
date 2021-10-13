@@ -1,0 +1,142 @@
+.header {
+    min-height: 100vh;
+    background: url(/img/background.jpg) no-repeat center/cover;
+    background-color: rgba(22, 22, 22, 0.8);
+    background-blend-mode: darken;
+}
+
+.head__container{
+    padding: 0 15px;
+}
+
+.head{
+    /* padding: 0 -15px; */
+    max-width: 950px;
+    margin: 0 auto;
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
+}
+
+
+/* .head__logo {
+    padding: 6px 22px 0 0;
+    float: left;
+    max-width: 21%;
+  }
+
+.head__nav{
+    display: inline-block;
+    float: left;
+    max-width: 79%;
+    padding-left: 22px;
+}
+
+.head__langswitch{
+    display: inline-block;
+    float: left;
+}
+.head__contacts, .head__links{
+    display: inline-block;
+    float: left;
+}
+
+.intro{
+
+} */
+/* .header close */
+
+/* .greeting {
+    position: absolute;
+    width: 380px;
+    height: 221px;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: #333333;
+    box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
+}
+
+.greeting__head{
+    max-width: 332px;
+    display: inline;
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 1.33;
+}
+
+.greeting__foot{
+    padding-top: 22px;
+    display: inline-block;
+    max-width: 332px;
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.33;
+} */
+/* .greeting close */
+.advantages{
+    max-height: 845px;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.advantages>div{
+    width: 338px;
+    height: 245px;
+}
+
+.table {
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.33;
+    color: #ffffff;
+    height: 225px;
+    width: 849px;
+    border-collapse: collapse;
+    text-align: left;
+}
+tbody svg{
+    margin-left: 22px;
+}
+.timelistHead{
+    font-family: 'IBM_Plex_Sans', sans-serif; 
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.33;
+    color: #ffffff;
+    background-color: #A3CC40;
+    height: 45px;
+}
+.timelistHead th:nth-child(1){
+    width: 76px;
+    border-radius: 10px 0 0 0;
+}
+.timelistHead th:nth-child(2){
+    width: 236px;
+}
+.timelistHead th:nth-child(3){
+    width: 238px;
+}
+.timelistHead th:nth-child(4){
+    border-radius: 0 10px 0 0;
+}
+.timelistBody tr:nth-child(even){
+    background-color: #373737;
+ }
+.timelistBody tr:nth-child(odd){
+    background-color: #4C4D4F;
+ }
+ .timelistBody tr:last-child :first-child{
+     border-radius: 0 0 0 10px;
+ }
+ .timelistBody tr:last-child :last-child{
+    border-radius: 0 0 10px 0;
+}

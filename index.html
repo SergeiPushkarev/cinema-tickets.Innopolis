@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/layouts.css" />
+    <link rel="stylesheet" href="/css/components.css" />
   </head>
   <body>
     <header class="header">
@@ -21,53 +21,72 @@
           </a>
         </div>
         <nav class="head__nav">
-          <div>
-            <ul class="head__contacts">
+          <div class="head__contacts">
+            <ul>
               <li class="head__contacts-tel">+7 (800) 355 12-56</li>
               <li class="head__contacts-email">
-                <a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a>
+                <a class="link__white" href="mailto:kino@innopolis.ru"
+                  >kino@innopolis.ru</a
+                >
               </li>
               <li class="head__contacts-add">ул.Спортивная д.1</li>
               <li class="head__contacts-call">
-                <a href="#feedback"> Заказать звонок</a>
+                <a href="#feedback">
+                  <svg
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.67222 7.98889C4.1 7.18333 2.81111 5.9 2.01111 4.32778L3.12371 3.49804C3.44322 3.25977 3.59072 2.85451 3.49912 2.4666L3.09853 0.770184C2.99196 0.318844 2.58905 0 2.1253 0H0.555556C0.25 0 0 0.25 0 0.555556C0 5.77222 4.22778 10 9.44444 10C9.75 10 10 9.75 10 9.44444V7.87332C10 7.4102 9.68201 7.00767 9.23146 6.90048L7.53545 6.49696C7.14653 6.40442 6.73987 6.55242 6.50139 6.87328L5.67222 7.98889Z"
+                      fill="#333333"
+                    />
+                  </svg>
+                  <span>Заказать звонок</span></a
+                >
               </li>
             </ul>
           </div>
-          <div>
-            <ul class="head__links">
+          <div class="head__links">
+            <ul>
               <li class="head__links-timelist">
-                <a href="#timelist"> EVENT DETAILS</a>
+                <a class="link__white" href="#timelist"> EVENT DETAILS</a>
               </li>
               <li class="head__links-film">
-                <a href="#chosefilm">SPEAKERS</a>
+                <a class="link__white" href="#chosefilm">SPEAKERS</a>
               </li>
-              <li class="head__links-review"><a href="#review">SPONSORS</a></li>
+              <li class="head__links-review">
+                <a class="link__white" href="#review">SPONSORS</a>
+              </li>
               <li class="head__links-feedback">
-                <a href="#feedback">PAST EVENTS</a>
+                <a class="link__white" href="#feedback">PAST EVENTS</a>
               </li>
               <li class="head__links-location">
-                <a href="#location">CONTACT</a>
+                <a class="link__white" href="#location">CONTACT</a>
               </li>
             </ul>
           </div>
+          <div class="head__langswitch">RU</div>
         </nav>
-        <div class="head__langswitch">RU</div>
       </div>
       <div class="intro">
-        <h1>Закажите билет в кино</h1>
-        <h2>
-          <b>Всем покупателям подарок!</b>
-        </h2>
+        <p>Закажите билет в кино</p>
+        <p>Всем покупателям подарок!</p>
       </div>
+      <div class="head__container"></div>
     </header>
-    <div class="greeting">
-      <div class="greeting__head">Добро пожаловать!</div>
-      <div class="greeting__foot">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam.
+    <section class="basealign reltive">
+      <div class="greeting">
+        <div class="greeting__head">Добро пожаловать!</div>
+        <div class="greeting__foot">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam.
+        </div>
       </div>
-    </div>
+    </section>
     <section class="basealign">
       <h1 class="blockname">Почему мы?</h1>
       <div class="advantages">
