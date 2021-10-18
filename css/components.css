@@ -3,14 +3,11 @@
     background: url(/img/background.jpg) no-repeat center/cover;
     background-color: rgba(22, 22, 22, 0.8);
     background-blend-mode: darken;
+    position: relative;
 }
 
 .head__container{
-    padding: 0 15px;
-}
-
-.head{
-    /* padding: 0 -15px; */
+    padding: 44px 0 0 0;
     max-width: 950px;
     margin: 0 auto;
     font-family: "IBM_Plex_Sans", sans-serif; 
@@ -19,9 +16,19 @@
     line-height: 1.33;
 }
 
+.header::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 115px solid transparent;
+    border-right: 300vh solid #FFF;
+}
 
-/* .head__logo {
-    padding: 6px 22px 0 0;
+.head__logo {
+    padding: 7px 0px 0 2px;
     float: left;
     max-width: 21%;
   }
@@ -30,37 +37,166 @@
     display: inline-block;
     float: left;
     max-width: 79%;
-    padding-left: 22px;
+    margin-left: 45px;
 }
-
 .head__langswitch{
+    padding-top: 3px;
+    position: relative;
     display: inline-block;
-    float: left;
+    float: right;
+    max-width: 3%;
 }
-.head__contacts, .head__links{
+
+.head__contacts-tel,
+.head__contacts-email,
+.head__contacts-add,
+.head__contacts-call,
+.head__links-timelist,
+.head__links-film,
+.head__links-review,
+.head__links-feedback,
+.head__links-location{
     display: inline-block;
     float: left;
 }
 
-.intro{
+.head__contacts-tel{
+    padding-top: 3px;
+}
+.head__contacts-email{
+    margin-left: 53px;
+    padding-top: 3px;
+}
+.head__contacts-add{
+    margin-left: 51px;
+    padding-top: 3px;
+}
+.head__contacts-call{
+    margin-left: 55px;
+}
 
-} */
+.call__button{
+    width: 130px;
+    height: 21px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    border: 1px solid #FFFFFF;
+}
+
+.call__button:hover{
+    background: #A3CC40;
+    border: #FFF;
+}
+
+.call__button svg{
+    padding: 5px 0 0 10px;
+}
+
+.call__button:hover svg{
+    fill: #FFF;
+}
+
+.call__button span{
+    padding-left: 5px;
+}
+
+.call__button:hover span{
+    color: #FFF;
+}
+
+.head__contacts-call a{
+    color: #333333;
+    text-decoration: none;
+}
+
+.head__links{
+    padding-top: 34px;
+}
+
+.head__links-timelist,
+.head__links-film,
+.head__links-review,
+.head__links-feedback,
+.head__links-location{
+    text-transform: uppercase;
+}
+
+.head__links-film{
+    margin-left: 74px;
+}
+
+.head__links-review{
+    margin-left: 71px;
+}
+
+.head__links-feedback{
+    margin-left: 77px;
+}
+
+.head__links-location{
+    margin-left: 73px;
+}
+
+.head__langswitch-dropdown{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s;
+    background: #666;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+}
+
+.head__langswitch-dropdown a{
+    display: table;
+    padding: 5px;
+}
+
+.head__langswitch:hover .head__langswitch-dropdown{
+    visibility: visible;
+    opacity: 1;
+}
+
+.head__langswitch:hover svg{
+    transform: rotate(180deg);
+}
+
+.head__intro{
+    clear: both;
+    margin: 0 auto;
+    margin-top: 180px;
+    text-align: center;
+}
+
+.head__intro-line01{
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 100;
+    font-size: 68px;
+    line-height: 1.33;
+}
+.head__intro-line02{
+    padding-top: 15px;
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 1.33;
+}
 /* .header close */
 
-/* .greeting {
+
+.greeting{
     position: absolute;
+    background-color: #FFF;
+    border-radius: 10px;
+    color: black;
     width: 380px;
     height: 221px;
-    top: 0;
-    right: 0;
     transform: translateY(-50%);
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    color: #333333;
-    box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
+    right: 0;
 }
 
-.greeting__head{
+/* .greeting__head{
     max-width: 332px;
     display: inline;
     font-family: "IBM_Plex_Sans", sans-serif; 
