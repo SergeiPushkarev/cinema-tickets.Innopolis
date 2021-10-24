@@ -7,12 +7,12 @@
 }
 
 .head__container{
-    padding: 44px 0 0 0;
-    max-width: 950px;
+    padding: 2.2rem 0 0 0;
+    max-width: 47rem;
     margin: 0 auto;
     font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 500;
-    font-size: 12px;
+    font-size: .6rem;
     line-height: 1.33;
 }
 
@@ -23,12 +23,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border-top: 125px solid transparent;
-    border-right: 1124px solid #FFF;
+    border-top: 6.25rem solid transparent;
+    border-right: 56.2rem solid #FFF;
 }
 
 .head__logo {
-    padding: 7px 0px 0 2px;
+    padding: .35rem 0 0 .1rem;
     float: left;
     max-width: 21%;
   }
@@ -44,24 +44,24 @@
 }
 
 .head__langswitch{
-    padding-top: 3px;
+    padding-top: .15rem;
     position: relative;
     float: right;
     max-width: 3%;
 }
 
 .head__contacts {
-    margin-left: 50px;
-    padding-top: 3px;
+    margin-left: 2.5rem;
+    padding-top: .15rem;
 }
 
 .call__button{
     box-sizing: border-box;
-    margin-left: 50px;
-    padding: 0 5px;
+    margin-left: 2.5rem;
+    padding: 0 .25rem;
     background: #FFFFFF;
     color: #333333;
-    border-radius: 6px;
+    border-radius: .3rem;
     border: 2px solid #EDEDED;
     text-decoration: none;
 }
@@ -76,7 +76,7 @@
 }
 
 .call__button span{
-    padding-left: 5px;
+    padding-left: .25rem;
     text-decoration: none;
 }
 
@@ -85,11 +85,11 @@
 }
 
 .head__links{
-    margin-top: 15px;
+    margin-top: .75rem;
 }
 
 .head__links-item{
-    margin-left: 70px;
+    margin-left: 3.5rem;
     text-transform: uppercase;
 }
 
@@ -106,7 +106,7 @@
 
 .head__langswitch-dropdown a{
     display: table;
-    padding: 5px;
+    padding: .25rem;
 }
 
 .head__langswitch:hover .head__langswitch-dropdown{
@@ -121,108 +121,142 @@
 .head__intro{
     clear: both;
     margin: 0 auto;
-    margin-top: 180px;
+    margin-top: 9rem;
     text-align: center;
 }
 
 .head__intro-line01{
     font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 100;
-    font-size: 68px;
+    font-size: 3.4rem;
     line-height: 1.33;
 }
 .head__intro-line02{
-    padding-top: 15px;
+    padding-top: .75rem;
     font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 400;
-    font-size: 41px;
+    font-size: 2.05rem;
     line-height: 1.33;
 }
 /* .header close */
 
 .greeting__container{
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
 }
 
 .greeting__box{
-    max-width: 426px;
-    padding: 30px 47px;
+    max-width: 21.3rem;
+    padding: 1.5rem 2.35rem;
     position: absolute;
     background-color: #FFF;
-    border-radius: 10px;
+    border-radius: .5rem;
     color: black;
     right: 0;
-    top: -170px;
-    box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
+    top: -8.5rem;
+    box-shadow: 0 1.35rem 1.95rem rgba(163, 204, 64, 0.18);
 }
 
 .greeting__head{
-    max-width: 332px;
+    max-width: 16.6rem;
     display: inline-block;
     font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 600;
-    font-size: 33px;
+    font-size: 1.65rem;
     line-height: 1.33;
-    margin-bottom: 22px;
+    margin-bottom: 1.1rem;
 }
 
 .greeting__body{
     display: inline-block;
-    max-width: 332px;
+    max-width: 16.6rem;
     font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 400;
-    font-size: 11px;
+    font-size: .55rem;
     line-height: 1.33;
 }
 
-/* .advantages{
-    max-height: 845px;
-    color: black;
+.advantages{
+    padding: 0 .25rem;
     display: flex;
-    flex-flow: row wrap;
-    
-} */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4.75rem;
+}
 
-/* .advantages>div{
-    width: 338px;
-    height: 245px;
-} */
+.advantages__item{
+    max-width: 12.25rem;
+}
+
+.advantages__item-header{
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.33;
+    color: #333333;
+    text-align: center;
+    padding-top: 1.75rem;
+    padding-bottom: 1.25rem;
+}
+
+.advantages__item-text{
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 400;
+    font-size: .55rem;
+    line-height: 1.33;
+    color: #333333;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+/* advantages close */
+
+.timelist__table{
+    margin-bottom: 1.5rem;
+}
 
 .table {
     font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 400;
-    font-size: 14px;
+    font-size: .7rem;
     line-height: 1.33;
     color: #ffffff;
-    height: 225px;
-    width: 849px;
+    height: 11.25rem;
+    width: 42.5rem;
     border-collapse: collapse;
     text-align: left;
 }
+
+.table th{
+    vertical-align: middle;
+}
+
+.table td{
+    vertical-align: middle;
+}
+
 tbody svg{
-    margin-left: 22px;
+    margin-left: 1.1rem;
 }
 .timelistHead{
     font-family: 'IBM_Plex_Sans', sans-serif; 
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 1.33;
     color: #ffffff;
     background-color: #A3CC40;
-    height: 45px;
+    height: 2.25rem;
 }
 .timelistHead th:nth-child(1){
-    width: 76px;
-    border-radius: 10px 0 0 0;
+    width: 4rem;
+    border-radius: .5rem 0 0 0;
 }
 .timelistHead th:nth-child(2){
-    width: 236px;
+    width: 11.9rem;
 }
 .timelistHead th:nth-child(3){
-    width: 238px;
+    width: 11.9rem;
 }
 .timelistHead th:nth-child(4){
-    border-radius: 0 10px 0 0;
+    border-radius: 0 .5rem 0 0;
 }
 .timelistBody tr:nth-child(even){
     background-color: #373737;
@@ -231,8 +265,19 @@ tbody svg{
     background-color: #4C4D4F;
  }
  .timelistBody tr:last-child :first-child{
-     border-radius: 0 0 0 10px;
+     border-radius: 0 0 0 .5rem;
  }
  .timelistBody tr:last-child :last-child{
-    border-radius: 0 0 10px 0;
+    border-radius: 0 0 .5rem 0;
+}
+
+.timelist__underline{
+    max-width: 26.9rem;
+    margin: 0 auto;
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 400;
+    font-size: .55rem;
+    line-height: 1.33;
+    color: #333333;
+    text-align: center;
 }
