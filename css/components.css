@@ -25,6 +25,7 @@
     bottom: 0;
     border-top: 6.25rem solid transparent;
     border-right: 56.2rem solid #FFF;
+    overflow: hidden;
 }
 
 .head__logo {
@@ -187,6 +188,11 @@
     max-width: 12.25rem;
 }
 
+.advantages__item img{
+    width: 12.25rem;
+    height: 8.5rem;
+}
+
 .advantages__item-header{
     font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 600;
@@ -281,3 +287,4 @@ tbody svg{
     color: #333333;
     text-align: center;
 }
+/* timelist close */
