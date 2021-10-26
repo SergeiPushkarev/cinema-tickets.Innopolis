@@ -24,7 +24,7 @@
     right: 0;
     bottom: 0;
     border-top: 6.25rem solid transparent;
-    border-right: 56.2rem solid #FFF;
+    border-right: 55.3rem solid #FFF;
     overflow: hidden;
 }
 
@@ -181,7 +181,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 4.75rem;
 }
 
 .advantages__item{
@@ -288,3 +287,105 @@ tbody svg{
     text-align: center;
 }
 /* timelist close */
+
+ .gift{
+}
+
+.gift__container{
+    background: url(../img/Clapper.jpg) no-repeat center/cover;
+    background-color: rgba(22, 22, 22, 0.8);
+    background-blend-mode: darken;
+}
+
+.gift__container:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 100vw solid transparent;
+    border-top: 100px solid red;
+}
+
+.gift__container::after{
+
+}
+
+.gift__wrap{
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.gift__block01{
+    display: inline-block;
+    float: left;
+    max-width: 50%;;
+}
+
+.gift__block02{
+    padding: 30px 0;
+    display: inline-block;
+    float: right;
+    max-width: 50%;
+}
+
+.gift__prise{
+    position: absolute;
+    top: -40px;
+    clip-path: circle(140px at 150px 150px);
+}
+
+.gift__prise img{
+    width: 300px;
+    height: 300px;
+}
+
+.gift__head{
+    padding: 30px 0;
+    color: black;
+}
+
+.gift__text{
+    padding: 30px 0;
+    color: black;
+}
+
+/* .gift__get{
+    margin-left: auto;
+    padding: 135px 0;
+}
+
+.gift__get-head{
+    display: inline-block;
+    margin-right: 0;
+    font-family: "IBM_Plex_Sans", sans-serif;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1.33;
+    color: #FFF;
+}
+
+.gift__get-text{
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 400;
+    font-size: .55rem;
+    line-height: 1.33;
+    color: #FFF;
+}
+
+.gift__button-wrap{
+    margin-left: auto;
+}
+
+.gift__button{
+    box-sizing: border-box;
+    display: inline-block;
+    border: 2px solid #A3CC40;
+    background-color: #A3CC40;
+    padding: 5px 32px;
+    border-radius: .3rem;
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 500;
+    font-size: .7rem;
+    line-height: 1.33;
+    cursor: pointer;
+} */
