@@ -208,6 +208,16 @@ textarea {
     *vertical-align: middle; /* 3 */
 }
 
+button{
+    padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* Сброс стилей для кнопки. Отсутствовал в исходном reset */
+
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
