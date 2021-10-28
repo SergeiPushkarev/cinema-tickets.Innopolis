@@ -176,15 +176,25 @@
     line-height: 1.33;
 }
 
+.basealign__advantages{
+    max-width: 45rem;
+    margin: 0  auto;
+}
+
 .advantages{
-    padding: 0 .25rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .advantages__item{
-    max-width: 12.25rem;
+    flex-basis: 299px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-bottom: 2.75rem;
 }
 
 .advantages__item img{
@@ -204,13 +214,13 @@
 }
 
 .advantages__item-text{
+    padding: 0 2rem;
     font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 400;
     font-size: .55rem;
     line-height: 1.33;
     color: #333333;
     text-align: center;
-    padding-bottom: 2rem;
 }
 /* advantages close */
 
