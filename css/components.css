@@ -298,11 +298,22 @@ tbody svg{
 }
 /* timelist close */
 
+.gift__prise{
+    position: absolute;
+    top: -2.2rem;
+    z-index: 1;
+}
+
+.gift__prise img{
+    max-width: 13.9rem;
+    border-radius: 50%;
+    box-shadow: 7px 10px 20px 2px black;
+}
+
 .gift__container{
     background: url(../img/Clapper.jpg) no-repeat center/cover;
     background-color: rgba(22, 22, 22, 0.8);
     background-blend-mode: darken;
-    margin-bottom: 3rem;
 }
 
 .gift__container:before{
@@ -311,41 +322,20 @@ tbody svg{
     top: 0;
     left: 0;
     border-top: 5.8rem solid #FFF;
-    border-right: 100vw solid transparent;
+    border-right: 55rem solid transparent;
 }
 
 .gift__container::after{
     content: "";
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: 0;
-    border-left: 100vw solid transparent;
+    border-left: 55rem solid transparent;
     border-bottom: 4.8rem solid #FFF;
 }
 
-.gift__block01{
-    float: left;
-}
-
-.gift__block02{
-    float: right;
-    max-width: 65%;
-    padding: 6rem 0;
-}
-
-.gift__clear{
-    clear: both;
-}
-
-.gift__prise{
-    position: absolute;
-    top: -2.2rem;
-}
-
-.gift__prise img{
-    max-width: 13.9rem;
-    border-radius: 50%;
-    box-shadow: 7px 10px 20px 2px black;
+.gift__block{
+    padding: 6rem 0 8.5rem 15rem;
 }
 
 .gift__head{
@@ -368,10 +358,11 @@ tbody svg{
 
 .gift__button-block{
     float: right;
-    padding-bottom: 1rem;
 }
 
 .gift__button-item{
     padding: .15rem 1.6rem;
     font-size: .7rem;
 }
+/* gift close */
+

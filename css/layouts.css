@@ -26,6 +26,10 @@ body{
     margin-bottom: 5.3rem;
 }
 
+.relative{
+    position: relative;
+}
+
 .link__white{
     text-decoration: none;
     color: #FFFF;
@@ -50,8 +54,4 @@ body{
 
 .button__call {
     color: black;
-}
-
-.relative{
-    position: relative;
 }
