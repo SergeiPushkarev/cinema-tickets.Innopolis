@@ -298,6 +298,10 @@ tbody svg{
 }
 /* timelist close */
 
+.gift__wrap{
+    margin-bottom: 2.8rem;
+}
+
 .gift__prise{
     position: absolute;
     top: -2.2rem;
