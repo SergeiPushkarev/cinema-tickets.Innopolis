@@ -176,6 +176,10 @@
     line-height: 1.33;
 }
 
+.advantages__blockname{
+    margin-bottom: 4.2rem;
+}
+
 .basealign__advantages{
     max-width: 45rem;
     margin: 0  auto;
@@ -188,7 +192,7 @@
 }
 
 .advantages__item{
-    flex-basis: 299px;
+    flex-basis: 240px;
     flex-shrink: 1;
     flex-grow: 1;
     display: flex;
@@ -226,6 +230,10 @@
 
 .timelist__table{
     margin-bottom: 1.5rem;
+}
+
+.timelist__blockname{
+    padding-bottom: 3.8rem;
 }
 
 .table {
@@ -370,3 +378,66 @@ tbody svg{
 }
 /* gift close */
 
+.films__intro{
+    padding: 1.2rem 14rem 1.2rem 0;
+    font-family: "IBM_Plex_Sans", sans-serif; 
+    font-weight: 400;
+    font-size: .55rem;
+    line-height: 1.33;
+    color: #333333;
+}
+
+.movie__container{
+    overflow: hidden;
+    padding: 1.3rem 0 3.7rem 0;
+}
+
+.movie__item{
+    float: left;
+    width: 33.3%;
+    position: relative;
+}
+
+.movie__item-bg img{
+    width: 100%;
+}
+
+.movie__item-shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(22, 22, 22, 0.8);
+}
+
+.movie__item-descr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:rgba(144, 210, 61, 0.4);
+    opacity: 0;
+}
+
+.movie__item-descr:hover{
+    opacity: 1;
+    transition: .8s;
+}
+
+.descr__head{
+    padding: 1rem;
+    font-family: "IBM_Plex_Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.45rem;
+    line-height: 1.33;
+}
+
+.descr__text{
+    padding: 0 1rem;
+    font-family: "IBM_Plex_Sans", sans-serif;
+    font-weight: 400;
+    font-size: .55rem;
+    line-height: 1.33;
+}
