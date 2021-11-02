@@ -170,10 +170,6 @@
 .greeting__body{
     display: inline-block;
     max-width: 16.6rem;
-    font-family: "IBM_Plex_Sans", sans-serif; 
-    font-weight: 400;
-    font-size: .55rem;
-    line-height: 1.33;
 }
 
 .advantages__blockname{
@@ -297,10 +293,6 @@ tbody svg{
 .timelist__underline{
     max-width: 26.9rem;
     margin: 0 auto;
-    font-family: "IBM_Plex_Sans", sans-serif; 
-    font-weight: 400;
-    font-size: .55rem;
-    line-height: 1.33;
     color: #333333;
     text-align: center;
 }
@@ -361,10 +353,6 @@ tbody svg{
 
 .gift__text{
     padding-bottom: 1.65rem;
-    font-family: "IBM_Plex_Sans", sans-serif; 
-    font-weight: 400;
-    font-size: .55rem;
-    line-height: 1.33;
     text-align: right;
 }
 
@@ -380,15 +368,11 @@ tbody svg{
 
 .films__intro{
     padding: 1.2rem 14rem 1.2rem 0;
-    font-family: "IBM_Plex_Sans", sans-serif; 
-    font-weight: 400;
-    font-size: .55rem;
-    line-height: 1.33;
     color: #333333;
 }
 
 .movie__container{
-    padding: 1.3rem 0 3.7rem 0;
+    padding: 1.3rem 0 4rem 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -440,4 +424,73 @@ tbody svg{
     font-weight: 400;
     font-size: .55rem;
     line-height: 1.33;
+}
+/* films close */
+
+.souvenirs__intro{
+    color: #333333;
+    padding: 1.4rem 14rem 1.4rem 0;
+}
+
+.souvenirs__container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 1.3rem 0;
+}
+
+.souvenirs__item{
+    flex: 0 0 12.3rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 7px 10px 20px 2px black;
+}
+
+.souvenirs__item img{
+    display: block;
+    width: 12.3rem;
+    height: 16.6rem;
+}
+
+.souvenirs__item-mark{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mark-bg{
+    position: absolute;
+    bottom: -2.75rem;
+    left: 0;
+    right: 0;
+    padding-top: 8.5rem;
+    background: rgba(163, 204, 64, 0.8);
+    transform: skew(0, -15deg);
+    transition: .3s;
+}
+
+.mark-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 3rem 1rem 3rem;
+    font-family: "IBM_Plex_Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.33;
+    text-align: center;
+    vertical-align: top;
+    transition: .3s;
+}
+
+.souvenirs__item-mark:hover .mark-bg{
+    bottom: -1.75rem;
+}
+
+.souvenirs__item-mark:hover .mark-text{
+    bottom: 1rem;
 }
