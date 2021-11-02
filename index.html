@@ -607,120 +607,99 @@
         </div>
       </div>
     </section>
-    <section id="review" class="basealign">
-      <h1 class="blockname">Отзывы</h1>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi
-        incidunt a ipsam animi recusandae, placeat et aliquam expedita
-        reprehenderit! Consequatur rem perspiciatis tempore ratione? Hic
-        necessitatibus quae modi nulla?
-      </div>
-      <div>
-        <img
-          src="img/elena_biryukova.jpg"
-          alt="Елена Еленова"
-          width="210"
-          height="152.71"
-        />
-        <p>Елена Еленова</p>
-        <div>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, beatae
-          perferendis cumque hic cupiditate quo veniam eveniet aliquam? Expedita
-          excepturi ut ullam consequuntur facere, dicta magnam fuga explicabo
-          cupiditate sit.
+    <section id="review" class="review__container">
+      <div class="review__body basealign">
+        <h1 class="blockname">Отзывы</h1>
+        <div class="review__intro text__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi
+          incidunt a ipsam animi recusandae, placeat et aliquam expedita
+          reprehenderit! Consequatur rem perspiciatis tempore ratione?
         </div>
-      </div>
-      <div>
-        <img
-          src="img/boris_borisov.jpg"
-          alt="Борис Борисов"
-          width="210"
-          height="152.71"
-        />
-        <p>Борис Борисов</p>
-        <div>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          quisquam sunt totam velit. Sit numquam reprehenderit aspernatur
-          molestias nobis fuga natus illo hic quia, perspiciatis ab fugit
-          voluptatum sunt eveniet.
-        </div>
-      </div>
-      <div>
-        <img
-          src="img/dicaprio.jpg"
-          alt="Леонардо ДиКаприо"
-          width="210"
-          height="152.71"
-        />
-        <p>Леонардо ДиКаприо</p>
-        <div>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
-          rerum fugit saepe magni minima recusandae odit expedita mollitia nulla
-          aliquam eligendi, unde quos, quidem enim error! Voluptatibus non ea
-          nemo.
+        <div class="review__bar">
+          <div class="review__bar-item">
+            <div class="bar__foto">
+              <img
+                src="img/elena_biryukova.jpg"
+                alt="Елена Еленова"
+                width="210"
+                height="152.71"
+              />
+            </div>
+            <div class="bar__descr">
+              <div class="bar__descr-name">Елена Еленова</div>
+              <div class="bar__descr-text text__description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                odio sint et dolore eius consectetur earum soluta dignissimos
+                placeat fugit exercitationem cumque sunt magnam a, porro harum,
+                quaerat corporis iure.
+              </div>
+              <div class="bar__date">01.01.2021</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section id="feedback" class="basealign">
-      <h1 class="blockname">Обратная связь</h1>
-      <form action="/order.php" id="reviewForm">
-        <div>
-          <input
-            type="text"
-            name="nameField"
-            id="nameField"
-            placeholder="Полное имя"
-            required
-            aria-label="nameField"
-          />
-        </div>
-        <div>
-          <label for="sit">
-            <select name="sit" id="sit" placeholder="Номер места" required>
-              <option value="">-не выбрано-</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-            </select>
-          </label>
-        </div>
-        <div>
-          <textarea
-            name="reviewField"
-            id="reviewField"
-            rows="1"
-            placeholder="Напишите свой отзыв"
-            required
-            aria-label="reviewField"
-          ></textarea>
-        </div>
-        <div>
-          <input
-            type="email"
-            name="enterEmail"
-            id="enterEmail"
-            aria-label="enterEmail"
-            placeholder="Укажите  электронную почту"
-            pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-            required
-          />
-        </div>
-        <div>
-          <input type="checkbox" id="persData" required />
-          <label for="persData"
-            >Я согласен на обработку персональных данных</label
-          >
-        </div>
-      </form>
+    <section id="feedback">
       <div>
-        <button form="reviewForm" type="submit">послать</button>
+        <div class="feedback__container">
+          <div class="leftside"></div>
+          <div class="rightside">
+            <h1 class="blockname">Обратная связь</h1>
+            <form action="/order.php" id="reviewForm">
+              <div>
+                <input
+                  type="text"
+                  name="nameField"
+                  id="nameField"
+                  placeholder="Полное имя"
+                  required
+                  aria-label="nameField"
+                />
+              </div>
+              <div>
+                <label for="sit">
+                  <select
+                    name="sit"
+                    id="sit"
+                    placeholder="Номер места"
+                    required
+                  >
+                    <option value="">-не выбрано-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </label>
+              </div>
+              <div>
+                <textarea
+                  name="reviewField"
+                  id="reviewField"
+                  rows="1"
+                  placeholder="Напишите свой отзыв"
+                  required
+                  aria-label="reviewField"
+                ></textarea>
+              </div>
+              <div>
+                <input type="checkbox" id="persData" required />
+                <label for="persData"
+                  >Я согласен на обработку персональных данных</label
+                >
+              </div>
+              <div>
+                <button form="reviewForm" type="submit">послать</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
     <section id="location" class="basealign">
