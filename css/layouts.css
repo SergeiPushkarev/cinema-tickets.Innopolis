@@ -45,6 +45,11 @@ body{
     color: #FFF;
 }
 
+.button__feedback{
+    width: 100%;
+    padding: .7rem 0;
+}
+
 .button:hover{
     background: #FFF;
     color: #A3CC40;
@@ -60,4 +65,36 @@ body{
     font-weight: 400;
     font-size: .55rem;
     line-height: 1.33;
+}
+
+.underline:hover{
+    color: #A3CC40;
+}
+
+.underline::before{
+    content: "";
+    position: absolute;
+    background-color: #A3CC40;
+    left: -.2rem;
+    bottom: -.25rem;
+    width: 0;
+    height: 1px;
+    transition: .2s ease-in;
+}
+
+.underline:hover::before{
+    width: 107%;
+}
+
+.clear{
+    clear: both;
+}
+
+.footer__blockname{
+    padding-bottom: .9rem;
+    font-family: "IBM_Plex_Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.33;
+    text-transform: uppercase;
 }
