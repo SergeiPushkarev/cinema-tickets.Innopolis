@@ -708,10 +708,6 @@ tbody svg{
     padding: 0 .1rem;
 } */
 
-.feedback__text{
-
-}
-
 .feedback__textarea{
     display: block;
     min-height: 6rem;
