@@ -540,12 +540,6 @@ tbody svg{
     padding: 1.4rem 14rem 1.4rem 0;
 }
 
-.review__bar{
-    /* padding-top: 2.3rem;
-    padding-bottom: 1rem;
-    padding-left: 15rem; */
-}
-
 .review__bar-item{
     display: flex;
     flex-direction: column;
