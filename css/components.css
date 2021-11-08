@@ -541,21 +541,21 @@ tbody svg{
 }
 
 .review__bar{
-    padding-top: 2.3rem;
+    /* padding-top: 2.3rem;
     padding-bottom: 1rem;
-    padding-left: 15rem;
+    padding-left: 15rem; */
 }
 
 .review__bar-item{
     display: flex;
     flex-direction: column;
-    width: 12.25rem;
+    width: 10.55rem;
     background-color: #97B13C;
     border-radius: 10px;
 }
 
 .bar__foto{
-    flex: 1 1 8.9rem;
+    flex: 1 1 7.7rem;
 }
 
 .bar__foto img{
@@ -566,19 +566,19 @@ tbody svg{
 }
 
 .bar__descr{
-    flex: 1 1 7.7rem;
-    padding: 1rem;
+    padding: 1rem .5rem .5rem .5rem;
 }
 
 .bar__descr-name{
     font-family: "IBM_Plex_Sans", sans-serif;
     font-weight: 600;
-    font-size: .9rem;
+    font-size: .75rem;
     line-height: 1.33;
 }
 
 .bar__descr-text{
-    padding: auto 0;
+    padding-top: .55rem;
+    padding-bottom: .3rem;
 }
 
 .bar__date{
