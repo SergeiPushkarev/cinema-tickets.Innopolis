@@ -554,12 +554,11 @@ tbody svg {
 
 .review__intro {
   color: #ffffff;
-  padding: 1.4rem 14rem 1.4rem 0;
+  padding: 1.4rem 14rem 3rem 0;
 }
 
 .review__bar {
-  box-sizing: border-box;
-  padding-top: 3rem;
+  /* box-sizing: border-box; */
 }
 
 .review__bar-item {
