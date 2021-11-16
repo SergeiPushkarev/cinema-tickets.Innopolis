@@ -246,7 +246,6 @@
   font-size: 0.7rem;
   line-height: 1.33;
   color: #ffffff;
-  height: 11.25rem;
   width: 42.5rem;
   border-collapse: collapse;
   text-align: left;
@@ -293,10 +292,12 @@ tbody svg {
 
 .timelistBody tr:nth-child(even) {
   background-color: #373737;
+  height: 2.25rem;
 }
 
 .timelistBody tr:nth-child(odd) {
   background-color: #4c4d4f;
+  height: 2.25rem;
 }
 
 .timelistBody tr:last-child :first-child {
