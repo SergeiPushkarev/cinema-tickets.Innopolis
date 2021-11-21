@@ -7,8 +7,8 @@
 }
 
 .head__container {
-  padding: 2.2rem 0 0 0;
-  max-width: 47rem;
+  padding: 2.3rem 0 14.1rem 0;
+  max-width: 48.3rem;
   margin: 0 auto;
   font-family: "IBM_Plex_Sans", sans-serif;
   font-weight: 500;
@@ -28,38 +28,34 @@
   overflow: hidden;
 }
 
+.head__row{
+  display: flex;
+}
+
 .head__logo {
-  padding: 0.35rem 0 0 0.1rem;
-  float: left;
-  max-width: 21%;
+  flex: 0 0 22.6%;
+  padding: .3rem 0 0 1rem;
 }
 
-.head__nav {
-  float: left;
-  max-width: 79%;
-  margin-left: 45px;
+.head__nav{
+  flex: 0 0 65.7%;
+  display: flex;
+  flex-direction: column;
 }
 
-.head__nav li {
-  display: inline-block;
+.head__nav-item{
+  flex: 0 0 1.65rem;
+  display: flex;
+  flex-direction: row;
 }
 
-.head__langswitch {
-  padding-top: 0.15rem;
-  position: relative;
-  float: right;
-  max-width: 3%;
-}
-
-.head__contacts {
-  margin-left: 2.5rem;
-  padding-top: 0.15rem;
+.nav__row1-item{
+  flex: 0 0 7.87rem;
 }
 
 .call__button {
   box-sizing: border-box;
-  margin-left: 2.5rem;
-  padding: 0 0.25rem;
+  padding-left: .4rem;
   background: #ffffff;
   color: #333333;
   border-radius: 0.3rem;
@@ -78,6 +74,8 @@
 
 .call__button span {
   padding-left: 0.25rem;
+  padding-right: .35rem;
+  padding-top: .1rem;
   text-decoration: none;
 }
 
@@ -85,13 +83,21 @@
   color: #fff;
 }
 
-.head__links {
-  margin-top: 0.75rem;
+.nav__row2-item{
+  flex: 0 0 7.25rem;
+  text-transform: uppercase;
 }
 
-.head__links-item {
-  margin-left: 3.5rem;
-  text-transform: uppercase;
+.nav__row2-item:nth-child(2){
+  padding-left: .75rem;
+}
+
+.head__langswitch{
+  flex: 0 0 11.7%;
+}
+
+.head__langswitch-wrap{
+  float: right;
 }
 
 .head__langswitch-dropdown {
@@ -120,9 +126,9 @@
 }
 
 .head__intro {
-  clear: both;
   margin: 0 auto;
-  margin-top: 9rem;
+  margin-top: 5.6rem;
+  padding-left: 1rem;
   text-align: center;
 }
 
@@ -143,6 +149,10 @@
 
 /* .header close */
 
+.advantages__container{
+  margin-bottom: 5.85rem;
+}
+
 .greeting__container {
   margin-bottom: 1.5rem;
 }
@@ -154,7 +164,7 @@
   background-color: #fff;
   border-radius: 0.5rem;
   color: black;
-  right: 0;
+  right: -.45rem;
   top: -8.5rem;
   box-shadow: 0 1.35rem 1.95rem rgba(163, 204, 64, 0.18);
 }
@@ -179,14 +189,12 @@
 }
 
 .basealign__advantages {
-  max-width: 45rem;
-  margin: 0 auto;
+  margin: 0 97px 0 113px;
 }
 
 .advantages {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .advantages__item {
@@ -196,7 +204,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding-bottom: 2.75rem;
+  padding-bottom: 2.55rem;
 }
 
 .advantages__item:hover {
@@ -232,12 +240,16 @@
 
 /* advantages close */
 
+.timelist__container{
+  margin-bottom: 5.4rem;
+}
+
 .timelist__table {
   margin-bottom: 1.5rem;
 }
 
 .timelist__blockname {
-  padding-bottom: 3.8rem;
+  padding-bottom: 4.1rem;
 }
 
 .table {
@@ -358,7 +370,7 @@ tbody svg {
 }
 
 .gift__block {
-  padding: 6rem 0 8.5rem 15rem;
+  padding: 5.7rem 0 8.6rem 15rem;
 }
 
 .gift__head {
@@ -371,7 +383,7 @@ tbody svg {
 }
 
 .gift__text {
-  padding-bottom: 1.65rem;
+  padding-bottom: 1.35rem;
   text-align: right;
 }
 
@@ -492,8 +504,8 @@ tbody svg {
   position: absolute;
   bottom: -2.75rem;
   left: 0;
-  right: 0;
-  padding-top: 8.5rem;
+  right: -.2rem;
+  padding-top: 8.9rem;
   background: rgba(163, 204, 64, 0.8);
   transform: skew(0, -15deg);
   transition: 0.3s;
@@ -550,16 +562,13 @@ tbody svg {
 }
 
 .review__body {
-  padding: 6rem 0;
+  padding: 5.9rem 0;
+  margin-bottom: 2rem;
 }
 
 .review__intro {
   color: #ffffff;
-  padding: 1.4rem 14rem 3rem 0;
-}
-
-.review__bar {
-  /* box-sizing: border-box; */
+  padding: 1.4rem 14rem 2rem 0;
 }
 
 .review__bar-item {
@@ -818,18 +827,18 @@ tbody svg {
 
 .footer__wrap {
   margin: 0 auto;
-  padding-top: 4.3rem;
-  width: 938px;
+  padding-top: 4.1rem;
+  width: 47.4rem;
 }
 
 .footer__end {
   float: left;
-  width: 47%;
+  width: 46.5%;
 }
 
 .footer__parting {
   width: 60%;
-  padding: 0.6rem 0;
+  padding: .6rem 0 .5rem 0;
   font-family: "IBM_Plex_Sans", sans-serif;
   font-weight: 400;
   font-size: 0.7rem;
