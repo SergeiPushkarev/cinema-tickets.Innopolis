@@ -4,8 +4,23 @@
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:768px) {
     html{
-        font-size: 4vw;
+        font-size: 3vw;
+    }
+    .greeting__container{
+        display: none;
+    }
+    .timelist__table{
+        overflow-x: scroll;
+    }
+    .souvenirs__container{
+        justify-content: space-around;
+    }
+    .feedback__container{
+        display: block;
+    }
+    .leftside{
+        display: none;
     }
 }

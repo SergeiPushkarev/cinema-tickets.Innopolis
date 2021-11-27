@@ -24,12 +24,13 @@
   right: 0;
   bottom: 0;
   border-top: 6.25rem solid transparent;
-  border-right: 55.3rem solid #fff;
+  border-right: 98vw solid #fff;
   overflow: hidden;
 }
 
 .head__row{
   display: flex;
+  margin: 0 auto;
 }
 
 .head__logo {
@@ -44,13 +45,13 @@
 }
 
 .head__nav-item{
-  flex: 0 0 1.65rem;
+  flex: 0 0 62%;
   display: flex;
   flex-direction: row;
 }
 
 .nav__row1-item{
-  flex: 0 0 7.87rem;
+  flex: 0 0 24.8%;
 }
 
 .call__button {
@@ -84,7 +85,7 @@
 }
 
 .nav__row2-item{
-  flex: 0 1 7.25rem;
+  flex: 0 0 22.8%;
   text-transform: uppercase;
 }
 
@@ -127,7 +128,7 @@
 
 .head__intro {
   margin: 0 auto;
-  margin-top: 5.6rem;
+  margin-top: 6.5rem;
   padding-left: 1rem;
   text-align: center;
 }
@@ -198,7 +199,7 @@
 }
 
 .advantages__item {
-  flex-basis: 240px;
+  flex-basis: 33%;
   flex-shrink: 1;
   flex-grow: 1;
   display: flex;
@@ -287,19 +288,20 @@ tbody svg {
 }
 
 .timelistHead th:nth-child(1) {
-  width: 4rem;
+  width: 10%;
   border-radius: 0.5rem 0 0 0;
 }
 
 .timelistHead th:nth-child(2) {
-  width: 11.9rem;
+  width: 28%;
 }
 
 .timelistHead th:nth-child(3) {
-  width: 11.9rem;
+  width: 28%;
 }
 
 .timelistHead th:nth-child(4) {
+  width: 34%;
   border-radius: 0 0.5rem 0 0;
 }
 
@@ -358,7 +360,7 @@ tbody svg {
   top: 0;
   left: 0;
   border-top: 5.8rem solid #fff;
-  border-right: 55rem solid transparent;
+  border-right: 98vw solid transparent;
 }
 
 .gift__container::after {
@@ -366,7 +368,7 @@ tbody svg {
   position: absolute;
   right: 0;
   bottom: 0;
-  border-left: 55rem solid transparent;
+  border-left: 98vw solid transparent;
   border-bottom: 4.8rem solid #fff;
 }
 
@@ -398,6 +400,11 @@ tbody svg {
 }
 
 /* gift close */
+
+.films__basealign{
+  max-width: 77%;
+  margin: 0  auto;
+}
 
 .films__intro {
   padding: 1.2rem 14rem 1.2rem 0;
@@ -473,7 +480,7 @@ tbody svg {
 
 .souvenirs__container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 1.3rem 0;
   margin-bottom: 1.4rem;
@@ -549,7 +556,7 @@ tbody svg {
   position: absolute;
   top: 0;
   left: 0;
-  border-left: 55rem#FFFFFF solid;
+  border-left: 98vw#FFFFFF solid;
   border-bottom: 3.9rem solid transparent;
 }
 
@@ -558,7 +565,7 @@ tbody svg {
   position: absolute;
   right: 0;
   bottom: 0;
-  border-right: 55rem#FFFFFF solid;
+  border-right: 98vw#FFFFFF solid;
   border-top: 3.3rem solid transparent;
 }
 
@@ -624,38 +631,38 @@ tbody svg {
 .feedback__container {
   display: flex;
   flex-wrap: nowrap;
-  width: 38.5rem;
+  width: 68vw;
   margin: 0 auto;
   box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
+  border-radius: 1rem;
 }
 
 .leftside {
-  flex: 0 0 19.2rem;
+  flex: 0 0 45%;
   background: linear-gradient(270deg,
-      #ffffff 12.2%,
+      #ffffff 5%,
       rgba(30, 30, 30, 0) 107.85%),
     url("/img/spect_review.jpg") no-repeat center/cover;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+    border-radius: inherit;
 }
 
 .rightside {
-  flex: 0 0 17.3rem;
+  flex: 0 0 55%;
   background-color: #fff;
-  padding: 0.5rem 0;
+  padding: 0 1.9rem;
+  border-radius: inherit;
 }
 
 .blockname__feedback {
-  padding: 1rem 3.5rem 0.75rem 3.5rem;
+  padding: 1.5rem 3.5rem 0.75rem 3.5rem;
   font-size: 1.25rem;
 }
 
 .feedback__form {
-  margin-right: 50px;
+  margin: 0 auto;
 }
 
 .feedback__name {
-  width: 17.3rem;
   padding: 0.25rem 0;
 }
 
@@ -817,8 +824,26 @@ tbody svg {
 /* feedback close */
 
 .location {
-  margin: 0 3.15rem;
+  padding-top: 3.2rem;
+  width: 68vw;
+  margin: 0 auto;
 }
+
+.location__map{
+  width: 100%;
+  padding-top: 53%;
+  position: relative;
+}
+
+.location iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
 
 /* location close */
 
@@ -829,7 +854,7 @@ tbody svg {
 .footer__wrap {
   margin: 0 auto;
   padding-top: 4.1rem;
-  width: 47.4rem;
+  width: 84%;
 }
 
 .footer__end {
