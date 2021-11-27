@@ -39,19 +39,19 @@
 }
 
 .head__nav{
-  flex: 0 0 65.7%;
+  flex: 0 0 77.4%;
   display: flex;
   flex-direction: column;
 }
 
 .head__nav-item{
-  flex: 0 0 62%;
+  flex: 0 0 65%;
   display: flex;
   flex-direction: row;
 }
 
 .nav__row1-item{
-  flex: 0 0 24.8%;
+  flex: 0 0 21%;
 }
 
 .call__button {
@@ -85,7 +85,7 @@
 }
 
 .nav__row2-item{
-  flex: 0 0 22.8%;
+  flex: 0 0 19.4%;
   text-transform: uppercase;
 }
 
@@ -94,7 +94,7 @@
 }
 
 .head__langswitch{
-  flex: 0 0 11.7%;
+  flex: 0 0 15.9%;
 }
 
 .head__langswitch-wrap{
@@ -165,8 +165,8 @@
   background-color: #fff;
   border-radius: 0.5rem;
   color: black;
-  right: -.45rem;
-  top: -8.5rem;
+  right: -1.05rem;
+  top: -8.6rem;
   box-shadow: 0 1.35rem 1.95rem rgba(163, 204, 64, 0.18);
 }
 
@@ -338,12 +338,13 @@ tbody svg {
 
 .gift__prise {
   position: absolute;
-  top: -2.2rem;
+  top: -2.4rem;
+  left: 6.9rem;
   z-index: 1;
 }
 
 .gift__prise img {
-  max-width: 13.9rem;
+  max-width: 50%;
   border-radius: 50%;
   box-shadow: 7px 10px 20px 2px black;
 }
@@ -373,7 +374,9 @@ tbody svg {
 }
 
 .gift__block {
-  padding: 5.7rem 0 8.6rem 15rem;
+  max-width: 79%;
+  margin: 0 auto;
+  padding: 5.7rem 0 8.5rem 15.1rem;
 }
 
 .gift__head {
@@ -402,7 +405,7 @@ tbody svg {
 /* gift close */
 
 .films__basealign{
-  max-width: 77%;
+  max-width: 76%;
   margin: 0  auto;
 }
 
@@ -475,15 +478,15 @@ tbody svg {
 
 .souvenirs__intro {
   color: #333333;
-  padding: 1.4rem 14rem 1.4rem 0;
+  padding: 1.2rem 14rem 1.2rem 0;
 }
 
 .souvenirs__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1.3rem 0;
-  margin-bottom: 1.4rem;
+  padding: .8rem 0;
+  margin-bottom: 1.8rem;
 }
 
 .souvenirs__item {
