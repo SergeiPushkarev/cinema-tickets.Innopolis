@@ -6,10 +6,61 @@
 
 @media screen and (max-width:768px) {
     html{
-        font-size: 3vw;
+        font-size: 2.9vw;
+    }
+    .head__nav-burgermenu{
+        display: block;
+    }
+    .burgermenu__btn{
+        display: flex;
+    }
+    .head__nav-mobilemenu{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: #fff;
+        font-size: .9rem;
+        padding-top: 3.75rem;
+        padding-right: 4.4rem;
+        padding-left: 2.1rem;
+    }
+    .head__row1,
+    .head__row2{
+        flex-direction: column;
+    }
+    .head__row1{
+        padding-top: 7.3rem;
+    }
+    .nav__row1-item{
+        flex-basis: 28%;
+    }
+    .head__row2{
+        order: -1;
+    }
+    .nav__row2-item{
+        flex-basis: 42%;
+    }
+    .nav__row1-item>.link__white{
+        color: #9B9B9B;
+    }
+    .nav__row2-item>.link__white{
+        color: black;
+    }
+    .nav__row2-item:nth-child(2){
+        padding-left: 0;
+      }
+    .head__langswitch-wrap>.link__white{
+        color: #A3CC40;
+    }
+    .head__langswitch{
+        order: -1;
+    }
+    .head__langswitch-wrap{
+        float: left;
     }
     .greeting__container{
-        display: none;
+        /* display: none; */
     }
     .timelist__table{
         overflow-x: scroll;
