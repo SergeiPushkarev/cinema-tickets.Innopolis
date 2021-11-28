@@ -24,6 +24,7 @@
         padding-top: 3.75rem;
         padding-right: 4.4rem;
         padding-left: 2.1rem;
+        overflow:hidden;
     }
     .head__row1,
     .head__row2{
@@ -59,9 +60,13 @@
     .head__langswitch-wrap{
         float: left;
     }
-    .greeting__container{
-        /* display: none; */
+    .head__intro p{
+        font-size: 1.8rem;
     }
+    .advantages__blockname {
+        padding-top: 4rem;
+        margin-bottom: 4.2rem;
+      }
     .timelist__table{
         overflow-x: scroll;
     }
@@ -73,5 +78,22 @@
     }
     .leftside{
         display: none;
+    }
+}
+@media screen and (max-width:550px){
+    html{
+        font-size: 2.9vw;
+    }
+    .greeting__container{
+        display: none;
+    }
+    .text__description{
+        font-size: 1rem;
+    }
+    .blockname{
+        font-size: 3rem;
+    }
+    .head__intro p{
+        font-size: 3.8rem;
     }
 }

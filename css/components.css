@@ -45,9 +45,9 @@
   z-index: 999;
 }
 
-.head__nav-mobilemenuclosed{
+/* .head__nav-mobilemenuclosed{
   transform: translateX(100%);
-}
+} */
 
 .head__row1{
   flex: 0 0 auto;
