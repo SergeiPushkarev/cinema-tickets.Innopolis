@@ -141,13 +141,6 @@
   display: none;
 }
 
-.burgermenu__toggle{
-  display: none;
-}
-#burgermenu__toggle{
-  opacity: 0;
-}
-
 .burgermenu__btn {
   display: none;
   align-items: center;
@@ -177,22 +170,18 @@
   top: 8px;
 }
 
-#burgermenu__toggle:checked ~ .burgermenu__btn > span {
+.burgermenu__btn:hover > span {
   transform: rotate(45deg);
 }
-#burgermenu__toggle:checked ~ .burgermenu__btn > span::before {
+.burgermenu__btn:hover > span::before {
   top: 0;
   transform: rotate(0);
   background-color: #A3CC40;
 }
-#burgermenu__toggle:checked ~ .burgermenu__btn > span::after {
+.burgermenu__btn:hover > span::after {
   top: 0;
   transform: rotate(90deg);
   background-color: #A3CC40;
-}
-#burgermenu__toggle:checked ~ .burgermenu__box {
-  visibility: visible;
-  left: 0;
 }
 
 .head__intro {
