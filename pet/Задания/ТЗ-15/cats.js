@@ -4,8 +4,8 @@ const cats = {
     'siam': '🙀',
     'bombay' : '😼'
     };
-for (const breed of Object.keys(cats)) {
+for (const breed in cats) {
     if (breed.length > 4) {
-    console.log(cats[breed])
+        console.log(cats[breed])
     }
 }
