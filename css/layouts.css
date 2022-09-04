@@ -18,7 +18,7 @@ body{
 
 .basealign{
     max-width: 75%;
-    margin: 0  auto;
+    margin: 0 auto;
 }
 
 .relative{
@@ -35,7 +35,7 @@ body{
     font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 500;
     line-height: 1.33;
-    border: 2px solid#A3CC40;
+    border: 2px solid #A3CC40;
     background: #A3CC40;
     border-radius: .3rem;
     color: #FFF;

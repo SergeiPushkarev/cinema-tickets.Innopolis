@@ -60,9 +60,9 @@
     .head__langswitch-wrap{
         float: left;
     }
-    .head__intro p{
+    /* .head__intro p{
         font-size: 1.8rem;
-    }
+    } */
     .advantages__blockname {
         padding-top: 4rem;
         margin-bottom: 4.2rem;
@@ -80,20 +80,238 @@
         display: none;
     }
 }
-@media screen and (max-width:550px){
+@media screen and (max-width:551px){
     html{
-        font-size: 2.9vw;
+        font-size: 1.9vw;
     }
-    .greeting__container{
+    .basealign{
+        max-width: 84%;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+
+    .head__container {
+        max-width: 44.6rem;
+        padding: 1.9rem 0 13.4rem 0;
+    }
+
+    .burgermenu__btn {
+        top: 3rem;
+        right: 3rem;
+        width: 3.2rem;
+        height: 25px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+    
+    .head__intro{
+        padding-left: 0;
+        margin-top: 4.5rem;
+    }
+    .head__intro-line01{
+        font-size: 3.35rem;
+    }
+
+    .head__intro-line02{
+        font-size: 1.9rem;
+    }
+
+    .greeting__container {
+        margin-bottom: 0;
+    }
+
+    .greeting__box {
+        max-width: 26rem;
+        padding: 1.6rem;
+        position: absolute;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        color: black;
+        right: 15%;
+        top: -8.6rem;
+        box-shadow: 0 1.35rem 1.95rem rgb(163 204 64 / 18%);
+    }
+
+    .greeting__head {
+        display: inline-block;
+        font-family: "IBM_Plex_Sans", sans-serif;
+        font-weight: 600;
+        font-size: 2.1rem;
+        line-height: 1.33;
+        margin-bottom: .6rem;
+        padding-left: 2rem;
+    }
+
+    .text__description{
+        font-size: .8rem;
+    }
+    .advantages__blockname {
+        padding-top: 6rem;
+    }
+
+    .advantages__item-header{
+        font-size: 2rem;
+    }
+    
+    .advantages__item-text{
         display: none;
     }
-    .text__description{
-        font-size: 1rem;
-    }
+
     .blockname{
         font-size: 3rem;
     }
-    .head__intro p{
-        font-size: 3.8rem;
+
+    .head__nav-mobilemenu{
+        display: none;
+        flex-flow: column nowrap;
+        z-index: 999;
+        font-size: 1.7rem;
+        padding: 5rem;
     }
-}
+    .mobilemenu__contact-item{
+        flex: 0 0 0%;
+        order: 0;
+    }
+    
+    .head__nav-mobilemenu li:first-child{
+        padding-bottom: 3rem;
+    }
+
+    .head__nav-mobilemenu li:nth-child(7){
+        padding-top: 10rem;
+    }
+
+    .head__nav-mobilemenu li:last-child{
+        padding-top: 7rem;
+    }
+
+    .mobilemenu__nav-item{
+        flex: 0 0 5%;
+        text-transform: uppercase;
+        order: 0;
+    }
+
+    .mobilemenu__nav-item .link__white{
+        color: black;
+    }
+
+    .mobilemenu__contact-item .link__white {
+        color: #9B9B9B;
+    }
+
+    .call__button{
+        padding: 1rem 3rem;
+        border: 3px solid #a3cc40;
+        border-radius: 1rem;
+    }
+
+    .call__button span {
+        color: #a3cc40;
+    }
+
+    .call__button svg path {
+       fill: #A3CC40;
+    }
+    .head__langswitch{
+        flex: 0 0 0;
+        float: left;
+        order: 0;
+    }
+
+    .head__langswitch span{
+        color: #A3CC40;
+    }
+
+    .timelist__table{
+        overflow-x: scroll;
+    }
+
+    .gift__head{
+        text-align: center;
+    }
+
+    .gift__text{
+        display: none;
+    }
+
+    .gift__button-block {
+        font-size: 2rem;
+        text-align: center;
+        float: none;
+    }
+
+    .review__bar{
+        margin-right: 7rem;
+    }
+
+    .formplaceholder{
+        font-size: 1.3rem;
+    }
+
+    .name__input{
+        font-size: 2rem;
+    }
+
+    .sit__select{
+        font-size: 1.5rem;
+    }
+
+    .feedback__textarea::-webkit-input-placeholder {
+        color: #a1a1a1;
+        font-family: "IBM_Plex_Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1.3rem;
+        line-height: 1.33;
+    }
+    
+    .check__mark {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .check__text {
+        font-size: 1.3rem;
+    }
+
+    .footer__wrap{
+
+    }
+
+    .footer__block1 {
+        width: 38%;
+    }
+
+    .footer__logo svg{
+        width: 100px;
+    }
+
+    .footer__parting{
+        display: none;
+    }
+
+    .footer__site{
+        display: none;
+    }
+
+    .footer__contacts{
+        flex-basis: 100%;
+    }
+
+    .footer__contacts-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer__contacts-list li:nth-child(1n+4){
+        display: none;
+    }
+
+    .footer__contacts-item{
+        flex: 1 0 50%;
+        font-size: 1.2rem;
+    }
+
+    }
