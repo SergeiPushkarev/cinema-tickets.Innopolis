@@ -6,7 +6,7 @@ $(document).ready(function(){
             0:{
                 items: 1,
                 center: true,
-                stagePadding: 135,
+                stagePadding: 138,
                 margin: 60,
                 nav: true,
             },

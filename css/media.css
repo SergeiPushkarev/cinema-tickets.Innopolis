@@ -8,77 +8,6 @@
     html{
         font-size: 2.9vw;
     }
-    .head__nav-burgermenu{
-        display: block;
-    }
-    .burgermenu__btn{
-        display: flex;
-    }
-    .head__nav-mobilemenu{
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        background: #fff;
-        font-size: .9rem;
-        padding-top: 3.75rem;
-        padding-right: 4.4rem;
-        padding-left: 2.1rem;
-        overflow:hidden;
-    }
-    .head__row1,
-    .head__row2{
-        flex-direction: column;
-    }
-    .head__row1{
-        padding-top: 7.3rem;
-    }
-    .nav__row1-item{
-        flex-basis: 28%;
-    }
-    .head__row2{
-        order: -1;
-    }
-    .nav__row2-item{
-        flex-basis: 42%;
-    }
-    .nav__row1-item>.link__white{
-        color: #9B9B9B;
-    }
-    .nav__row2-item>.link__white{
-        color: black;
-    }
-    .nav__row2-item:nth-child(2){
-        padding-left: 0;
-      }
-    .head__langswitch-wrap>.link__white{
-        color: #A3CC40;
-    }
-    .head__langswitch{
-        order: -1;
-    }
-    .head__langswitch-wrap{
-        float: left;
-    }
-    /* .head__intro p{
-        font-size: 1.8rem;
-    } */
-    .advantages__blockname {
-        padding-top: 4rem;
-        margin-bottom: 4.2rem;
-      }
-    .timelist__table{
-        overflow-x: scroll;
-    }
-    .souvenirs__container{
-        justify-content: space-around;
-    }
-    .feedback__container{
-        display: block;
-    }
-    .leftside{
-        display: none;
-    }
 }
 @media screen and (max-width:551px){
     html{
@@ -98,6 +27,7 @@
     }
 
     .burgermenu__btn {
+        display: flex;
         top: 3rem;
         right: 3rem;
         width: 3.2rem;
@@ -105,68 +35,16 @@
         cursor: pointer;
         z-index: 1000;
     }
-    
-    .head__intro{
-        padding-left: 0;
-        margin-top: 4.5rem;
-    }
-    .head__intro-line01{
-        font-size: 3.35rem;
-    }
-
-    .head__intro-line02{
-        font-size: 1.9rem;
-    }
-
-    .greeting__container {
-        margin-bottom: 0;
-    }
-
-    .greeting__box {
-        max-width: 26rem;
-        padding: 1.6rem;
-        position: absolute;
-        background-color: #fff;
-        border-radius: 0.5rem;
-        color: black;
-        right: 15%;
-        top: -8.6rem;
-        box-shadow: 0 1.35rem 1.95rem rgb(163 204 64 / 18%);
-    }
-
-    .greeting__head {
-        display: inline-block;
-        font-family: "IBM_Plex_Sans", sans-serif;
-        font-weight: 600;
-        font-size: 2.1rem;
-        line-height: 1.33;
-        margin-bottom: .6rem;
-        padding-left: 2rem;
-    }
-
-    .text__description{
-        font-size: .8rem;
-    }
-    .advantages__blockname {
-        padding-top: 6rem;
-    }
-
-    .advantages__item-header{
-        font-size: 2rem;
-    }
-    
-    .advantages__item-text{
-        display: none;
-    }
-
-    .blockname{
-        font-size: 3rem;
-    }
 
     .head__nav-mobilemenu{
         display: none;
         flex-flow: column nowrap;
         z-index: 999;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: #fff;
         font-size: 1.7rem;
         padding: 5rem;
     }
@@ -223,6 +101,64 @@
     .head__langswitch span{
         color: #A3CC40;
     }
+    
+    .head__intro{
+        padding-left: 0;
+        margin-top: 4.5rem;
+    }
+    .head__intro-line01{
+        font-size: 3.35rem;
+    }
+
+    .head__intro-line02{
+        font-size: 1.9rem;
+    }
+
+    .greeting__container {
+        margin-bottom: 0;
+    }
+
+    .greeting__box {
+        max-width: 26rem;
+        padding: 1.6rem;
+        position: absolute;
+        background-color: #fff;
+        border-radius: 0.5rem;
+        color: black;
+        right: 15%;
+        top: -8.6rem;
+        box-shadow: 0 1.35rem 1.95rem rgb(163 204 64 / 18%);
+    }
+
+    .greeting__head {
+        display: inline-block;
+        font-family: "IBM_Plex_Sans", sans-serif;
+        font-weight: 600;
+        font-size: 2.1rem;
+        line-height: 1.33;
+        margin-bottom: .6rem;
+        padding-left: 2rem;
+    }
+
+    .text__description{
+        font-size: .8rem;
+    }
+    .advantages__blockname {
+        padding-top: 6rem;
+        margin-bottom: 4.2rem;
+    }
+
+    .advantages__item-header{
+        font-size: 2rem;
+    }
+    
+    .advantages__item-text{
+        display: none;
+    }
+
+    .blockname{
+        font-size: 3rem;
+    }
 
     .timelist__table{
         overflow-x: scroll;
@@ -242,6 +178,10 @@
         float: none;
     }
 
+    .souvenirs__container{
+        justify-content: space-around;
+    }
+
     .review__bar{
         margin-right: 7rem;
     }
@@ -256,6 +196,13 @@
 
     .sit__select{
         font-size: 1.5rem;
+    }
+
+    .feedback__container{
+        display: block;
+    }
+    .leftside{
+        display: none;
     }
 
     .feedback__textarea::-webkit-input-placeholder {
@@ -273,10 +220,6 @@
     
     .check__text {
         font-size: 1.3rem;
-    }
-
-    .footer__wrap{
-
     }
 
     .footer__block1 {
