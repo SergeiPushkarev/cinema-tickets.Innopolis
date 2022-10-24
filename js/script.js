@@ -10,7 +10,13 @@ $(document).ready(function(){
                 margin: 60,
                 nav: true,
             },
-            551:{
+            552:{
+                items: 3,
+                center: true,
+                margin: 60,
+                nav: true,
+            },
+            768:{
                 items: 3,
                 margin:100,
                 nav: true,

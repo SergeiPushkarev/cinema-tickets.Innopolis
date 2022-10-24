@@ -1,29 +1,49 @@
-@media screen and (max-width:1200px) {
+@media screen and (min-width:768px) {
     html{
         font-size: 1.78vw;
     }
 }
 
-@media screen and (max-width:768px) {
-    html{
-        font-size: 2.9vw;
+@media screen and (max-width:1060px) {
+    .timelist__table{
+        overflow-x: scroll;
     }
 }
-@media screen and (max-width:551px){
+
+@media screen and (min-width:552px) and (max-width:768px){
+    .head__container{
+        padding-bottom: 12.4rem;
+    }
+
+    .head__intro{
+        margin-top: 5.5rem;
+    }
+
+    .greeting__box{
+        max-width: 26rem;
+        padding-top: 2.1rem;
+        padding-bottom: 2.1rem;
+        right: 6.65rem;
+        top: -9.6rem;
+        text-align: center;
+    }
+
+    .advantages__blockname{
+        padding-top: 3.7rem;
+    }
+}
+
+@media screen and (max-width:768px) {
     html{
         font-size: 1.9vw;
     }
+
     .basealign{
         max-width: 84%;
     }
 
-    .button {
-        font-size: 2rem;
-    }
-
     .head__container {
         max-width: 44.6rem;
-        padding: 1.9rem 0 13.4rem 0;
     }
 
     .burgermenu__btn {
@@ -46,7 +66,7 @@
         right: 0;
         background: #fff;
         font-size: 1.7rem;
-        padding: 5rem;
+        padding: 5.2rem 4.6rem 0 4.2rem;
     }
     .mobilemenu__contact-item{
         flex: 0 0 0%;
@@ -54,15 +74,15 @@
     }
     
     .head__nav-mobilemenu li:first-child{
-        padding-bottom: 3rem;
+        padding-bottom: 2.2rem;
     }
 
     .head__nav-mobilemenu li:nth-child(7){
-        padding-top: 10rem;
+        padding-top: 6.8rem;
     }
 
     .head__nav-mobilemenu li:last-child{
-        padding-top: 7rem;
+        padding-top: 3.5rem;
     }
 
     .mobilemenu__nav-item{
@@ -80,26 +100,47 @@
     }
 
     .call__button{
-        padding: 1rem 3rem;
+        padding: .2rem 2rem;
         border: 3px solid #a3cc40;
-        border-radius: 1rem;
+        border-radius: .7rem;
     }
 
     .call__button span {
         color: #a3cc40;
+        font-size: 1.5rem;
+    }
+
+    .call__button svg {
+        width: 1.2rem;
+        height: 1.2rem;
     }
 
     .call__button svg path {
        fill: #A3CC40;
     }
+
     .head__langswitch{
         flex: 0 0 0;
         float: left;
         order: 0;
+        font-size: 1.1rem;
     }
 
     .head__langswitch span{
         color: #A3CC40;
+    }
+}
+@media screen and (max-width:551px){
+    html{
+        font-size: 1.9vw;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+
+    .head__container {
+        padding: 1.9rem 0 13.4rem 0;
     }
     
     .head__intro{
@@ -158,10 +199,6 @@
 
     .blockname{
         font-size: 3rem;
-    }
-
-    .timelist__table{
-        overflow-x: scroll;
     }
 
     .gift__head{
