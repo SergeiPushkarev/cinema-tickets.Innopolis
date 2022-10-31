@@ -10,12 +10,11 @@ btn.onclick = function () {
     } else
     someObject[someKey] = someValue;
     console.log(someObject);
-    
-};
-
-let keys = document.getElementById("someObject");
-for (const key in someObject) {
+    let keys = document.getElementById("someObject");
+    keys.innerHTML = "";
+    for (const key in someObject) {
     keys.innerHTML += `
-    <ul>${key} = ${someObject[key]}</ul>
+    <li>${key} = ${someObject[key]}</li>
     `; 
+    };
 };

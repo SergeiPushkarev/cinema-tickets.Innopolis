@@ -2,3 +2,11 @@ input {
     display: block;
     padding: 5px;
 }
+#wrap{
+    margin: 10px;
+    display: block;
+    border: 3px solid;
+    color: red;
+    box-sizing: border-box;
+    width: 180px;
+}

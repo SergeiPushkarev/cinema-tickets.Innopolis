@@ -1,12 +1,16 @@
-const add = (a, b) => check(a) + check(b);
-function check(x) {
-    if (Number.isNaN(x)) {
-        return x = -2
-    } else if (x === undefined) {
-        return x = 0
+    const add = (a, b) => {
+        if (check(a) === true || check(b) === true) {
+            return 0
+        } else return check(a) + check(b);
+        function check(x) {
+            if (Number.isNaN(x)) {
+                return x = true
+            } else if (x === undefined) {
+                return x = 0
+            }
+                else return x = Number(x)
+        };
     }
-        else return x = Number(x)
-}
 /*
     Измените функцию add таким образом, чтобы
     все условия ниже вывели в консоль true
@@ -41,16 +45,18 @@ const arr = [
     { rating: "90%", cost: 34.0, name: "Аватар 2" },
     { rating: "88%", cost: 37.6, name: "Неизведанное: Удача Дрейка" },
     { rating: "88%", cost: 36.5, name: "Топ Ган: Мэверик" },
-].map(function (film) { 
-    if(Number(this.rating) >= 92) {
-    return film = { rating: film.rating, cost: film.cost() * 2, name: film.name }
-} else return film = { rating: film.rating, cost: film.cost, name: film.name }
-
+];
+const arr2 = arr.map(function (film) { 
+    if(Number(film.rating.replace("%","")) >= 92) {
+        return film = { rating: film.rating, cost: film.cost * 2, name: film.name }
+    } else return film = { rating: film.rating, cost: film.cost, name: film.name }
+});
         /**
          * Опишите функцию для map таким образом,
          * что бы у фильмов с рейтингом 92 и более %, цена (cost) увеличилась в два раза.
          */
-    });
+
+const best = arr.filter((film) => Number(film.rating.replace("%","")) < 90)
 /**
  * Отфильтруйте фильмы с рейтингом ниже 90%.
  * Почитать про фильтр можно тут - https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter

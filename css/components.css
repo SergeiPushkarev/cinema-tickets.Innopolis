@@ -313,7 +313,7 @@
   vertical-align: middle;
 }
 
-tbody svg {
+.tbody input {
   margin-left: 1.1rem;
 }
 
@@ -355,12 +355,36 @@ tbody svg {
   height: 2.25rem;
 }
 
-.timelistBody tr:last-child :first-child {
+.timelistBody tr:last-child td:first-child {
   border-radius: 0 0 0 0.5rem;
 }
 
-.timelistBody tr:last-child :last-child {
+.timelistBody tr:last-child td:last-child {
   border-radius: 0 0 0.5rem 0;
+}
+
+.tabcheck__input {
+  display: none;
+}
+
+.tabcheck{
+  display: inline-block;
+  box-sizing: content-box;
+  margin-left: 40%;
+  border: 2px solid #a3cc40;
+  width: .5rem;
+  height: .5rem;
+}
+
+.tabcheck__mark{
+  position: absolute;
+  opacity: 0;
+  top: -4px;
+  left: -1px;
+}
+
+.tabcheck__input:checked + .tabcheck__mark{
+  opacity: 1;
 }
 
 .timelist__underline {
@@ -802,6 +826,14 @@ tbody svg {
   line-height: 1.33;
 }
 
+.feedback__check {
+  padding: 1.3rem 0;
+}
+
+.check__label {
+  cursor: pointer;
+}
+
 .check__mark {
   display: inline-block;
   box-sizing: content-box;
@@ -810,14 +842,6 @@ tbody svg {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-}
-
-.feedback__check {
-  padding: 1.3rem 0;
-}
-
-.check__label {
-  cursor: pointer;
 }
 
 .check__mark svg {

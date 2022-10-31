@@ -4,21 +4,20 @@ $(document).ready(function(){
         responsiveClass: true,
         responsive:{
             0:{
-                items: 1,
-                center: true,
-                stagePadding: 138,
-                margin: 60,
+                items: 3,
+                stagePadding: 0,
+                margin: 25,
                 nav: true,
             },
             552:{
                 items: 3,
-                center: true,
-                margin: 60,
+                stagePadding: 0,
+                margin: 40,
                 nav: true,
             },
             768:{
                 items: 3,
-                margin:100,
+                margin: 70,
                 nav: true,
             }
         }
