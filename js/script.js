@@ -23,3 +23,10 @@ $(document).ready(function(){
         }
     });
   });
+
+//burger button toggle
+const brgBtn = document.getElementById("brgBtn")
+brgBtn.onclick = function () {
+    document.getElementsById('mobilemenu').classList.add('mobilemenu-open');
+    
+}

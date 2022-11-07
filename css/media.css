@@ -56,7 +56,7 @@
         z-index: 1000;
     }
 
-    .head__nav-mobilemenu{
+    .mobilemenu{
         display: none;
         flex-flow: column nowrap;
         z-index: 999;
@@ -68,20 +68,25 @@
         font-size: 1.7rem;
         padding: 5.2rem 4.6rem 0 4.2rem;
     }
+
+    .mobilemenu-open{
+        display: flex;
+    }
+
     .mobilemenu__contact-item{
         flex: 0 0 0%;
         order: 0;
     }
     
-    .head__nav-mobilemenu li:first-child{
+    .mobilemenu li:first-child{
         padding-bottom: 2.2rem;
     }
 
-    .head__nav-mobilemenu li:nth-child(7){
+    .mobilemenu li:nth-child(7){
         padding-top: 6.8rem;
     }
 
-    .head__nav-mobilemenu li:last-child{
+    .mobilemenu li:last-child{
         padding-top: 3.5rem;
     }
 

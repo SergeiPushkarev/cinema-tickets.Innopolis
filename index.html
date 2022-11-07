@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/media.css" />
     <link rel="stylesheet" href="/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/css/prisepopup.css">
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script defer src="/js/owl.carousel.min.js"></script>
     <script defer src="/js/script.js"></script>
@@ -29,10 +30,10 @@
             </a>
           </div>
           <nav class="head__nav">
-            <div class="burgermenu__btn burgermenu__btn-close">
+            <div id="brgBtn" class="burgermenu__btn burgermenu__btn-close">
               <span></span>
             </div>
-            <ul class="head__nav-mobilemenu">
+            <ul id="mobilemenu" class="mobilemenu">
               <li class="head__langswitch relative">
                 <div class="head__langswitch">
                   <div class="head__langswitch-wrap">
@@ -1043,5 +1044,13 @@
         />
       </symbol>
     </svg>
+    <div class="popup">
+      <div class="popup-wrapper">
+        <div class="popup-close">
+          <div id="popup-btn" class="popup-close__btn"></div>
+        </div>
+      </div>
+      
+    </div>
   </body>
 </html>

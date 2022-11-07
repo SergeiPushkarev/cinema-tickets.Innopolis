@@ -41,7 +41,7 @@
   flex: 0 0 77.4%;
 }
 
-.head__nav-mobilemenu{
+.mobilemenu{
   display: flex;
   flex-flow: row wrap;
   flex: 0 0 1.6rem;

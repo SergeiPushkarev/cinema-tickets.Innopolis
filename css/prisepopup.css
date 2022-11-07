@@ -1,0 +1,51 @@
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(51, 51, 51, .54);
+}
+
+.popup-wrapper {
+    position: relative;
+    max-width: 40rem;
+    min-height: 20rem;
+    background-color: white;
+    margin: 10% auto;
+    border-radius: 1.3rem;
+}
+
+.popup-close {
+    position: absolute;
+    right: .3rem;
+    top: .3rem;
+}
+
+.popup-close__btn{
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 40px;
+    border: 2px solid #a3cc40;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.popup-close__btn:hover{
+    background-color: #a3cc40;
+}
+
+.popup-close__btn::before{
+    content: "+";
+    position: absolute;
+    color: #a3cc40;
+    transform: rotate(45deg);
+    top: -.35rem;
+    left: .35rem;
+    font-size: 2.3rem;
+}
+
+.popup-close__btn:hover::before{
+    color: #FFF;
+}
