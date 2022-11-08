@@ -30,34 +30,32 @@
             </a>
           </div>
           <nav class="head__nav">
-            <div id="brgBtn" class="burgermenu__btn burgermenu__btn-close">
+            <div id="brgBtn" class="burgermenu__btn">
               <span></span>
             </div>
             <ul id="mobilemenu" class="mobilemenu">
               <li class="head__langswitch relative">
                 <div class="head__langswitch">
-                  <div class="head__langswitch-wrap">
-                    <a href="#" class="head__langswitch-list link__white">
-                      <span>RU</span>
-                      <svg
-                        width="8"
-                        height="4"
-                        viewBox="0 0 8 4"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M4.00406 3.8728L0.824164 0.692904L1.38985 0.127219L4.00406 2.74143L6.61827 0.127219L7.18396 0.692905L4.00406 3.8728Z"
-                          fill="white"
-                        />
-                      </svg>
-                    </a>
-                    <div class="head__langswitch-dropdown relative">
-                      <a href="#" class="link__white">EN</a>
-                      <a href="#" class="link__white">RU</a>
-                    </div>
+                  <a href="#" class="head__langswitch-list link__white">
+                    <span>RU</span>
+                    <svg
+                      width="8"
+                      height="4"
+                      viewBox="0 0 8 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.00406 3.8728L0.824164 0.692904L1.38985 0.127219L4.00406 2.74143L6.61827 0.127219L7.18396 0.692905L4.00406 3.8728Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                  <div class="head__langswitch-dropdown relative">
+                    <a href="#" class="link__white">EN</a>
+                    <a href="#" class="link__white">RU</a>
                   </div>
                 </div>
               </li>
@@ -293,7 +291,7 @@
               ipsum.
             </div>
             <div class="gift__button-block">
-              <button class="button gift__button-item">Получить подарок</button>
+              <button id="btn-gift" class="button gift__button-item">Получить подарок</button>
             </div>
           </div>
         </div>
@@ -706,98 +704,96 @@
         </div>
       </div>
     </section>
-    <section id="feedback">
-      <div class="basealign">
-        <div class="feedback__container">
-          <div class="leftside"></div>
-          <div class="rightside">
-            <h1 class="blockname blockname__feedback">Обратная связь</h1>
-            <div class="feedback__form">
-              <form action="/order.php" id="reviewForm">
-                <div class="feedback__name">
-                  <label class="formlabel formlabel-filled">
-                    <p class="formplaceholder">Полное имя</p>
-                    <input
-                      class="name__input"
-                      type="text"
-                      name="nameField"
-                      id="nameField"
-                      required
-                      aria-label="nameField"
-                    />
-                  </label>
-                </div>
-                <div class="feedback_sit">
-                  <label class="formlabel formlabel-filled" for="sit">
-                    <p class="formplaceholder">Номер места</p>
-                    <select
-                      class="sit__select"
-                      name="sit"
-                      id="sit"
-                      placeholder="Номер места"
-                      required
-                    >
-                      <option value=""></option>
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4">4</option>
-                      <option value="5">5</option>
-                      <option value="6">6</option>
-                      <option value="7">7</option>
-                      <option value="8">8</option>
-                      <option value="9">9</option>
-                      <option value="10">10</option>
-                    </select>
-                  </label>
-                </div>
-                <div class="feedback__text">
-                  <textarea
-                    class="feedback__textarea"
-                    name="reviewField"
-                    id="reviewField"
-                    rows="1"
-                    placeholder="Напишите свой отзыв"
+    <section id="feedback" class="basealign">
+      <div class="feedback__container">
+        <div class="leftside"></div>
+        <div class="rightside">
+          <h1 class="blockname blockname__feedback">Обратная связь</h1>
+          <div class="feedback__form">
+            <form action="/order.php" id="reviewForm">
+              <div class="feedback__name">
+                <label class="formlabel formlabel-filled">
+                  <p class="formplaceholder">Полное имя</p>
+                  <input
+                    class="form__input"
+                    type="text"
+                    name="nameField"
+                    id="nameField"
                     required
-                    aria-label="reviewField"
-                  ></textarea>
-                </div>
-                <div class="feedback__check">
-                  <label class="check__label" for="persData">
-                    <input
-                      class="check__input"
-                      type="checkbox"
-                      id="persData"
-                      required
-                    />
-                    <span class="check__mark">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM18.1216 10.6249L11.8475 16.899C11.4936 17.2529 11.0134 17.4518 10.5128 17.4518C10.0121 17.4518 9.53198 17.2529 9.17798 16.8989L5.87855 13.5994C5.14139 12.8623 5.14139 11.6671 5.87859 10.9299C6.6158 10.1928 7.81097 10.1927 8.54813 10.9299L10.5128 12.8947L15.4521 7.95544C16.1893 7.21828 17.3844 7.21828 18.1216 7.95548C18.8587 8.6925 18.8587 9.88772 18.1216 10.6249Z"
-                          fill="#A3CC40"
-                        />
-                      </svg>
-                    </span>
-                    <span class="check__text">
-                      Я согласен на обработку персональных данных
-                    </span>
-                  </label>
-                </div>
-                <div class="button__feedback-wrap">
-                  <button
-                    class="button button__feedback"
-                    form="reviewForm"
-                    type="submit"
+                    aria-label="nameField"
+                  />
+                </label>
+              </div>
+              <div class="feedback_sit">
+                <label class="formlabel formlabel-filled" for="sit">
+                  <p class="formplaceholder">Номер места</p>
+                  <select
+                    class="sit__select"
+                    name="sit"
+                    id="sit"
+                    placeholder="Номер места"
+                    required
                   >
-                    послать
-                  </button>
-                </div>
-              </form>
-            </div>
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
+                </label>
+              </div>
+              <div class="feedback__text">
+                <textarea
+                  class="feedback__textarea"
+                  name="reviewField"
+                  id="reviewField"
+                  rows="1"
+                  placeholder="Напишите свой отзыв"
+                  required
+                  aria-label="reviewField"
+                ></textarea>
+              </div>
+              <div class="feedback__check">
+                <label class="check__label" for="persData">
+                  <input
+                    class="check__input"
+                    type="checkbox"
+                    id="persData"
+                    required
+                  />
+                  <span class="check__mark">
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM18.1216 10.6249L11.8475 16.899C11.4936 17.2529 11.0134 17.4518 10.5128 17.4518C10.0121 17.4518 9.53198 17.2529 9.17798 16.8989L5.87855 13.5994C5.14139 12.8623 5.14139 11.6671 5.87859 10.9299C6.6158 10.1928 7.81097 10.1927 8.54813 10.9299L10.5128 12.8947L15.4521 7.95544C16.1893 7.21828 17.3844 7.21828 18.1216 7.95548C18.8587 8.6925 18.8587 9.88772 18.1216 10.6249Z"
+                        fill="#A3CC40"
+                      />
+                    </svg>
+                  </span>
+                  <span class="check__text">
+                    Я согласен на обработку персональных данных
+                  </span>
+                </label>
+              </div>
+              <div class="button__feedback-wrap">
+                <button
+                  class="button button__form"
+                  form="reviewForm"
+                  type="submit"
+                >
+                  послать
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -1044,11 +1040,92 @@
         />
       </symbol>
     </svg>
-    <div class="popup">
-      <div class="popup-wrapper">
+    <div id="popup_prize" class="popup">
+      <div class="popup-wrapper relative">
         <div class="popup-close">
-          <div id="popup-btn" class="popup-close__btn"></div>
+          <div id="popup-btn" class="popup-close__btn">
+            <span></span>
+          </div>
         </div>
+        <form action="" id="popup-prizeform" class="popup__form">
+          <div class="popup__form-item">
+            <label class="formlabel formlabel-filled">
+              <p class="formplaceholder">Введите имя</p>
+              <input
+                class="form__input"
+                type="text"
+                name="nameField"
+                id="nameField"
+                required
+                aria-label="nameField"
+              />
+            </label>
+          </div>
+          <div class="popup__form-item">
+            <label class="formlabel formlabel-filled">
+              <p class="formplaceholder">Введите email</p>
+              <input
+                class="form__input"
+                type="text"
+                name="nameField"
+                id="nameField"
+                required
+                aria-label="nameField"
+              />
+            </label>
+          </div>
+          <div class="popup__form-item">
+            <label class="formlabel formlabel-filled" for="sit">
+              <p class="formplaceholder">Выберите подарок</p>
+              <select
+                class="sit__select"
+                name="sit"
+                id="sit"
+                placeholder="Номер места"
+                required
+              >
+                <option value=""></option>
+                <option value="1">Бесплатный 3-й билет</option>
+                <option value="2">Удвоим попкорн</option>
+                <option value="3">Бесплатный напиток</option>
+              </select>
+            </label>
+          </div>
+          <div class="popup__form-item">
+            <label class="check__label" for="persData">
+              <input
+                class="check__input"
+                type="checkbox"
+                id="persData"
+                required
+              />
+              <span class="check__mark">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM18.1216 10.6249L11.8475 16.899C11.4936 17.2529 11.0134 17.4518 10.5128 17.4518C10.0121 17.4518 9.53198 17.2529 9.17798 16.8989L5.87855 13.5994C5.14139 12.8623 5.14139 11.6671 5.87859 10.9299C6.6158 10.1928 7.81097 10.1927 8.54813 10.9299L10.5128 12.8947L15.4521 7.95544C16.1893 7.21828 17.3844 7.21828 18.1216 7.95548C18.8587 8.6925 18.8587 9.88772 18.1216 10.6249Z"
+                    fill="#A3CC40"
+                  />
+                </svg>
+              </span>
+              <span class="check__text">
+                Я согласен на обработку персональных данных
+              </span>
+            </label>
+          </div>
+          <div class="popup__form-item button__feedback-wrap">
+            <button
+              class="button button__form"
+              form="popup-prizeform"
+              type="submit"
+            >
+              Отправить
+            </button>
+          </div>
+        </form>
       </div>
       
     </div>

@@ -5,47 +5,71 @@
     left: 0;
     bottom: 0;
     background-color: rgba(51, 51, 51, .54);
+    z-index: 1;
+}
+
+.hidden{
+    display: none;
 }
 
 .popup-wrapper {
-    position: relative;
-    max-width: 40rem;
-    min-height: 20rem;
+    max-width: 60%;
     background-color: white;
-    margin: 10% auto;
+    margin: 15% auto;
     border-radius: 1.3rem;
 }
 
 .popup-close {
     position: absolute;
-    right: .3rem;
-    top: .3rem;
+    right: .9rem;
+    top: .9rem;
 }
 
 .popup-close__btn{
     position: relative;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 40px;
     border: 2px solid #a3cc40;
     z-index: 1;
     cursor: pointer;
 }
 
+.popup-close__btn span{
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: .2rem;
+    background-color: #a3cc40;
+    transform: rotate(45deg);
+    top: 45%;
+    left: 10%;
+}
+
+.popup-close__btn span::before{
+    content: "";
+    position: absolute;
+    background-color: #a3cc40;
+    width: 100%;
+    height: .2rem;
+    transform: rotate(90deg);
+}
+
 .popup-close__btn:hover{
     background-color: #a3cc40;
 }
 
-.popup-close__btn::before{
-    content: "+";
-    position: absolute;
-    color: #a3cc40;
-    transform: rotate(45deg);
-    top: -.35rem;
-    left: .35rem;
-    font-size: 2.3rem;
+.popup-close__btn:hover span,
+.popup-close__btn:hover span::before{
+    background-color: #FFF;
 }
 
-.popup-close__btn:hover::before{
-    color: #FFF;
+.popup__form{
+    display: flex;
+    flex-direction: column;
+    padding: 2.6rem;
+}
+
+.popup__form-item{
+    flex: 0 0 3rem;
 }

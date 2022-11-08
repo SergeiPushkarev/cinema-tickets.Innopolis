@@ -25,8 +25,19 @@ $(document).ready(function(){
   });
 
 //burger button toggle
-const brgBtn = document.getElementById("brgBtn")
-brgBtn.onclick = function () {
-    document.getElementsById('mobilemenu').classList.add('mobilemenu-open');
-    
+const brgBtn = document.getElementById('brgBtn');
+const mobMenu = document.getElementById('mobilemenu');
+function menuToggle(){
+    brgBtn.classList.toggle('burgermenu__btn-open')
+    mobMenu.classList.toggle('mobilemenu-open')
 }
+brgBtn.onclick = menuToggle;
+
+const btnGift = document.getElementById("popup_prize");
+const btnGiftOpen = document.querySelector('#btn-gift');
+const btnGiftClose = document.querySelector('#popup-btn');
+function popupToggle () {
+    btnGift.classList.toggle('hidden')
+};
+btnGiftOpen.onclick = popupToggle;
+btnGiftClose.onclick = popupToggle;
