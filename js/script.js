@@ -32,8 +32,12 @@ const btnGiftOpen = document.querySelector('#btn-gift');
 const btnGiftClose = document.querySelector('#popup-btn');
 const nameInputGift = document.querySelector("#popup-prize input[name='name']").parentNode;
 const emailInputGift = document.querySelector("#popup-prize input[name='email']").parentNode;
-const selectInputGigt = document.querySelector('#selectPrize');
-const INPUT_ERORR_CLASS = 'formlabel-error';
+const selectInputGigt = document.querySelector('#selectPrize').parentNode;
+const nameInputFeedback = document.querySelector('#nameFeedback').parentNode;
+const sitInputFeedback = document.querySelector('#sit').parentNode;
+const btnFeedback = document.querySelector('#btnFeedback');
+const feedbackForm = document.getElementById('reviewForm')
+const INPUT_ERROR_CLASS = 'formlabel-error';
 const INPUT_FOCUS_CLASS = 'formlabel-focused';
 //burger button toggle
 function menuToggle(){
@@ -55,17 +59,19 @@ btnGiftClose.onclick = popupToggle;
 function initializeField(field) {
     const input = field.getElementsByTagName('input')[0];
     const errorText = field.querySelector('.formlabel__error-msg');
-    clearForm();
+    errorText.innerText = "";
+    clearErrorField();
     input.value = "";
-    field.classList.remove(INPUT_FOCUS_CLASS);
-    function clearForm(){
-        field.classList.remove(INPUT_ERORR_CLASS);
+    function clearErrorField(){
+        const errorText = field.querySelector('.formlabel__error-msg');
+        field.classList.remove(INPUT_ERROR_CLASS);
         errorText.innerText = "";
     };
+    field.classList.remove(INPUT_FOCUS_CLASS);
     input.addEventListener('focus', function(){
         field.classList.add(INPUT_FOCUS_CLASS)
     });
-    input.addEventListener('input', clearForm);
+    input.addEventListener('input', clearErrorField);
     input.addEventListener('blur', function(){
         if (!input.value) {
             field.classList.remove(INPUT_FOCUS_CLASS)
@@ -80,34 +86,110 @@ function initializeField(field) {
         },
         setError(errorMsg){
             errorText.innerText = errorMsg;
-            field.classList.add(INPUT_ERORR_CLASS);
+            field.classList.add(INPUT_ERROR_CLASS);
+        },
+        clearImput(){
+            input.value = "";
+            field.classList.remove(INPUT_FOCUS_CLASS)
         }
     }
 };
+
+function initializeSelect(select){
+    const inpSelect = select.getElementsByTagName('select')[0];
+    const errorText = select.querySelector('.formlabel__error-msg');
+    errorText.innerText = "";
+    clearErrorField();
+    inpSelect.selectedIndex = 0;
+    function clearErrorField(){
+        const errorText = select.querySelector('.formlabel__error-msg');
+        select.classList.remove(INPUT_ERROR_CLASS);
+        errorText.innerText = "";
+    };
+    select.classList.remove(INPUT_FOCUS_CLASS);
+    inpSelect.addEventListener('change', function(){
+        select.classList.add(INPUT_FOCUS_CLASS);
+        clearErrorField();
+    });
+    inpSelect.addEventListener('blur', function(){
+        if (!inpSelect.value) {
+            select.classList.remove(INPUT_FOCUS_CLASS)
+        }
+    });
+    return {
+        getValue(){
+            return inpSelect.value
+        },
+        setError(errorMsg){
+            errorText.innerText = errorMsg;
+            select.classList.add(INPUT_ERROR_CLASS);
+        },
+        clearValue(){
+            inpSelect.selectedIndex = 0;
+            select.classList.remove(INPUT_FOCUS_CLASS)
+        }
+    }
+};
+
 const nameField = initializeField(nameInputGift);
 const emailField = initializeField(emailInputGift);
-
-
+const selectField = initializeSelect(selectInputGigt);
+const nameFieldForm = initializeField(nameInputFeedback);
+const sitFieldForm = initializeSelect(sitInputFeedback);
 
 giftForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const nameValue = nameField.getValue();
     const emailValue = emailField.getValue();
+    const selectValue = selectField.getValue();
     if (!nameValue) {
         nameField.setError('Обязательно для заполнения');
         nameField.focus();
         return
     };
-    if (selectInputGift.value === "none"){
-        selectInputGift.classList.add(INPUT_ERORR_CLASS);
+    if (!emailValue) {
+        emailField.setError('Обязательно для заполнения');
+        emailField.focus();
+        return
+    };
+    if (selectValue === "none"){
+        selectField.setError('Обязательно выберите подарок!');
         return
     };
     const data = {
         name: nameValue,
         email: emailValue,
-        id: selectInputGift.value,
+        id: selectValue,
     };
     const url = new URL('https://jsonplaceholder.typicode.com/users');
     url.search = new URLSearchParams(data).toString();
-    fetch(url.toString())
+    fetch(url.toString());
+    popupToggle();
+    nameField.clearImput();
+    emailField.clearImput();
+    selectField.clearValue();
+});
+
+feedbackForm.addEventListener('submit', function (event){
+    event.preventDefault();
+    const nameValue = nameFieldForm.getValue();
+    const selectValue = sitFieldForm.getValue();
+    if (!nameValue) {
+        nameFieldForm.setError('Обязательно для заполнения');
+        nameFieldForm.focus();
+        return
+    };
+    if (selectValue === "none"){
+        sitFieldForm.setError('Обязательно выберите место!');
+        return
+    };
+    const data = {
+        name: nameValue,
+        id: selectValue,
+    };
+    const url = new URL('https://jsonplaceholder.typicode.com/users');
+    url.search = new URLSearchParams(data).toString();
+    fetch(url.toString());
+    nameFieldForm.clearImput();
+    sitFieldForm.clearValue();
 })
