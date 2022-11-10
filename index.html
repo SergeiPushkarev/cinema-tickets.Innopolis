@@ -712,20 +712,21 @@
           <div class="feedback__form">
             <form action="/order.php" id="reviewForm">
               <div class="feedback__name">
-                <label class="formlabel formlabel-filled">
+                <label class="formlabel formlabel-focused formlabel-error" for="nameFeedback">
                   <p class="formplaceholder">Полное имя</p>
                   <input
                     class="form__input"
                     type="text"
-                    name="nameField"
-                    id="nameField"
+                    name="name"
+                    id="nameFeedback"
                     required
                     aria-label="nameField"
                   />
+                  <p class="formlabel__error-msg">Error</p>
                 </label>
               </div>
               <div class="feedback_sit">
-                <label class="formlabel formlabel-filled" for="sit">
+                <label class="formlabel formlabel-focused formlaberor" for="sit">
                   <p class="formplaceholder">Номер места</p>
                   <select
                     class="sit__select"
@@ -1040,64 +1041,67 @@
         />
       </symbol>
     </svg>
-    <div id="popup_prize" class="popup">
+    <div id="popup-prize" class="popup hidden">
       <div class="popup-wrapper relative">
         <div class="popup-close">
           <div id="popup-btn" class="popup-close__btn">
             <span></span>
           </div>
         </div>
-        <form action="" id="popup-prizeform" class="popup__form">
+        <form id="popup-prizeform" class="popup__form">
           <div class="popup__form-item">
-            <label class="formlabel formlabel-filled">
+            <label class="formlabel formlabel-focused formlabel-error" for="namePrize">
               <p class="formplaceholder">Введите имя</p>
               <input
                 class="form__input"
                 type="text"
-                name="nameField"
-                id="nameField"
-                required
+                name="name"
+                id="namePrize"
+                value="Sergei"
                 aria-label="nameField"
               />
+              <p class="formlabel__error-msg">Error</p>
             </label>
           </div>
           <div class="popup__form-item">
-            <label class="formlabel formlabel-filled">
+            <label class="formlabel formlabel-focused formlabel-error" for="emailPrize">
               <p class="formplaceholder">Введите email</p>
               <input
                 class="form__input"
                 type="text"
-                name="nameField"
-                id="nameField"
-                required
+                name="email"
+                id="emailPrize"
+                value="email@gmail.com"
+                
                 aria-label="nameField"
               />
+              <p class="formlabel__error-msg">Error</p>
             </label>
           </div>
           <div class="popup__form-item">
-            <label class="formlabel formlabel-filled" for="sit">
+            <label class="formlabel formlabel-focused formlabel-error" for="selectPrize">
               <p class="formplaceholder">Выберите подарок</p>
               <select
-                class="sit__select"
-                name="sit"
-                id="sit"
-                placeholder="Номер места"
-                required
+                class="form__input"
+                name="selectPrize"
+                id="selectPrize"
+                placeholder="Выберите подарок"
+                
               >
-                <option value=""></option>
+                <option value="none" disabled selected></option>
                 <option value="1">Бесплатный 3-й билет</option>
-                <option value="2">Удвоим попкорн</option>
-                <option value="3">Бесплатный напиток</option>
+                <option value="1">Удвоим попкорн</option>
+                <option value="1">Бесплатный напиток</option>
               </select>
             </label>
           </div>
           <div class="popup__form-item">
-            <label class="check__label" for="persData">
+            <label class="check__label" for="persDataPrize">
               <input
                 class="check__input"
                 type="checkbox"
-                id="persData"
-                required
+                id="persDataPrize"
+                
               />
               <span class="check__mark">
                 <svg
