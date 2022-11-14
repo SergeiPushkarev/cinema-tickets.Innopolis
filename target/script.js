@@ -151,6 +151,7 @@ giftForm.addEventListener('submit', function (event) {
   if (!emailValue) {
     emailField.setError('Обязательно для заполнения');
     emailField.focus();
+    // ^[\w]{3,16}@[a-z]{3,8}\.[a-z]{2,3}$
     return;
   }
   ;
