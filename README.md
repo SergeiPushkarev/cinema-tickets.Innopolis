@@ -15,3 +15,8 @@ npx babel js -d target
 '''shell
 npx babel js -d target --watch
 '''
+
+## компиляция с Source Map
+'''shell
+npx babel js -d target --watch --source-maps
+'''

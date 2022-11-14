@@ -53,7 +53,12 @@ btnGiftOpen.onclick = function() {
     popupToggle();
     nameField.focus();
 };
-btnGiftClose.onclick = popupToggle;
+btnGiftClose.onclick = function(){
+    popupToggle();
+    nameField.clearImput();
+    emailField.clearImput();
+    selectField.clearValue();
+};
 
 
 function initializeField(field) {
@@ -117,6 +122,9 @@ function initializeSelect(select){
         }
     });
     return {
+        focus(){
+            select.classList.add(INPUT_FOCUS_CLASS);
+        },
         getValue(){
             return inpSelect.value
         },
@@ -150,11 +158,16 @@ giftForm.addEventListener('submit', function(event) {
     if (!emailValue) {
         emailField.setError('Обязательно для заполнения');
         emailField.focus();
-       // ^[\w]{3,16}@[a-z]{3,8}\.[a-z]{2,3}$
+        return
+    };
+    if (!/^[\w]{3,16}@[a-z]{3,8}\.[a-z]{2,3}$/.test(emailField)) {
+        emailField.setError('Это неправильный e-mail');
+        emailField.focus();
         return
     };
     if (selectValue === "none"){
         selectField.setError('Обязательно выберите подарок!');
+        selectField.focus();
         return
     };
     const data = {

@@ -54,7 +54,12 @@ btnGiftOpen.onclick = function () {
   popupToggle();
   nameField.focus();
 };
-btnGiftClose.onclick = popupToggle;
+btnGiftClose.onclick = function () {
+  popupToggle();
+  nameField.clearImput();
+  emailField.clearImput();
+  selectField.clearValue();
+};
 function initializeField(field) {
   var input = field.getElementsByTagName('input')[0];
   var errorText = field.querySelector('.formlabel__error-msg');
@@ -118,6 +123,9 @@ function initializeSelect(select) {
     }
   });
   return {
+    focus: function focus() {
+      select.classList.add(INPUT_FOCUS_CLASS);
+    },
     getValue: function getValue() {
       return inpSelect.value;
     },
@@ -151,12 +159,18 @@ giftForm.addEventListener('submit', function (event) {
   if (!emailValue) {
     emailField.setError('Обязательно для заполнения');
     emailField.focus();
-    // ^[\w]{3,16}@[a-z]{3,8}\.[a-z]{2,3}$
+    return;
+  }
+  ;
+  if (!/^[\w]{3,16}@[a-z]{3,8}\.[a-z]{2,3}$/.test(emailField)) {
+    emailField.setError('Это неправильный e-mail');
+    emailField.focus();
     return;
   }
   ;
   if (selectValue === "none") {
     selectField.setError('Обязательно выберите подарок!');
+    selectField.focus();
     return;
   }
   ;
@@ -198,3 +212,4 @@ feedbackForm.addEventListener('submit', function (event) {
   nameFieldForm.clearImput();
   sitFieldForm.clearValue();
 });
+//# sourceMappingURL=script.js.map
