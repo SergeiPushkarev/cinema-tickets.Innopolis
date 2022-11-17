@@ -55,4 +55,4 @@ const stuff = [
 
 const zodiacSigns = [...stuff[0],...stuff[1],...stuff[2].slice(0,2).flat()]
 const flowers = [...stuff[2].slice(2).flat(),...stuff[3]]
-const food = stuff[4].flat().slice(0,3)
+const food = stuff[4].flat().flatMap(e => e.value ? e.value : e.get())
