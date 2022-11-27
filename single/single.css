@@ -1,0 +1,168 @@
+.align{
+    max-width: 84%;
+    margin: 0 auto;
+}
+
+.block01{
+    border-bottom: 1px solid rgb(185, 185, 185);
+    font-family: "IBM_Plex_Sans", sans-serif;
+    line-height: 1.33;
+    font-weight: 400;
+}
+
+.film{
+    display: flex;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.film__logo{
+    padding: 1.9rem 1.9rem 0 0;
+    flex: 0 0 50%;
+    border-right: 1px solid rgb(185, 185, 185);
+}
+
+.film__logo img{
+    width: 22.2rem;
+    height: 25.5rem;
+}
+
+.film__card{
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding-left: 2rem;
+}
+
+.film__card-item{
+    flex: 0 0 2.7rem;
+    align-items: center;
+}
+
+.card-name{
+    font-weight: 500;
+    font-size: 3rem;
+    color: black;
+}
+
+.card-rate{
+    font-weight: 400;
+    font-size: .65rem;
+    color: rgb(185, 185, 185);
+    display: flex;
+    flex-direction: row;
+}
+
+.rate-bar{
+    flex: 0 0 2rem;
+}
+
+.rate-text span:first-child{
+    font-weight: 800;
+    font-size: .65rem;
+    color: #a3cc40;
+}
+
+.card-stat{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-stat__item img{
+    width: 10px;
+    height: 10px;
+}
+
+.card-stat__item{
+    flex: 0 0 6rem;
+    font-weight: 800;
+    font-size: .65rem;
+    color: black
+}
+
+.card-descr{
+    font-weight: 400;
+    font-size: .65rem;
+    color: rgb(185, 185, 185);
+    padding: 1rem 0;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+}
+
+.card-info__item{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(185, 185, 185);
+    flex: 0 0 1.5rem;
+    align-items: center;
+}
+
+.card-info__item-title{
+    flex: 0 0 5rem;
+    font-weight: 800;
+    font-size: .65rem;
+    color: #a3cc40;
+}
+
+.card-info__item-value{
+    flex: 0 0 5rem;
+    font-weight: 400;
+    font-size: .65rem;
+    color: rgb(185, 185, 185);
+}
+
+.other {
+    padding-top: 2.8rem;
+}
+
+.other__header{
+    font-weight: 800;
+    font-size: .75rem;
+    color: grey;
+    margin-bottom: 1rem;
+}
+
+.other__item-header{
+    font-weight: 800;
+    font-size: .75rem;
+    color: black;
+    margin-left: 2.4rem;
+}
+
+.other__item-wrapper{
+    padding-left: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 7rem;
+    gap: .2rem;
+}
+
+.card-item{
+    width: 6.4rem;
+}
+
+.card-logo img{
+    height: 7.2rem;
+    width: 6.4rem;
+    border-radius: 0.2rem;
+}
+
+.card-title{
+    font-weight: 400;
+    font-size: .65rem;
+    color: #a3cc40;
+}
+
+.card-year{
+    font-weight: 400;
+    font-size: .45rem;
+    color: rgb(185, 185, 185);
+}

@@ -11,13 +11,15 @@ const getKinopoiskApiData = (url) => {
     });   
 };
 const getTopFilms = () => {
-    return getKinopoiskApiData('https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_100_POPULAR_FILMS&page=1')
+    return getKinopoiskApiData('https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_250_BEST_FILMS&page=1')
 };
 const getFilmById = (id) => {
     return getKinopoiskApiData(`https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`)
 };
 
-function renderBlockFilms(posterUrl, nameRu){
+function renderBlockFilms(posterUrl, nameRu, id){
+    const link = document.createElement('a');
+    link.href = `/single/?id=${id}`
     const itemWrap = document.createElement('div');
     itemWrap.classList.add('movie__item');
     const itemBg = document.createElement('div');
@@ -26,7 +28,6 @@ function renderBlockFilms(posterUrl, nameRu){
     shadow.classList.add('movie__item-shadow');
     const itemDescr = document.createElement('a');
     itemDescr.className ='movie__item-descr link__white';
-    itemWrap.append(itemBg,shadow,itemDescr);
     const imgBg = document.createElement('img');
     imgBg.alt = 'постер_фильма';
     imgBg.src = posterUrl;
@@ -39,6 +40,8 @@ function renderBlockFilms(posterUrl, nameRu){
     descrTxt.classList.add('descr__text');
     descrTxt.innerText = '..loading..';
     itemDescr.append(descrHead,descrTxt);
+    itemWrap.append(link);
+    link.append(itemBg,shadow,itemDescr);
     return [itemWrap, descrTxt]
 }
 
@@ -49,12 +52,13 @@ const getBlockFilmsData = async () => {
         const request = [];
         const filmsLayout = new Map();
 
-        data.films.forEach(async (film) => {
-            const [filmConteiner, description] = renderBlockFilms(film.posterUrlPreview,film.nameRu);
+        data.films.forEach(async (film, i) => {
+            const [filmConteiner, description] = renderBlockFilms(film.posterUrlPreview, film.nameRu, film.filmId);
             filmsLayout.set(film.filmId, filmConteiner);
 
             request.push(new Promise(async (resolve,reject) =>{
-                   try{
+                   setTimeout(async()=>{
+                    try{
                         const answer = await getFilmById(film.filmId);
                         const dataFilmId = await answer.json();
                         description.textContent = dataFilmId.description;
@@ -65,6 +69,7 @@ const getBlockFilmsData = async () => {
                    }
                         
                    resolve();
+                   }, i * 100)
                 }));
         });
         await Promise.all(request);
@@ -74,4 +79,4 @@ const getBlockFilmsData = async () => {
         console.error(error)
     }
 };
-// getBlockFilmsData();
+getBlockFilmsData();

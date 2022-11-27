@@ -2,6 +2,10 @@
     html{
         font-size: 1.78vw;
     }
+
+    .basealign{
+        max-width: 75%;
+    }
 }
 
 @media screen and (max-width:1060px) {
@@ -11,7 +15,7 @@
 }
 
 @media screen and (min-width:552px) and (max-width:768px){
-    .head__container{
+    .header{
         padding-bottom: 12.4rem;
     }
 
@@ -36,10 +40,6 @@
 @media screen and (max-width:768px) {
     html{
         font-size: 1.9vw;
-    }
-
-    .basealign{
-        max-width: 84%;
     }
 
     .head__container {
@@ -143,11 +143,7 @@
     .button {
         font-size: 2rem;
     }
-
-    .head__container {
-        padding: 1.9rem 0 13.4rem 0;
-    }
-    
+      
     .head__intro{
         padding-left: 0;
         margin-top: 4.5rem;
