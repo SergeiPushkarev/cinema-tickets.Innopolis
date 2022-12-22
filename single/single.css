@@ -12,12 +12,12 @@
 
 .film{
     display: flex;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem 0;
 }
 
 .film__logo{
-    padding: 1.9rem 1.9rem 0 0;
+    margin-top: 1.9rem;
+    padding-right: 2rem;
     flex: 0 0 50%;
     border-right: 1px solid rgb(185, 185, 185);
 }
@@ -27,12 +27,17 @@
     height: 25.5rem;
 }
 
+.film__logo .skeleton-img {
+    width: 22.2rem;
+    height: 25.5rem;
+}
+
 .film__card{
     flex: 0 1 50%;
     display: flex;
     flex-direction: column;
     color: black;
-    padding-left: 2rem;
+    padding: .7rem 2rem;
 }
 
 .film__card-item{
@@ -40,10 +45,13 @@
     align-items: center;
 }
 
+
+
 .card-name{
     font-weight: 500;
     font-size: 3rem;
     color: black;
+    line-height: 2.5rem;
 }
 
 .card-rate{
@@ -54,11 +62,20 @@
     flex-direction: row;
 }
 
-.rate-bar{
-    flex: 0 0 2rem;
+.star{
+    fill:#a3cc40
 }
 
-.rate-text span:first-child{
+.star:hover ~ .star{
+    fill: grey;
+}
+
+.rate-knpsk{
+    padding: 0 .5rem;
+}
+.rate-goodview{
+    padding-left: 1rem;
+    padding-right: .5rem;
     font-weight: 800;
     font-size: .65rem;
     color: #a3cc40;
@@ -103,17 +120,22 @@
 }
 
 .card-info__item-title{
-    flex: 0 0 5rem;
+    flex: 0 0 25%;
     font-weight: 800;
     font-size: .65rem;
     color: #a3cc40;
 }
 
 .card-info__item-value{
-    flex: 0 0 5rem;
+    flex: 0 0 75%;
     font-weight: 400;
     font-size: .65rem;
     color: rgb(185, 185, 185);
+}
+
+.card-info__item:last-child .card-info__item-value{
+    font-weight: 800;
+    color: rgb(0, 0, 0);
 }
 
 .other {
@@ -132,6 +154,7 @@
     font-size: .75rem;
     color: black;
     margin-left: 2.4rem;
+    text-transform: capitalize;
 }
 
 .other__item-wrapper{
@@ -145,14 +168,21 @@
     gap: .2rem;
 }
 
+.card a {
+    text-decoration: none;
+}
+
 .card-item{
     width: 6.4rem;
 }
 
 .card-logo img{
     height: 7.2rem;
-    width: 6.4rem;
     border-radius: 0.2rem;
+}
+
+.card-logo .skeleton-img{
+    height: 7.2rem;
 }
 
 .card-title{
@@ -165,4 +195,44 @@
     font-weight: 400;
     font-size: .45rem;
     color: rgb(185, 185, 185);
+}
+
+@keyframes skeleton {
+    0% {
+      background-color: rgb(221, 221, 221);
+    }
+    50%{
+      background-color: #b6b6b6;
+    }
+    100%{
+      background-color: rgb(221,221,221);
+    }
+  }
+  
+.skeleton-string{
+    width: 90%;
+    height: 1rem;
+    border-radius: .2rem;
+    animation: skeleton 2s infinite linear;
+}
+
+.skeleton-img{
+    width: 100%;
+    height: 100%;
+    border-radius: .2rem;
+    animation: skeleton 2s infinite linear;
+}
+
+.skeleton-header{
+    width: 90%;
+    height: 1rem;
+    border-radius: .2rem;
+    animation: skeleton 2s infinite linear;
+}
+
+.skeleton-descr{
+    width: 90%;
+    height: .5rem;
+    border-radius: .2rem;
+    animation: skeleton 2s infinite linear;
 }

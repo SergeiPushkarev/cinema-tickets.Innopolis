@@ -122,170 +122,137 @@
         </div>
     </header>
     <div class="block01">
-        <div class="film align">
-            <div class="film__logo">
-                <img src="../img/movies/ice.jpg" alt="poster" width="444"
-                height="511">
-            </div>
-            <div class="film__card">
-                <div class="film__card-item card-name">Живое</div>
-                <div class="film__card-item card-rate">
-                    <div class="rate-bar">5.0</div>
-                    <div class="rate-text">
-                        <span>9/10</span>
-                        <span>Rotten Tomatoes</span>
-                    </div>
-                </div>
-                <div class="film__card-item card-stat">
-                    <div class="card-stat__item">
-                        <img src="../img/single/calendar.png" alt="calendar">
-                        <span>24/12/2022</span>
-                    </div>
-                    <div class="card-stat__item">
-                        <img src="../img/single/eye.png" alt="views">
-                        <span>144 K Views</span>
-                    </div>
-                    <div class="card-stat__item">
-                        <img src="../img/single/free-icon-heart-simple-shape-silhouette-32557.png" alt="likes">
-                        <span>134k Likes</span>
-                    </div>
-                </div>
-                <div class="film__card-item card-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tempora modi! Ad impedit quidem consequatur ipsam optio reprehender</div>
-                <div class=" film__card-item card-info">
-                    <div class="card-info__item">
-                        <div class="card-info__item-title">Cnhfyf</div>
-                        <div class="card-info__item-value">sdfkdsfk</div>
-                    </div>
-                    <div class="card-info__item">
-                        <div class="card-info__item-title">Csdfsdf</div>
-                        <div class="card-info__item-value">sghfk</div>
-                    </div>
-                    <div class="card-info__item">
-                        <div class="card-info__item-title">hjkhjf</div>
-                        <div class="card-info__item-value">sdfkdsfk</div>
-                    </div>
-                    <div class="card-info__item">
-                        <div class="card-info__item-title">ewwedsf</div>
-                        <div class="card-info__item-value">sdfkdsfk</div>
-                    </div>
-                </div>
-            </div>
+      <div class="film align">
+        <div id="film__logo" class="film__logo">
+          <div class="skeleton-img"></div>
         </div>
+        <div class="film__card">
+          <div id="card-name" class="film__card-item card-name skeleton-string"></div>
+          <div class="film__card-item card-rate">
+              <svg class="star" style="width: 1rem; height:1rem">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg class="star" style="width: 1rem; height:1rem">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg class="star" style="width: 1rem; height:1rem">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg class="star" style="width: 1rem; height:1rem">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg class="star" style="width: 1rem; height:1rem">
+                <use xlink:href="#star"></use>
+              </svg>
+              <p class="rate-knpsk">5.0</p>
+              <p class="rate-goodview">9/10</p>
+              <p>Good View</p>
+          </div>
+          <div class="film__card-item card-stat">
+              <div class="card-stat__item">
+                  <img src="../img/single/calendar.png" alt="calendar">
+                  <span>24/12/2022</span>
+              </div>
+              <div class="card-stat__item">
+                  <img src="../img/single/eye.png" alt="views">
+                  <span>144 K Views</span>
+              </div>
+              <div class="card-stat__item">
+                  <img src="../img/single/free-icon-heart-simple-shape-silhouette-32557.png" alt="likes">
+                  <span>134k Likes</span>
+              </div>
+          </div>
+          <div id="card-descr" class="card-descr skeleton-string"></div>
+          <div id="card-info" class="film__card-item card-info">
+            <div class="card-info__item">
+              <div class="skeleton-string card-info__item-title"></div>
+              <div class="skeleton-string"></div>
+            </div>
+            <div class="card-info__item">
+              <div class="skeleton-string card-info__item-title"></div>
+              <div class="skeleton-string"></div>
+            </div>
+            <div class="card-info__item">
+              <div class="skeleton-string card-info__item-title"></div>
+              <div class="skeleton-string"></div>
+            </div>
+            <div class="card-info__item">
+              <div class="skeleton-string card-info__item-title"></div>
+              <div class="skeleton-string"></div>
+            </div>
+            <div class="card-info__item">
+              <div class="skeleton-string card-info__item-title"></div>
+              <div class="skeleton-string"></div>
+            </div>
+            <div class="card-info__item">
+              <div class="skeleton-string card-info__item-title"></div>
+              <div class="skeleton-string"></div>
+            </div>
+            <div class="card-info__item">
+              <div class="skeleton-string card-info__item-title"></div>
+              <div class="skeleton-string"></div> 
+            </div>
+            <div class="card-info__item">
+              <div class="skeleton-string card-info__item-title"></div>
+              <div class="skeleton-string"></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="block02">
-        <div class="other align">
+        <div id="other" class="other align">
             <h1 class="other__header">Другие фильмы</h1>
-            <div class="other__item">
-                <div class="other__item-header">Экшн</div>
+            <div id="other__wrap" class="other__wrap">
+              <div class="other__item">
+                <div class="other__item-header skeleton-string"></div>
                 <div class="other__item-wrapper">
-                    <div class="other__item-films owl-carousel slide01">
-                        <div class="card">
-                            <div class="card-item card-logo">
-                                <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                            </div>
-                            <div class="card-item card-title">Название фильма</div>
-                            <div class="card-item card-year">Год и режиссер</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-item card-logo">
-                                <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                            </div>
-                            <div class="card-item card-title">Название фильма</div>
-                            <div class="card-item card-year">Год и режиссер</div>
-                        </div>
-                        <div class="card">
-                          <div class="card-item card-logo">
-                              <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                          </div>
-                          <div class="card-item card-title">Название фильма</div>
-                          <div class="card-item card-year">Год и режиссер</div>
-                      </div>
-                        <div class="card">
-                            <div class="card-item card-logo">
-                                <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                            </div>
-                            <div class="card-item card-title">Название фильма</div>
-                            <div class="card-item card-year">Год и режиссер</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-item card-logo">
-                                <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                            </div>
-                            <div class="card-item card-title">Название фильма</div>
-                            <div class="card-item card-year">Год и режиссер</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-item card-logo">
-                                <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                            </div>
-                            <div class="card-item card-title">Название фильма</div>
-                            <div class="card-item card-year">Год и режиссер</div>
-                        </div>
-                        <div class="card">
-                            <div class="card-item card-logo">
-                                <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                            </div>
-                            <div class="card-item card-title">Название фильма</div>
-                            <div class="card-item card-year">Год и режиссер</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="other__item">
-                <div class="other__item-header">Драма</div>
-                <div class="other__item-wrapper">
-                  <div class="other__item-films owl-carousel slide02">
+                  <div class="other__item-films owl-carousel">
                     <div class="card">
                         <div class="card-item card-logo">
-                            <img src="../img/movies/kalashnikov.jpg" alt="poster">
+                            <div class="skeleton-img"></div>
                         </div>
-                        <div class="card-item card-title">Название фильма</div>
-                        <div class="card-item card-year">Год и режиссер</div>
-                    </div>
-                    <div class="card">
-                        <div class="card-item card-logo">
-                            <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                        </div>
-                        <div class="card-item card-title">Название фильма</div>
-                        <div class="card-item card-year">Год и режиссер</div>
-                    </div>
-                    <div class="card">
-                        <div class="card-item card-logo">
-                            <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                        </div>
-                        <div class="card-item card-title">Название фильма</div>
-                        <div class="card-item card-year">Год и режиссер</div>
-                    </div>
-                    <div class="card">
-                        <div class="card-item card-logo">
-                            <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                        </div>
-                        <div class="card-item card-title">Название фильма</div>
-                        <div class="card-item card-year">Год и режиссер</div>
-                    </div>
-                    <div class="card">
-                        <div class="card-item card-logo">
-                            <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                        </div>
-                        <div class="card-item card-title">Название фильма</div>
-                        <div class="card-item card-year">Год и режиссер</div>
-                    </div>
-                    <div class="card">
-                        <div class="card-item card-logo">
-                            <img src="../img/movies/kalashnikov.jpg" alt="poster">
-                        </div>
-                        <div class="card-item card-title">Название фильма</div>
-                        <div class="card-item card-year">Год и режиссер</div>
+                        <div class="card-item skeleton-descr"></div>
+                        <div class="card-item skeleton-descr"></div>
                     </div>
                     <div class="card">
                       <div class="card-item card-logo">
-                          <img src="../img/movies/kalashnikov.jpg" alt="poster">
+                          <div class="skeleton-img"></div>
                       </div>
-                      <div class="card-item card-title">Название фильма</div>
-                      <div class="card-item card-year">Год и режиссер</div>
-                  </div>
+                      <div class="card-item skeleton-descr"></div>
+                      <div class="card-item skeleton-descr"></div>
+                    </div>
+                    <div class="card">
+                      <div class="card-item card-logo">
+                          <div class="skeleton-img"></div>
+                      </div>
+                      <div class="card-item skeleton-descr"></div>
+                      <div class="card-item skeleton-descr"></div>
+                    </div>
+                    <div class="card">
+                      <div class="card-item card-logo">
+                          <div class="skeleton-img"></div>
+                      </div>
+                      <div class="card-item skeleton-descr"></div>
+                      <div class="card-item skeleton-descr"></div>
+                    </div>
+                    <div class="card">
+                      <div class="card-item card-logo">
+                          <div class="skeleton-img"></div>
+                      </div>
+                      <div class="card-item skeleton-descr"></div>
+                      <div class="card-item skeleton-descr"></div>
+                    </div>
+                    <div class="card">
+                      <div class="card-item card-logo">
+                          <div class="skeleton-img"></div>
+                      </div>
+                      <div class="card-item skeleton-descr"></div>
+                      <div class="card-item skeleton-descr"></div>
+                    </div>
                 </div>
                 </div>
+              </div>
             </div>
         </div>
     </div>
@@ -519,4 +486,13 @@
       />
     </symbol>
   </svg>
-</html>
+  <svg style="display: none;">
+      <symbol
+      id="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+        <path d="M489,255.9c0-0.2,0-0.5,0-0.7c0-1.6,0-3.2-0.1-4.7c0-0.9-0.1-1.8-0.1-2.8  c0-0.9-0.1-1.8-0.1-2.7c-0.1-1.1-0.1-2.2-0.2-3.3c0-0.7-0.1-1.4-0.1-2.1c-0.1-1.2-0.2-2.4-0.3-3.6c0-0.5-0.1-1.1-0.1-1.6  c-0.1-1.3-0.3-2.6-0.4-4c0-0.3-0.1-0.7-0.1-1C474.3,113.2,375.7,22.9,256,22.9S37.7,113.2,24.5,229.5c0,0.3-0.1,0.7-0.1,1  c-0.1,1.3-0.3,2.6-0.4,4c-0.1,0.5-0.1,1.1-0.1,1.6c-0.1,1.2-0.2,2.4-0.3,3.6c0,0.7-0.1,1.4-0.1,2.1c-0.1,1.1-0.1,2.2-0.2,3.3  c0,0.9-0.1,1.8-0.1,2.7c0,0.9-0.1,1.8-0.1,2.8c0,1.6-0.1,3.2-0.1,4.7c0,0.2,0,0.5,0,0.7c0,0,0,0,0,0.1s0,0,0,0.1c0,0.2,0,0.5,0,0.7  c0,1.6,0,3.2,0.1,4.7c0,0.9,0.1,1.8,0.1,2.8c0,0.9,0.1,1.8,0.1,2.7c0.1,1.1,0.1,2.2,0.2,3.3c0,0.7,0.1,1.4,0.1,2.1  c0.1,1.2,0.2,2.4,0.3,3.6c0,0.5,0.1,1.1,0.1,1.6c0.1,1.3,0.3,2.6,0.4,4c0,0.3,0.1,0.7,0.1,1C37.7,398.8,136.3,489.1,256,489.1  s218.3-90.3,231.5-206.5c0-0.3,0.1-0.7,0.1-1c0.1-1.3,0.3-2.6,0.4-4c0.1-0.5,0.1-1.1,0.1-1.6c0.1-1.2,0.2-2.4,0.3-3.6  c0-0.7,0.1-1.4,0.1-2.1c0.1-1.1,0.1-2.2,0.2-3.3c0-0.9,0.1-1.8,0.1-2.7c0-0.9,0.1-1.8,0.1-2.8c0-1.6,0.1-3.2,0.1-4.7  c0-0.2,0-0.5,0-0.7C489,256,489,256,489,255.9C489,256,489,256,489,255.9z"/>
+        <polygon points="256,119.4 300.4,209.3 399.6,223.8 327.8,293.8 344.8,392.6 256,345.9 167.2,392.6   184.2,293.8 112.4,223.8 211.6,209.3" fill="#FFF"/>
+    </symbol>
+  </svg>
+  </html>
+
+  

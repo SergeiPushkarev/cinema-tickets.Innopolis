@@ -1,5 +1,5 @@
 const movieConteiner = document.getElementById('movie__container');
-movieConteiner.innerHTML = "";
+
 
 const getKinopoiskApiData = (url) => {
     return fetch(url, {
@@ -26,7 +26,7 @@ function renderBlockFilms(posterUrl, nameRu, id){
     itemBg.classList.add('movie__item-bg');
     const shadow = document.createElement('div');
     shadow.classList.add('movie__item-shadow');
-    const itemDescr = document.createElement('a');
+    const itemDescr = document.createElement('div');
     itemDescr.className ='movie__item-descr link__white';
     const imgBg = document.createElement('img');
     imgBg.alt = 'постер_фильма';
@@ -73,6 +73,7 @@ const getBlockFilmsData = async () => {
                 }));
         });
         await Promise.all(request);
+        movieConteiner.innerHTML = "";
         const filmsLayouts = [...filmsLayout.values()].slice(0,9);
         movieConteiner.append(...filmsLayouts);
     } catch(error) {
