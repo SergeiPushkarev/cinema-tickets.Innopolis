@@ -3,18 +3,7 @@ const cardInfoWrap = document.getElementById('card-info')
 const info = new URLSearchParams(location.search);
 const infoId = info.get('id');
 const otherItemFilms = document.getElementById('other__wrap')
-const getKinopoiskApiData = (url) => {
-    return fetch(url, {
-        method: 'GET',
-        headers: {
-            'X-API-KEY': 'a74abe5b-98c9-4b94-ad76-7418b4c4f991',
-            'Content-Type': 'application/json'
-        }
-    })
-}
-const getFilmById = (id) => {
-    return getKinopoiskApiData(`https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`)
-}
+
 const getFilmInfo = (id) =>{
     return getKinopoiskApiData(`https://kinopoiskapiunofficial.tech/api/v1/staff?filmId=${id}`)
 }
@@ -115,8 +104,8 @@ async function getGenreId(filmGenre) {
     return id
 }
 
-function getOwlOther (other) {
-    let owlClass = `slide`
+function getOwlOther (other, i) {
+    let owlClass = `slide${i}`
     other.classList.add('owl-carousel')
     other.classList.add(owlClass)
     $(document).ready(function(){
@@ -128,18 +117,18 @@ function getOwlOther (other) {
     })
 ;}
 
-const getOtherBlock = async (genres) => {
+const getOtherBlock = async (genres, i) => {
     const wrap = renderOtherItem(genres.genre)
     genreId = await getGenreId(genres)
     const similarFilms = await getSimilarGenres(genreId).then(a=>a.json())
     const otherItem = document.createElement('div')
     otherItem.className = ('other__item-films')
     wrap.append(otherItem)
-    getOwlOther(otherItem)
+    getOwlOther(otherItem, i)
     similarFilms.items.slice(0,7).forEach(a=>{
         otherItem.append(renderOtherCard(a.nameRu, a.posterUrlPreview, a.year, a.kinopoiskId))
     });
-    getOwlOther(otherItem)
+    
 }
 
 const getFilmCardBlock = async () => {
@@ -160,7 +149,7 @@ const getFilmCardBlock = async () => {
         console.log (error)
     };
     otherItemFilms.innerHTML = ""
-    data.genres.slice(0,2).forEach(a=>getOtherBlock(a))
+    data.genres.slice(0,2).forEach((a, i)=>getOtherBlock(a, i))
 };
 getFilmCardBlock();
 

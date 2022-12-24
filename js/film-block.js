@@ -1,20 +1,7 @@
 const movieConteiner = document.getElementById('movie__container');
 
-
-const getKinopoiskApiData = (url) => {
-    return fetch(url, {
-        method: 'GET',
-        headers: {
-            'X-API-KEY': 'a74abe5b-98c9-4b94-ad76-7418b4c4f991',
-            'Content-Type': 'application/json'
-        }
-    });   
-};
 const getTopFilms = () => {
     return getKinopoiskApiData('https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_250_BEST_FILMS&page=1')
-};
-const getFilmById = (id) => {
-    return getKinopoiskApiData(`https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}`)
 };
 
 function renderBlockFilms(posterUrl, nameRu, id){
