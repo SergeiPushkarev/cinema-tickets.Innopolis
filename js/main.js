@@ -126,6 +126,7 @@ function initializeSelect(select){
         clearValue(){
             inpSelect.selectedIndex = 0;
             select.classList.remove(INPUT_FOCUS_CLASS)
+            clearErrorField();
         }
     }
 };
@@ -151,7 +152,7 @@ giftForm.addEventListener('submit', function(event) {
         emailField.focus();
         return
     };
-    if (!/^[\w]{3,16}@[a-z]{3,8}\.[a-z]{2,3}$/.test(emailField)) {
+    if (!/^[\w.]{1,16}@[\w]{1,12}\.[\w]{1,4}$/.test(emailValue)) {
         emailField.setError('Это неправильный e-mail');
         emailField.focus();
         return
@@ -198,3 +199,4 @@ feedbackForm.addEventListener('submit', function (event){
     nameFieldForm.clearImput();
     sitFieldForm.clearValue();
 })
+innologo.href = "http://university.innopolis.ru"

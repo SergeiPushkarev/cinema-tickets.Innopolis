@@ -1,8 +1,10 @@
 .advantages__container{
-  margin-bottom: 5.85rem;
+  max-width: 56.2rem;
+  margin: 0 auto 5.85rem;
 }
 
 .greeting__container {
+  max-width: 48.3rem;
   margin-bottom: 1.5rem;
 }
 
@@ -190,6 +192,10 @@
   left: -1px;
 }
 
+.tabcheck__mark svg{
+  width: 100%;
+}
+
 .tabcheck__input:checked + .tabcheck__mark{
   opacity: 1;
 }
@@ -211,7 +217,7 @@
   position: absolute;
   max-width: 50%;
   top: -2.4rem;
-  left: 6.9rem;
+  left: 12%;
   z-index: 1;
 }
 
@@ -246,7 +252,7 @@
 }
 
 .gift__block {
-  max-width: 79%;
+  max-width: 43.3rem;
   margin: 0 auto;
   padding: 5.7rem 0 8.5rem 15.1rem;
 }
@@ -567,6 +573,7 @@
   font-size: 0.75rem;
   line-height: 1.33;
   z-index: 0;
+  pointer-events: none;
 }
 
 .form__input {

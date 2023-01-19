@@ -1,3 +1,4 @@
+// innologo.href = "/"
 const filmLogo = document.getElementById('film__logo')
 const cardInfoWrap = document.getElementById('card-info')
 const info = new URLSearchParams(location.search);

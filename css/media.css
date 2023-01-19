@@ -1,10 +1,11 @@
-@media screen and (min-width:768px) {
-    html{
-        font-size: 1.78vw;
-    }
-
+@media screen and (min-width:1124px) {
     .basealign{
-        max-width: 75%;
+        max-width: 1124px;
+    }
+}
+@media screen and (min-width:768px){
+    .basealign{
+        max-width: 76%;
     }
 }
 
