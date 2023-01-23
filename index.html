@@ -129,7 +129,7 @@
         </div>
       </div>
     </header>
-    <section class="advantages__container">
+    <section class="advantages__container basealign">
       <div class="greeting__container relative">
         <div class="greeting__box">
           <div class="greeting__head">Добро пожаловать!</div>
@@ -143,7 +143,7 @@
           </div>
         </div>
       </div>
-      <h1 class="basealign blockname advantages__blockname">Почему мы?</h1>
+      <h1 class="blockname advantages__blockname">Почему мы?</h1>
       <div class="advantages basealign__advantages">
         <div class="advantages__item">
           <img src="img/big_screen.jpg" alt="Большие экраны" />
@@ -367,9 +367,9 @@
       </div>
     </section>
     <section id="review" class="review__container">
-      <div class="review__body">
-        <h1 class="blockname basealign">Отзывы</h1>
-        <div class="review__intro text__description basealign">
+      <div class="review__body basealign">
+        <h1 class="blockname">Отзывы</h1>
+        <div class="review__intro text__description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quasi
           incidunt a ipsam animi recusandae, placeat et aliquam expedita
           reprehenderit! Consequatur rem perspiciatis tempore ratione?
@@ -567,15 +567,8 @@
                     id="persData"
                   />
                   <span class="check__mark">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM18.1216 10.6249L11.8475 16.899C11.4936 17.2529 11.0134 17.4518 10.5128 17.4518C10.0121 17.4518 9.53198 17.2529 9.17798 16.8989L5.87855 13.5994C5.14139 12.8623 5.14139 11.6671 5.87859 10.9299C6.6158 10.1928 7.81097 10.1927 8.54813 10.9299L10.5128 12.8947L15.4521 7.95544C16.1893 7.21828 17.3844 7.21828 18.1216 7.95548C18.8587 8.6925 18.8587 9.88772 18.1216 10.6249Z"
-                        fill="#A3CC40"
-                      />
+                    <svg>
+                      <use xlink:href="#check-svg"></use>
                     </svg>
                   </span>
                   <span class="check__text">
@@ -755,6 +748,18 @@
         <div class="clear"></div>
         </div>
     </footer>
+    <svg style="display:none;">
+        <symbol
+        id="check-svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM18.1216 10.6249L11.8475 16.899C11.4936 17.2529 11.0134 17.4518 10.5128 17.4518C10.0121 17.4518 9.53198 17.2529 9.17798 16.8989L5.87855 13.5994C5.14139 12.8623 5.14139 11.6671 5.87859 10.9299C6.6158 10.1928 7.81097 10.1927 8.54813 10.9299L10.5128 12.8947L15.4521 7.95544C16.1893 7.21828 17.3844 7.21828 18.1216 7.95548C18.8587 8.6925 18.8587 9.88772 18.1216 10.6249Z"
+          fill="#A3CC40"
+        />
+    </svg>
     <svg style="display: none">
       <symbol
         id="inno_logo"
@@ -899,18 +904,10 @@
                 class="check__input"
                 type="checkbox"
                 id="persDataPrize"
-                
               />
               <span class="check__mark">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0ZM18.1216 10.6249L11.8475 16.899C11.4936 17.2529 11.0134 17.4518 10.5128 17.4518C10.0121 17.4518 9.53198 17.2529 9.17798 16.8989L5.87855 13.5994C5.14139 12.8623 5.14139 11.6671 5.87859 10.9299C6.6158 10.1928 7.81097 10.1927 8.54813 10.9299L10.5128 12.8947L15.4521 7.95544C16.1893 7.21828 17.3844 7.21828 18.1216 7.95548C18.8587 8.6925 18.8587 9.88772 18.1216 10.6249Z"
-                    fill="#A3CC40"
-                  />
+                <svg>
+                  <use xlink:href="#check-svg"></use>
                 </svg>
               </span>
               <span class="check__text">

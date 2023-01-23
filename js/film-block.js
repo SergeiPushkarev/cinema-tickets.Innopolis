@@ -67,4 +67,4 @@ const getBlockFilmsData = async () => {
         console.error(error)
     }
 };
-getBlockFilmsData();
+// getBlockFilmsData();
