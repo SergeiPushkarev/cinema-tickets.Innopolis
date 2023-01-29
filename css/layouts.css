@@ -92,6 +92,7 @@ body{
     background-blend-mode: darken;
     position: relative;
     padding-bottom: 14.1rem;
+    overflow: hidden;
   }
   
   .header__single{
@@ -117,8 +118,7 @@ body{
     right: 0;
     bottom: 0;
     border-top: 6.25rem solid transparent;
-    border-right: 98vw solid #fff;
-    overflow: hidden;
+    border-right: 100vw solid #fff;
   }
   
   .head__row{

@@ -36,10 +36,6 @@
   margin-bottom: 4.2rem;
 }
 
-.basealign__advantages {
-  margin: 0 -35px 0 -20px;
-}
-
 .advantages {
   display: flex;
   flex-wrap: wrap;
@@ -108,7 +104,7 @@
   line-height: 1.33;
   color: #ffffff;
   margin: 0 auto;
-  width: 849px;
+  width: 42.4rem;
   border-collapse: collapse;
   text-align: left;
 }
@@ -229,6 +225,7 @@
   background: url(../img/Clapper.jpg) no-repeat center/cover;
   background-color: rgba(22, 22, 22, 0.8);
   background-blend-mode: darken;
+  overflow: hidden;
 }
 
 .gift__container:before {
@@ -237,7 +234,7 @@
   top: 0;
   left: 0;
   border-top: 5.8rem solid #fff;
-  border-right: 98vw solid transparent;
+  border-right: 100vw solid transparent;
 }
 
 .gift__container::after {
@@ -322,19 +319,9 @@
   background: rgba(22, 22, 22, 0.8);
 }
 
-.movie__item-shadow:hover {
-  opacity: 0;
-  transition: .8s;
-}
-
 .movie__item-descr {
   background: rgba(144, 210, 61, 0.4);
-  opacity: 0;
-}
-
-.movie__item-descr:hover {
-  opacity: 1;
-  transition: .8s;
+  top: 40%;
 }
 
 .descr__head {
@@ -346,11 +333,7 @@
 }
 
 .descr__text {
-  padding: 0 1rem;
-  font-family: "IBM_Plex_Sans", sans-serif;
-  font-weight: 400;
-  font-size: .55rem;
-  line-height: 1.33;
+  opacity: 0;
 }
 
 /* films close */
@@ -431,6 +414,7 @@
   background-color: rgba(22, 22, 22, 0.8);
   background-blend-mode: darken;
   position: relative;
+  overflow: hidden;
 }
 
 .review__container::before {

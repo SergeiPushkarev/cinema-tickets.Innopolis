@@ -3,38 +3,39 @@
         max-width: 48.3rem;
     }
 }
-@media screen and (min-width:768px) and (max-width:1124px) {
+
+@media screen and (min-width:769px){
+    .basealign__advantages {
+        margin: 0 -35px 0 -20px;
+    }
+    .movie__item-shadow:hover {
+        opacity: 0;
+        transition: .8s;
+    }
+      
+    .movie__item-descr {
+        opacity: 0;
+        top: 0;
+    }
+      
+    .movie__item-descr:hover {
+        opacity: 1;
+        transition: .8s;
+    }
+
+    .descr__text {
+        opacity: 1;
+        padding: 0 1rem;
+        font-family: "IBM_Plex_Sans", sans-serif;
+        font-weight: 400;
+        font-size: .55rem;
+        line-height: 1.33;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1124px) {
     .basealign{
         max-width: 76%;
-    }
-}
-
-@media screen and (max-width:1060px) {
-    .timelist__table{
-        overflow-x: scroll;
-    }
-}
-
-@media screen and (min-width:552px) and (max-width:768px){
-    .header{
-        padding-bottom: 12.4rem;
-    }
-
-    .head__intro{
-        margin-top: 5.5rem;
-    }
-
-    .greeting__box{
-        max-width: 26rem;
-        padding-top: 2.1rem;
-        padding-bottom: 2.1rem;
-        right: 6.65rem;
-        top: -9.6rem;
-        text-align: center;
-    }
-
-    .advantages__blockname{
-        padding-top: 3.7rem;
     }
 }
 
@@ -135,6 +136,11 @@
     .head__langswitch span{
         color: #A3CC40;
     }
+
+    .tabcheck__mark{
+        width: .7rem;
+        height: .7rem;
+    }
 }
 @media screen and (max-width:551px){
     html{
@@ -157,38 +163,20 @@
         font-size: 1.9rem;
     }
 
-    .greeting__container {
-        margin-bottom: 0;
-    }
-
     .greeting__box {
-        max-width: 26rem;
-        padding: 1.6rem;
-        position: absolute;
-        background-color: #fff;
-        border-radius: 0.5rem;
-        color: black;
-        right: 15%;
-        top: -8.6rem;
-        box-shadow: 0 1.35rem 1.95rem rgb(163 204 64 / 18%);
-    }
-
-    .greeting__head {
-        display: inline-block;
-        font-family: "IBM_Plex_Sans", sans-serif;
-        font-weight: 600;
-        font-size: 2.1rem;
-        line-height: 1.33;
-        margin-bottom: .6rem;
-        padding-left: 2rem;
+        display: none;
     }
 
     .text__description{
-        font-size: .8rem;
+        font-size: 1rem;
     }
     .advantages__blockname {
         padding-top: 6rem;
         margin-bottom: 4.2rem;
+    }
+
+    .advantages__item{
+        flex-basis: 34%;
     }
 
     .advantages__item-header{
@@ -201,6 +189,23 @@
 
     .blockname{
         font-size: 3rem;
+    }
+
+    .timelist__table{
+        overflow: scroll;
+    }
+
+    .table {
+        min-width: 70rem;
+    }
+
+    .timelistHead{
+        font-size: 1.5rem;
+    }
+
+    .tabcheck__mark{
+        width: 1rem;
+        height: 1rem;
     }
 
     .gift__head{
@@ -220,10 +225,6 @@
     .souvenirs__container{
         justify-content: space-around;
     }
-
-    /* .review__bar{
-        margin-right: 7rem;
-    } */
 
     .formplaceholder{
         font-size: 1.3rem;
