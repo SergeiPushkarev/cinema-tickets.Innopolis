@@ -299,6 +299,11 @@
         font-size: 1.2rem;
     }
 
+    .popup-close__btn{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
     .popup__form-item{
         padding: 2rem 0;
     }
