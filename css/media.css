@@ -31,6 +31,10 @@
         font-size: .55rem;
         line-height: 1.33;
     }
+
+    .popup-wrapper{
+        max-width: 60%;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1124px) {
@@ -142,6 +146,7 @@
         height: .7rem;
     }
 }
+
 @media screen and (max-width:551px){
     html{
         font-size: 1.9vw;
@@ -230,12 +235,9 @@
         font-size: 1.3rem;
     }
 
-    .form__input{
+    .form__input,
+    .feedback__textarea{
         font-size: 2rem;
-    }
-
-    .sit__select{
-        font-size: 1.5rem;
     }
 
     .feedback__container{
@@ -295,6 +297,10 @@
     .footer__contacts-item{
         flex: 1 0 50%;
         font-size: 1.2rem;
+    }
+
+    .popup__form-item{
+        padding: 2rem 0;
     }
 
     }
