@@ -8,10 +8,6 @@
     z-index: 1;
 }
 
-.hidden{
-    display: none;
-}
-
 .popup-wrapper {
     max-width: 80%;
     background-color: white;

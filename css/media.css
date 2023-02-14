@@ -308,4 +308,8 @@
         padding: 2rem 0;
     }
 
+    .dropdown li{
+        font-size: 2rem;
+    }
+
     }

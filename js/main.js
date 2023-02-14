@@ -37,45 +37,86 @@ const feedbackForm = document.getElementById('reviewForm')
 const INPUT_ERROR_CLASS = 'formlabel-error';
 const INPUT_FOCUS_CLASS = 'formlabel-focused';
 
-function popupToggle () {
-    giftForm.classList.toggle('hidden')
+function popupToggle (popup) {
+    popup.classList.toggle('hidden')
 };
+function giftClose () {
+    popupToggle(giftForm);
+    nameField.clearValue();
+    emailField.clearValue();
+    selectField.clearValue();
+}
 btnGiftOpen.onclick = function() {
-    popupToggle();
+    popupToggle(giftForm);
     nameField.focus();
 };
 btnGiftClose.onclick = function(){
-    popupToggle();
-    nameField.clearImput();
-    emailField.clearImput();
-    selectField.clearValue();
+    giftClose()
 };
-
+giftForm.addEventListener('click', e=>{
+    if (e.target.classList == 'popup') {
+        giftClose()
+    }
+})
 
 function initializeField(field) {
-    const input = field.getElementsByTagName('input')[0];
-    const errorText = field.querySelector('.formlabel__error-msg');
-    errorText.innerText = "";
-    clearErrorField();
-    input.value = "";
+    function getInputType (inpt) {
+        if (inpt.getElementsByTagName('select').length === 1) {
+           return type = 'select'
+        } else if (inpt.getElementsByTagName('input').length === 1) {
+            return type = 'input'
+        }
+    }
     function clearErrorField(){
-        const errorText = field.querySelector('.formlabel__error-msg');
-        field.classList.remove(INPUT_ERROR_CLASS);
-        errorText.innerText = "";
+        if (errorText) {
+            field.classList.remove(INPUT_ERROR_CLASS);
+            errorText.innerText = "";
+        }
     };
+    function clearValue(){
+        if (getInputType(field) === 'input'){
+        input.value = "";
+        field.classList.remove(INPUT_FOCUS_CLASS)
+        } else if(getInputType(field) === 'select') {
+            input.selectedIndex = 0;
+            field.classList.remove(INPUT_FOCUS_CLASS)
+            clearErrorField();
+        }
+    }
+    const input = field.getElementsByTagName(getInputType(field))[0];
+    const errorText = field.querySelector('.formlabel__error-msg');
+    clearValue();
+    clearErrorField();
     field.classList.remove(INPUT_FOCUS_CLASS);
-    input.addEventListener('focus', function(){
-        field.classList.add(INPUT_FOCUS_CLASS)
-    });
-    input.addEventListener('input', clearErrorField);
-    input.addEventListener('blur', function(){
+    if (getInputType(field) === 'input') {
+            input.addEventListener('focus', function(){
+            field.classList.add(INPUT_FOCUS_CLASS)
+        });
+        input.addEventListener('input', clearErrorField);
+        input.addEventListener('blur', function(){
         if (!input.value) {
             field.classList.remove(INPUT_FOCUS_CLASS)
+            clearErrorField()
         }
     });
+    } else if (getInputType(field) === 'select') {
+        input.addEventListener('change', function(){
+            field.classList.add(INPUT_FOCUS_CLASS);
+            clearErrorField();
+        });
+        input.addEventListener('blur', function(){
+            if (!input.value || input.value == 0) {
+                field.classList.remove(INPUT_FOCUS_CLASS)
+            }
+        });
+    }
     return {
         focus(){
+            if (getInputType(field) === 'input') {
             input.focus()
+            } else if (getInputType(field) === 'select') {
+                input.classList.add(INPUT_FOCUS_CLASS);
+            }
         },
         getValue(){
             return input.value
@@ -84,58 +125,16 @@ function initializeField(field) {
             errorText.innerText = errorMsg;
             field.classList.add(INPUT_ERROR_CLASS);
         },
-        clearImput(){
-            input.value = "";
-            field.classList.remove(INPUT_FOCUS_CLASS)
-        }
-    }
-};
-
-function initializeSelect(select){
-    const inpSelect = select.getElementsByTagName('select')[0];
-    const errorText = select.querySelector('.formlabel__error-msg');
-    errorText.innerText = "";
-    clearErrorField();
-    inpSelect.selectedIndex = 0;
-    function clearErrorField(){
-        const errorText = select.querySelector('.formlabel__error-msg');
-        select.classList.remove(INPUT_ERROR_CLASS);
-        errorText.innerText = "";
-    };
-    select.classList.remove(INPUT_FOCUS_CLASS);
-    inpSelect.addEventListener('change', function(){
-        select.classList.add(INPUT_FOCUS_CLASS);
-        clearErrorField();
-    });
-    inpSelect.addEventListener('blur', function(){
-        if (!inpSelect.value) {
-            select.classList.remove(INPUT_FOCUS_CLASS)
-        }
-    });
-    return {
-        focus(){
-            select.classList.add(INPUT_FOCUS_CLASS);
-        },
-        getValue(){
-            return inpSelect.value
-        },
-        setError(errorMsg){
-            errorText.innerText = errorMsg;
-            select.classList.add(INPUT_ERROR_CLASS);
-        },
         clearValue(){
-            inpSelect.selectedIndex = 0;
-            select.classList.remove(INPUT_FOCUS_CLASS)
-            clearErrorField();
+            clearValue()
         }
     }
 };
-
 const nameField = initializeField(nameInputGift);
 const emailField = initializeField(emailInputGift);
-const selectField = initializeSelect(selectInputGigt);
+const selectField = initializeField(selectInputGigt);
 const nameFieldForm = initializeField(nameInputFeedback);
-const sitFieldForm = initializeSelect(sitInputFeedback);
+const sitFieldForm = initializeField(sitInputFeedback);
 
 giftForm.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -171,8 +170,8 @@ giftForm.addEventListener('submit', function(event) {
     url.search = new URLSearchParams(data).toString();
     fetch(url.toString());
     popupToggle();
-    nameField.clearImput();
-    emailField.clearImput();
+    nameField.clearValue();
+    emailField.clearValue();
     selectField.clearValue();
 });
 
@@ -196,7 +195,7 @@ feedbackForm.addEventListener('submit', function (event){
     const url = new URL('https://jsonplaceholder.typicode.com/users');
     url.search = new URLSearchParams(data).toString();
     fetch(url.toString());
-    nameFieldForm.clearImput();
+    nameFieldForm.clearValue();
     sitFieldForm.clearValue();
 })
-innologo.href = "http://university.innopolis.ru"
+// innologo.href = "http://university.innopolis.ru"

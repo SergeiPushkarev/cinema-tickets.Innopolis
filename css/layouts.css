@@ -25,6 +25,10 @@ body{
     position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
 .link__white{
     text-decoration: none;
     color: #FFFF;
