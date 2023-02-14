@@ -231,7 +231,8 @@
         justify-content: space-around;
     }
 
-    .formplaceholder{
+    .formplaceholder,
+    .formlabel__error-msg{
         font-size: 1.3rem;
     }
 
