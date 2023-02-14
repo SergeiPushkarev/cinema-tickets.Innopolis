@@ -238,6 +238,7 @@
     .form__input,
     .feedback__textarea{
         font-size: 2rem;
+        padding: 1rem 0.9rem;
     }
 
     .feedback__container{

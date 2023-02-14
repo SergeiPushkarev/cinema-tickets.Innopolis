@@ -556,7 +556,8 @@
 .form__input {
   display: block;
   box-sizing: border-box;
-  padding: 0.4rem 0.9rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
   width: 100%;
   background: transparent;
   border: transparent;
