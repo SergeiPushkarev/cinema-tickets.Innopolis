@@ -1,8 +1,11 @@
 "use strict";
 
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 var films = [{
   id: 12,
   name: "Человек-паук",
@@ -44,7 +47,7 @@ var Film = /*#__PURE__*/function () {
   _createClass(Film, [{
     key: "renderFilmTableItem",
     value: function renderFilmTableItem() {
-      return "\n    <tr>\n      <td>\n        <label class= \"tabcheck relative\" for=\"".concat(this.getId(), "\">\n        <input id=\"").concat(this.getId(), "\" class=\"tabcheck__input\" type=\"checkbox\" required>\n        <span class=\"tabcheck__mark\">\n          <svg\n        width=\"11\"\n        height=\"9\"\n        viewBox=\"0 0 11 9\"\n        fill=\"none\"\n        xmlns=\"http://www.w3.org/2000/svg\"\n      >\n        <path\n          fill-rule=\"evenodd\"\n          clip-rule=\"evenodd\"\n          d=\"M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z\"\n          fill=\"white\"\n        />\n      </svg>\n        </span>\n      </label>\n      </td>\n      <td>").concat(this.time, "</td>\n      <td>").concat(this.getName(), "</td>\n      <td>").concat(this.getGenres(), "</td>\n    </tr>\n    ");
+      return "\n    <tr>\n      <td>\n        <label class= \"tabcheck\" for=\"".concat(this.getId(), "\">\n        <input id=\"").concat(this.getId(), "\" class=\"tabcheck__input\" type=\"checkbox\" required>\n        <span class=\"tabcheck__mark relative\">\n          <svg\n            viewBox=\"0 0 11 9\"\n            fill=\"none\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n            >\n            <path\n              d=\"M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z\"\n              fill=\"#a3cc40\"\n            />\n          </svg>\n        </span>\n      </label>\n      </td>\n      <td>").concat(this.time, "</td>\n      <td>").concat(this.getName(), "</td>\n      <td>").concat(this.getGenres(), "</td>\n    </tr>\n    ");
     }
   }, {
     key: "getId",
@@ -87,4 +90,3 @@ for (var _i = 0, _films = films; _i < _films.length; _i++) {
   }
 }
 ;
-//# sourceMappingURL=film-table.js.map

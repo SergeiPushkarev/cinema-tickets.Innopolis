@@ -2,21 +2,21 @@
 ## Установка зависимостей
 
 '''shell
-npm install @babel/core @babel/cli @babel/preset-env --save-dev
+npm i
 '''
 
 ## Запуск Babel
 
 '''shell
-npx babel js -d target
+npm run build
 '''
 
 ## Автопересборка babel
 '''shell
-npx babel js -d target --watch
+npm run build
 '''
 
 ## компиляция с Source Map
 '''shell
-npx babel js -d target --watch --source-maps
+npm run start
 '''

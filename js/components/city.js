@@ -1,3 +1,5 @@
+import {SYPREX_URL, CITYLIST_URL} from "../__data__/city.js"
+import {initializeField} from "../components/input.js"
 let city
 let cityList
 const popupCity = document.querySelector('#popup-city')
@@ -9,25 +11,31 @@ const cityClose = document.querySelector('#city-closebtn')
 const dropdown = document.getElementById('dropdown')
 const cityField = initializeField(cityInputLabel)
 
-const SYPREX_URL = `https://api.sypexgeo.net/`
-const CITYLIST_URL = `https://gist.githubusercontent.com/gorborukov/0722a93c35dfba96337b/raw/435b297ac6d90d13a68935e1ec7a69a225969e58/russia`
-
 document.addEventListener('DOMContentLoaded', ()=>{
     getRequest(SYPREX_URL, setCity);
+    setTimeout(()=> {
+        if (!city){
+            getRequest(CITYLIST_URL, getCityList)
+            // cityInput.value = ""
+            popupCity.classList.toggle('hidden')
+        }
+    }, 2000)
 })
 cityBtn.addEventListener('click', function (){
-    popupToggle(popupCity)
-    cityInput.value = city
+    popupCity.classList.toggle('hidden')
+    if (!city) {
+        // cityInput.value = ""
+    } else cityInput.value = city
 });
 popupCity.addEventListener('click', function (event) {
     if (event.target.classList == 'popup') {
-        popupToggle(popupCity)
+        popupCity.classList.toggle('hidden')
     }
 })
-cityClose.addEventListener('click', function (){popupToggle(popupCity)});
+cityClose.addEventListener('click', function (){popupCity.classList.toggle('hidden')});
 cityForm.addEventListener('submit', function(event) {
     event.preventDefault();
-    popupToggle(popupCity)
+    popupCity.classList.toggle('hidden')
 })
 cityInput.addEventListener('focus', function(){
     cityField.clearValue()
@@ -68,9 +76,6 @@ function getRequest (url, clbck){
 function setCity (){
     let data = JSON.parse(this)
     city = data.city.name_ru
-    cityInput.value = city
-    setTimeout(()=> {popupToggle(popupCity)}, 2000)
-    getRequest(CITYLIST_URL, getCityList)
 }
 
 function getCityList (){
@@ -81,7 +86,7 @@ function clearChild(element) {
 }
 
 function citySearch (string) {
-    counter = 0
+    let counter = 0
     clearChild(dropdown)
     for (const i in cityList) {
         if (cityList[i].city.toLowerCase().indexOf(string.toLowerCase()) > -1 && counter < 5) {

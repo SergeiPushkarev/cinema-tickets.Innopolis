@@ -1,8 +1,4 @@
-const movieConteiner = document.getElementById('movie__container');
-
-const getTopFilms = () => {
-    return getKinopoiskApiData('https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_250_BEST_FILMS&page=1')
-};
+import {getFilmById,getTopFilms} from "../__data__/kinopoisk.js"
 
 function renderBlockFilms(posterUrl, nameRu, id){
     const link = document.createElement('a');
@@ -32,7 +28,7 @@ function renderBlockFilms(posterUrl, nameRu, id){
     return [itemWrap, descrTxt]
 }
 
-const getBlockFilmsData = async () => {
+const getBlockFilmsData = async (movieConteiner) => {
     try {
         const answer = await getTopFilms();
         const data = await answer.json();
@@ -67,4 +63,5 @@ const getBlockFilmsData = async () => {
         console.error(error)
     }
 };
-getBlockFilmsData();
+
+export {getBlockFilmsData}

@@ -1,19 +1,16 @@
-// innologo.href = "/"
+import "https://code.jquery.com/jquery-3.6.0.min.js"
+import "../libs/owl.carousel.min.js"
+import {getFilmById,getFilmInfo,getSimilarGenres,getGenreList} from "../js/__data__/kinopoisk.js"
+import "../js/components/burger.js"
+// const innologo = document.querySelector('.head__logo')
+// innologo.href = "/imdex.html"
 const filmLogo = document.getElementById('film__logo')
 const cardInfoWrap = document.getElementById('card-info')
 const info = new URLSearchParams(location.search);
 const infoId = info.get('id');
 const otherItemFilms = document.getElementById('other__wrap')
 
-const getFilmInfo = (id) =>{
-    return getKinopoiskApiData(`https://kinopoiskapiunofficial.tech/api/v1/staff?filmId=${id}`)
-}
-const getGenreList = () => {
-    return getKinopoiskApiData('https://kinopoiskapiunofficial.tech/api/v2.2/films/filters')
-}
-const getSimilarGenres = (id) =>{
-    return getKinopoiskApiData(`https://kinopoiskapiunofficial.tech/api/v2.2/films?genres=${id}`)
-}
+
 function renderFilmLogo (posterUrl){
     const logoImg = document.createElement('img');
     logoImg.alt = 'poster'
@@ -120,7 +117,7 @@ function getOwlOther (other, i) {
 
 const getOtherBlock = async (genres, i) => {
     const wrap = renderOtherItem(genres.genre)
-    genreId = await getGenreId(genres)
+    const genreId = await getGenreId(genres)
     const similarFilms = await getSimilarGenres(genreId).then(a=>a.json())
     const otherItem = document.createElement('div')
     otherItem.className = ('other__item-films')
@@ -152,7 +149,7 @@ const getFilmCardBlock = async () => {
     otherItemFilms.innerHTML = ""
     data.genres.slice(0,2).forEach((a, i)=>getOtherBlock(a, i))
 };
-getFilmCardBlock();
+// getFilmCardBlock();
 
 $(document).ready(function(){
     $(".other__item-films").owlCarousel({

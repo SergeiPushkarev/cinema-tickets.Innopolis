@@ -1,7 +1,30 @@
 {
+  "name": "cinema-tickets.innopolis",
+  "version": "1.0.0",
+  "description": "'''shell\r npm install @babel/core @babel/cli @babel/preset-env --save-dev\r '''",
+  "main": "target/script.js",
   "devDependencies": {
-    "@babel/cli": "^7.19.3",
-    "@babel/core": "^7.20.2",
-    "@babel/preset-env": "^7.20.2"
-  }
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.20.2",
+    "rimraf": "^4.1.2"
+  },
+  "scripts": {
+    "start": "npx babel js -d target --watch --source-maps",
+    "build": "npm run clean && npx babel js -d target --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf target"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeiPushkarev/cinema-tickets.Innopolis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeiPushkarev/cinema-tickets.Innopolis/issues"
+  },
+  "homepage": "https://github.com/SergeiPushkarev/cinema-tickets.Innopolis#readme"
 }

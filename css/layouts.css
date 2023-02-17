@@ -282,6 +282,66 @@ body{
     line-height: 1.33;
   }
 
+  .formlabel {
+    display: block;
+    position: relative;
+    background: #dedede;
+    border-radius: 5px;
+  }
+  
+  .formplaceholder {
+    position: absolute;
+    color: #a1a1a1;
+    top: 30%;
+    left: 4%;
+    font-family: "IBM_Plex_Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.33;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .form__input {
+    display: block;
+    box-sizing: border-box;
+    padding: .4rem .9rem;;
+    width: 100%;
+    background: transparent;
+    border: transparent;
+  }
+  
+  .formlabel:hover,
+  .formlabel-focused {
+    background-color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(170, 243, 77, 0.52);
+  }
+  
+  .formlabel-focused .formplaceholder {
+      top: -28%;
+      left: 4%;
+      padding: 0 .1rem;
+      transition: .2s;
+      background-color: #FFFFFF;
+  }
+  
+  .formlabel-error{
+    box-shadow: 0 0 0 0.25rem red;
+  }
+  
+  .formlabel__error-msg{
+    position: absolute;
+    color: red;
+    top: 80%;
+    left: 4%;
+    background-color: #FFFFFF;
+    font-family: "IBM_Plex_Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.33;
+    border-radius: .3rem
+  }
+
 .footer__blockname{
     padding-bottom: .9rem;
     font-family: "IBM_Plex_Sans", sans-serif;

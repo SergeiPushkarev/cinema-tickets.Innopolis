@@ -37,6 +37,12 @@
     }
 }
 
+@media screen and (min-width:769px) and (max-width:950px) {
+    .timelist__table{
+        overflow-x: scroll;
+    }
+}
+
 @media screen and (min-width:769px) and (max-width:1124px) {
     .basealign{
         max-width: 76%;
@@ -195,10 +201,6 @@
 
     .blockname{
         font-size: 3rem;
-    }
-
-    .timelist__table{
-        overflow: scroll;
     }
 
     .table {
