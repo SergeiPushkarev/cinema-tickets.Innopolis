@@ -1,9 +1,15 @@
-import "https://code.jquery.com/jquery-3.6.0.min.js"
 import "../libs/owl.carousel.min.js"
 import {getFilmById,getFilmInfo,getSimilarGenres,getGenreList} from "../js/__data__/kinopoisk.js"
 import "../js/components/burger.js"
-// const innologo = document.querySelector('.head__logo')
-// innologo.href = "/imdex.html"
+import "../css/reset.css"
+import "../css/fonts.css"
+import "../css/layouts.css"
+import "../css/media.css"
+import "/single/single.css"
+import "/single/owl.carousel.min.css"
+import "/single/owl.theme.default.min.css"
+const innologo = document.querySelector('.head__logo')
+innologo.href = "/index.html"
 const filmLogo = document.getElementById('film__logo')
 const cardInfoWrap = document.getElementById('card-info')
 const info = new URLSearchParams(location.search);
@@ -149,7 +155,7 @@ const getFilmCardBlock = async () => {
     otherItemFilms.innerHTML = ""
     data.genres.slice(0,2).forEach((a, i)=>getOtherBlock(a, i))
 };
-// getFilmCardBlock();
+getFilmCardBlock();
 
 $(document).ready(function(){
     $(".other__item-films").owlCarousel({

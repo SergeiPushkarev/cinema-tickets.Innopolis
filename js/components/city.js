@@ -1,6 +1,6 @@
 import {SYPREX_URL, CITYLIST_URL} from "../__data__/city.js"
 import {initializeField} from "../components/input.js"
-let city
+let cityUser
 let cityList
 const popupCity = document.querySelector('#popup-city')
 const cityForm = document.querySelector('#city-form')
@@ -12,20 +12,24 @@ const dropdown = document.getElementById('dropdown')
 const cityField = initializeField(cityInputLabel)
 
 document.addEventListener('DOMContentLoaded', ()=>{
-    getRequest(SYPREX_URL, setCity);
-    setTimeout(()=> {
-        if (!city){
+    if (!sessionStorage.getItem('city')) {
+        getRequest(SYPREX_URL, setCity);
+        setTimeout(()=> {
             getRequest(CITYLIST_URL, getCityList)
-            // cityInput.value = ""
             popupCity.classList.toggle('hidden')
-        }
-    }, 2000)
+            cityUser = sessionStorage.getItem('city')
+            if (cityUser) {
+                cityInput.value = cityUser
+            }
+
+        }, 2000)
+    }
 })
 cityBtn.addEventListener('click', function (){
     popupCity.classList.toggle('hidden')
-    if (!city) {
-        // cityInput.value = ""
-    } else cityInput.value = city
+    if (sessionStorage.getItem('city')) {
+        cityInput.value = sessionStorage.getItem('city')
+    }
 });
 popupCity.addEventListener('click', function (event) {
     if (event.target.classList == 'popup') {
@@ -35,19 +39,24 @@ popupCity.addEventListener('click', function (event) {
 cityClose.addEventListener('click', function (){popupCity.classList.toggle('hidden')});
 cityForm.addEventListener('submit', function(event) {
     event.preventDefault();
+    sessionStorage.setItem('city', cityInput.value)
     popupCity.classList.toggle('hidden')
+    
 })
 cityInput.addEventListener('focus', function(){
     cityField.clearValue()
 })
 cityInput.addEventListener('keyup', function(){
+    if(!cityList) {
+        getRequest(CITYLIST_URL, getCityList)
+    }
     citySearch(cityInput.value)
 })
 
 dropdown.addEventListener('click', e => {
     if (e.target != dropdown) {
         cityInput.value = e.target.textContent
-        city = e.target.textContent
+        cityUser = e.target.textContent
         dropdown.classList.add('hidden')
     }
 })
@@ -75,7 +84,7 @@ function getRequest (url, clbck){
 
 function setCity (){
     let data = JSON.parse(this)
-    city = data.city.name_ru
+    sessionStorage.setItem('city', data.city.name_ru)
 }
 
 function getCityList (){
