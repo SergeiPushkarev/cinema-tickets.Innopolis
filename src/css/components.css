@@ -412,7 +412,7 @@
 /* souvenirs close */
 
 .review__container {
-  background: url(/img/unsplash.jpg) no-repeat center/cover;
+  background: url(../img/unsplash.jpg) no-repeat center/cover;
   background-color: rgba(22, 22, 22, 0.8);
   background-blend-mode: darken;
   position: relative;
@@ -511,7 +511,7 @@
   background: linear-gradient(270deg,
       #ffffff 5%,
       rgba(30, 30, 30, 0) 107.85%),
-    url("/img/spect_review.jpg") no-repeat center/cover;
+    url("../img/spect_review.jpg") no-repeat center/cover;
     border-radius: inherit;
 }
 

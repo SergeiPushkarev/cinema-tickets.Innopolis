@@ -1,5 +1,5 @@
 import {SYPREX_URL, CITYLIST_URL} from "../__data__/city.js"
-import {initializeField} from "../components/input.js"
+import {initializeField} from "./input/input.js"
 let cityUser
 let cityList
 const popupCity = document.querySelector('#popup-city')

@@ -1,18 +1,18 @@
 import "../libs/owl.carousel.min.js"
-import {initializeField} from "./components/input.js"
+import {initializeField} from "./components/input/input.js"
 import "./components/burger.js"
 import {renderTimelist} from "./components/film-table.js"
 import {getBlockFilmsData} from "./components/film-block.js"
 import "./components/city.js"
 
-import "/css/reset.css"
-import "/css/fonts.css"
-import "/css/layouts.css"
-import "/css/components.css"
-import "/css/prisepopup.css"
-import "/css/media.css"
-import "/css/owl.carousel.min.css"
-import "/css/owl.theme.default.min.css"
+import "../css/reset.css"
+import "../css/fonts.css"
+import "../css/layouts.css"
+import "../css/components.scss"
+import "../css/prisepopup.css"
+import "../css/media.css"
+import "../css/owl.carousel.min.css"
+import "../css/owl.theme.default.min.css"
 
 //tablelist
 renderTimelist("timelistBody")

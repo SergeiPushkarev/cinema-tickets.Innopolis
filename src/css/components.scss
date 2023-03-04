@@ -1,0 +1,698 @@
+.advantages__container{
+  margin-bottom: 5.85rem;
+}
+
+.greeting__container {
+  max-width: 48.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.greeting__box {
+  max-width: 21.3rem;
+  padding: 1.5rem 2.35rem;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  color: black;
+  right: -1.05rem;
+  top: -8.6rem;
+  box-shadow: 0 1.35rem 1.95rem rgba(163, 204, 64, 0.18);
+}
+
+.greeting__head {
+  display: inline-block;
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.65rem;
+  line-height: 1.33;
+  margin-bottom: 1.1rem;
+}
+
+.greeting__body {
+  display: inline-block;
+}
+
+.advantages__blockname {
+  margin-bottom: 4.2rem;
+}
+
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  flex-basis: 33%;
+  flex-shrink: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding-bottom: 2.55rem;
+  transition: .2s;
+}
+
+.advantages__item:hover {
+  transform: scale(107%);
+}
+
+.advantages__item img {
+  width: 12.25rem;
+  height: 8.5rem;
+}
+
+.advantages__item-header {
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.33;
+  color: #333333;
+  text-align: center;
+  padding-top: 1.75rem;
+  padding-bottom: 1.25rem;
+}
+
+.advantages__item-text {
+  max-width: 15rem;
+  padding: 0 2rem;
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.55rem;
+  line-height: 1.33;
+  color: #333333;
+  text-align: center;
+}
+
+/* advantages close */
+
+.timelist__container{
+  margin-bottom: 5.4rem;
+}
+
+.timelist__table {
+  margin-bottom: 1.5rem;
+}
+
+.timelist__blockname {
+  padding-bottom: 4.1rem;
+}
+
+.table {
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.33;
+  color: #ffffff;
+  margin: 0 auto;
+  width: 42.4rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  vertical-align: middle;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.tbody input {
+  margin-left: 1.1rem;
+}
+
+.timelistHead {
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.33;
+  color: #ffffff;
+  background-color: #a3cc40;
+  height: 2.25rem;
+}
+
+.timelistHead th:nth-child(1) {
+  width: 10%;
+  border-radius: 0.5rem 0 0 0;
+}
+
+.timelistHead th:nth-child(2) {
+  width: 28%;
+}
+
+.timelistHead th:nth-child(3) {
+  width: 28%;
+}
+
+.timelistHead th:nth-child(4) {
+  width: 34%;
+  border-radius: 0 0.5rem 0 0;
+}
+
+.timelistBody tr:nth-child(even) {
+  background-color: #373737;
+  height: 2.25rem;
+}
+
+.timelistBody tr:nth-child(odd) {
+  background-color: #4c4d4f;
+  height: 2.25rem;
+}
+
+.timelistBody tr:last-child td:first-child {
+  border-radius: 0 0 0 0.5rem;
+}
+
+.timelistBody tr:last-child td:last-child {
+  border-radius: 0 0 0.5rem 0;
+}
+
+.tabcheck__input {
+  display: none;
+}
+
+.tabcheck{
+  margin-left: 40%;
+}
+
+.tabcheck__mark{
+  display: inline-block;
+  box-sizing: border-box;
+  width: .5rem;
+  height: .5rem;
+  box-shadow: 0 0 0 .1rem #a3cc40;
+}
+
+.tabcheck__mark svg{
+  position: absolute;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.tabcheck__input:checked + .tabcheck__mark svg{
+  opacity: 1;
+}
+
+.timelist__underline {
+  max-width: 26.9rem;
+  margin: 0 auto;
+  color: #333333;
+  text-align: center;
+}
+
+/* timelist close */
+
+.gift__wrap {
+  margin-bottom: 2.8rem;
+}
+
+.gift__prise {
+  position: absolute;
+  max-width: 50%;
+  top: -2.4rem;
+  left: 12%;
+  z-index: 1;
+}
+
+.gift__prise img {
+  max-width: 50%;
+  border-radius: 50%;
+  box-shadow: 7px 10px 20px 2px black;
+}
+
+.gift__container {
+  position: relative;
+  background: url(../img/Clapper.jpg) no-repeat center/cover;
+  background-color: rgba(22, 22, 22, 0.8);
+  background-blend-mode: darken;
+  overflow: hidden;
+}
+
+.gift__container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 5.8rem solid #fff;
+  border-right: 100vw solid transparent;
+}
+
+.gift__container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 100vw solid transparent;
+  border-bottom: 4.8rem solid #fff;
+}
+
+.gift__block {
+  max-width: 43.3rem;
+  margin: 0 auto;
+  padding: 5.7rem 0 8.5rem 15.1rem;
+}
+
+.gift__head {
+  padding-bottom: 1.75rem;
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 1.33;
+  text-align: right;
+}
+
+.gift__text {
+  padding-bottom: 1.35rem;
+  text-align: right;
+}
+
+.gift__button-block {
+  float: right;
+}
+
+.gift__button-item {
+  padding: 0.15rem 1.6rem;
+  font-size: 0.7rem;
+}
+
+/* gift close */
+
+.films__basealign{
+  max-width: 76%;
+  margin: 0  auto;
+}
+
+.films__intro {
+  padding: 1.2rem 14rem 1.2rem 0;
+  color: #333333;
+}
+
+.movie__container {
+  padding: 1.3rem 0 4.4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-rows: repeat(3, 25vw);
+  grid-auto-rows: 14rem;
+  place-items: stretch / stretch;
+}
+
+.movie__item {
+  position: relative;
+}
+
+.movie__item-bg,
+.movie__item-shadow,
+.movie__item-descr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.movie__item-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.movie__item-shadow {
+  background: rgba(22, 22, 22, 0.8);
+}
+
+.movie__item-descr {
+  background: rgba(144, 210, 61, 0.4);
+  top: 40%;
+}
+
+.descr__head {
+  padding: 1rem;
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.45rem;
+  line-height: 1.33;
+}
+
+.descr__text {
+  opacity: 0;
+}
+
+/* films close */
+
+.souvenirs__intro {
+  color: #333333;
+  padding: 1.2rem 14rem 1.2rem 0;
+}
+
+.souvenirs__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1.3rem 0;
+  margin-bottom: 1.8rem;
+}
+
+.souvenirs__item {
+  flex: 0 0 12.3rem;
+  margin-top: .5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 7px 10px 20px 2px black;
+}
+
+.souvenirs__item img {
+  display: block;
+  width: 12.3rem;
+  height: 16.6rem;
+}
+
+.souvenirs__item-mark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mark-bg {
+  position: absolute;
+  bottom: -2.75rem;
+  left: 0;
+  right: -.2rem;
+  padding-top: 8.9rem;
+  background: rgba(163, 204, 64, 0.8);
+  transform: skew(0, -15deg);
+  transition: 0.3s;
+}
+
+.mark-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 3rem 1rem 3rem;
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.33;
+  text-align: center;
+  vertical-align: top;
+  transition: 0.3s;
+}
+
+.souvenirs__item-mark:hover .mark-bg {
+  bottom: -1.75rem;
+}
+
+.souvenirs__item-mark:hover .mark-text {
+  bottom: 1rem;
+}
+
+/* souvenirs close */
+
+.review__container {
+  background: url(../img/unsplash.jpg) no-repeat center/cover;
+  background-color: rgba(22, 22, 22, 0.8);
+  background-blend-mode: darken;
+  position: relative;
+  overflow: hidden;
+}
+
+.review__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 98vw #FFFFFF solid;
+  border-bottom: 3.9rem solid transparent;
+}
+
+.review__container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-right: 98vw #FFFFFF solid;
+  border-top: 3.3rem solid transparent;
+}
+
+.review__body {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.review__intro {
+  color: #ffffff;
+  padding: 1.4rem 14rem 2rem 0;
+}
+
+.review__bar-item {
+  display: flex;
+  flex-direction: column;
+  width: 10.55rem;
+  background-color: #97b13c;
+  border-radius: .5rem;
+}
+
+.review__bar-item:hover {
+  transform: scale(107%);
+}
+
+.bar__foto {
+  flex: 1 1 7.7rem;
+}
+
+.bar__foto img {
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.bar__descr {
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+.bar__descr-name {
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+
+.bar__descr-text {
+  padding-top: 0.55rem;
+  padding-bottom: 0.3rem;
+}
+
+.bar__date {
+  float: right;
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 300;
+  font-size: 0.4rem;
+  line-height: 1.33;
+}
+
+/* review close */
+
+.feedback__container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 68vw;
+  margin: 0 auto;
+  box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
+  border-radius: 1rem;
+}
+
+.leftside {
+  flex: 0 0 45%;
+  background: linear-gradient(270deg,
+      #ffffff 5%,
+      rgba(30, 30, 30, 0) 107.85%),
+    url("../img/spect_review.jpg") no-repeat center/cover;
+    border-radius: inherit;
+}
+
+.rightside {
+  flex: 0 0 55%;
+  background-color: #fff;
+  padding: 0 1.9rem;
+  border-radius: inherit;
+}
+
+.blockname__form {
+  padding: 1.5rem 3.5rem 0.75rem 3.5rem;
+  font-size: 1.25rem;
+}
+
+.feedback__form {
+  margin: 0 auto;
+}
+
+.feedback__name {
+  padding: 0.25rem 0;
+}
+
+.feedback_sit {
+  padding: 1.5rem 0;
+}
+
+.sit__select {
+  display: block;
+  box-sizing: border-box;
+  padding: 0.4rem 0.9rem;
+  width: 100%;
+  background: transparent;
+  border: transparent;
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+
+.feedback__textarea {
+  display: block;
+  min-height: 6rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 5px;
+  width: 100%;
+  background: #dedede;
+  box-sizing: border-box;
+  border: transparent;
+  resize: none;
+}
+
+.feedback__textarea:hover {
+  background: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(170, 243, 77, 0.52);
+}
+
+.feedback__textarea::-webkit-input-placeholder {
+  color: #a1a1a1;
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.33;
+}
+
+.feedback__check {
+  padding: 1.3rem 0;
+}
+
+.check__label {
+  cursor: pointer;
+}
+
+.check__mark {
+  display: inline-block;
+  box-sizing: content-box;
+  vertical-align: middle;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 .1rem #a3cc40;
+}
+
+.check__mark svg {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.check__input:checked + .check__mark svg {
+  opacity: 1;
+}
+
+
+.check__text {
+  font-family: "IBM_Plex_Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.5rem;
+  line-height: 1.33;
+  color: #333333;
+}
+
+.check__input {
+  display: none;
+}
+
+.button__feedback-wrap {
+  padding: 1rem 0;
+}
+
+/* feedback close */
+
+.location {
+  padding-top: 3.2rem;
+  width: 68vw;
+  margin: 0 auto;
+}
+
+.location__map{
+  width: 100%;
+  padding-top: 53%;
+  position: relative;
+}
+
+.location iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+/* location close */
+
+
+@keyframes skeleton {
+  0% {
+    background-color: rgb(221, 221, 221);
+  }
+  50%{
+    background-color: #b6b6b6;
+  }
+  100%{
+    background-color: rgb(221,221,221);
+  }
+}
+
+.skeleton-fb{
+  /* width: 100%;
+  height: 100%; */
+  /* background: #cccccc; */
+  border-radius: .5rem;
+  margin: .1rem;
+  animation: skeleton 2s infinite linear;
+}
+
+
+.dropdown{
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  background-color: #FFF;
+  border: 2px solid #dedede;
+}
+
+.dropdown li {
+  cursor: pointer;
+  color: black;
+  list-style: none;
+  padding: .2rem .5rem;
+  font-size: 1rem;
+  border: 1px solid transparent
+}
+
+.dropdown li:hover{
+  background-color: #dedede;
+  border: 1px solid #FFF;
+}
+
+.button__city{
+  margin: 2rem 0;
+}

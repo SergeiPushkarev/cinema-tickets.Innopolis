@@ -91,7 +91,7 @@ body{
 }
 
 .header {
-    background: url(/img/background550.jpg) no-repeat center/cover;
+    background: url(../img/background550.jpg) no-repeat center/cover;
     background-color: rgba(22, 22, 22, 0.8);
     background-blend-mode: darken;
     position: relative;

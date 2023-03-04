@@ -4,8 +4,8 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    home: './js/glob.js',
-    single: './single/single.js'
+    home: './src/js/glob.js',
+    single: './src/single/single.js'
   },
   output: {
     filename: './js/[name]-bundle.js',
@@ -16,6 +16,14 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          "sass-loader",
+        ],
       },
       {
         test: /\.m?js$/,
@@ -37,13 +45,13 @@ module.exports = {
   },
   plugins: [
       new HtmlWebpackPlugin({
-      template:'index.html',
+      template:'src/index.html',
       title:'Innopolis Cinema Learning Page',
       filename: 'index.html',
       chunks: ['home']
     }),
     new HtmlWebpackPlugin({
-      template:'single/index.html',
+      template:'src/single/index.html',
       title:'Innopolis Cinema Learning Page',
       filename: 'single/index.html',
       chunks: ['single']
@@ -51,7 +59,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: 'img',
+          from: 'src/img',
           to: 'img',
         },
       ],

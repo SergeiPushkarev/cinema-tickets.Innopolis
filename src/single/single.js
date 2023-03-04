@@ -5,9 +5,9 @@ import "../css/reset.css"
 import "../css/fonts.css"
 import "../css/layouts.css"
 import "../css/media.css"
-import "/single/single.css"
-import "/single/owl.carousel.min.css"
-import "/single/owl.theme.default.min.css"
+import "./single.css"
+import "./owl.carousel.min.css"
+import "./owl.theme.default.min.css"
 const innologo = document.querySelector('.head__logo')
 innologo.href = "/index.html"
 const filmLogo = document.getElementById('film__logo')
