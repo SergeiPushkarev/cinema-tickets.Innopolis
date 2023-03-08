@@ -4,13 +4,13 @@ function renderBlockFilms(posterUrl, nameRu, id){
     const link = document.createElement('a');
     link.href = `/single/?id=${id}`
     const itemWrap = document.createElement('div');
-    itemWrap.classList.add('movie__item');
+    itemWrap.classList.add('movie');
     const itemBg = document.createElement('div');
-    itemBg.classList.add('movie__item-bg');
+    itemBg.classList.add('movie__bg');
     const shadow = document.createElement('div');
-    shadow.classList.add('movie__item-shadow');
+    shadow.classList.add('movie__shadow');
     const itemDescr = document.createElement('div');
-    itemDescr.className ='movie__item-descr link__white';
+    itemDescr.className ='movie__descr link__white';
     const imgBg = document.createElement('img');
     imgBg.alt = 'постер_фильма';
     imgBg.src = posterUrl;
@@ -18,9 +18,9 @@ function renderBlockFilms(posterUrl, nameRu, id){
     itemBg.append(imgBg);
     const descrHead = document.createElement('div');
     const descrTxt = document.createElement('div');
-    descrHead.classList.add('descr__head');
+    descrHead.classList.add('movie__descr-head');
     descrHead.innerText = nameRu;
-    descrTxt.classList.add('descr__text');
+    descrTxt.classList.add('movie__descr-text');
     descrTxt.innerText = '..loading..';
     itemDescr.append(descrHead,descrTxt);
     itemWrap.append(link);

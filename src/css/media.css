@@ -5,10 +5,10 @@
 }
 
 @media screen and (min-width:769px){
-    .basealign__advantages {
+    /* .basealign__advantages {
         margin: 0 -35px 0 -20px;
-    }
-    .movie__item-shadow:hover {
+    } */
+    /* .movie__item-shadow:hover {
         opacity: 0;
         transition: .8s;
     }
@@ -21,27 +21,27 @@
     .movie__item-descr:hover {
         opacity: 1;
         transition: .8s;
-    }
+    } */
 
-    .descr__text {
+    /* .descr__text {
         opacity: 1;
         padding: 0 1rem;
         font-family: "IBM_Plex_Sans", sans-serif;
         font-weight: 400;
         font-size: .55rem;
         line-height: 1.33;
-    }
+    } */
 
     .popup-wrapper{
         max-width: 60%;
     }
 }
 
-@media screen and (min-width:769px) and (max-width:950px) {
+/* @media screen and (min-width:769px) and (max-width:950px) {
     .timelist__table{
         overflow-x: scroll;
     }
-}
+} */
 
 @media screen and (min-width:769px) and (max-width:1124px) {
     .basealign{
@@ -148,10 +148,10 @@
         color: #A3CC40;
     }
 
-    .tabcheck__mark{
+    /* .tabcheck__mark{
         width: .7rem;
         height: .7rem;
-    }
+    } */
 }
 
 @media screen and (max-width:551px){
@@ -182,28 +182,28 @@
     .text__description{
         font-size: 1rem;
     }
-    .advantages__blockname {
+    /* .advantages__blockname {
         padding-top: 6rem;
         margin-bottom: 4.2rem;
-    }
+    } */
 
-    .advantages__item{
+    /* .advantages__item{
         flex-basis: 34%;
-    }
+    } */
 
-    .advantages__item-header{
+    /* .advantages__item-header{
         font-size: 2rem;
     }
     
     .advantages__item-text{
         display: none;
-    }
+    } */
 
     .blockname{
         font-size: 3rem;
     }
 
-    .table {
+    /* .table {
         min-width: 70rem;
     }
 
@@ -214,9 +214,9 @@
     .tabcheck__mark{
         width: 1rem;
         height: 1rem;
-    }
+    } */
 
-    .gift__head{
+    /* .gift__head{
         text-align: center;
     }
 
@@ -228,7 +228,7 @@
         font-size: 2rem;
         text-align: center;
         float: none;
-    }
+    } */
 
     .souvenirs__container{
         justify-content: space-around;

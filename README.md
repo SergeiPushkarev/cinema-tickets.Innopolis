@@ -5,18 +5,12 @@
 npm i
 '''
 
-## Запуск Babel
-
+## Сборка webpack в prod mode
 '''shell
 npm run build
 '''
 
-## Автопересборка babel
+## очистка dist
 '''shell
-npm run build
-'''
-
-## компиляция с Source Map
-'''shell
-npm run start
+npm run clean
 '''
