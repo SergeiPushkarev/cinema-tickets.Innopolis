@@ -41,7 +41,8 @@ module.exports = {
   },
   devServer:{
     port:4444,
-    hot:true
+    hot:true,
+    contentBase: "./dist"
   },
   plugins: [
       new HtmlWebpackPlugin({
