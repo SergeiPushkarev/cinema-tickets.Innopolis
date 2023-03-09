@@ -175,9 +175,9 @@
         font-size: 1.9rem;
     }
 
-    .greeting__box {
+    /* .greeting__box {
         display: none;
-    }
+    } */
 
     .text__description{
         font-size: 1rem;
@@ -230,9 +230,9 @@
         float: none;
     } */
 
-    .souvenirs__container{
+    /* .souvenirs__container{
         justify-content: space-around;
-    }
+    } */
 
     .formplaceholder,
     .formlabel__error-msg{
@@ -245,29 +245,28 @@
         padding: 1rem 0.9rem;
     }
 
-    .feedback__container{
+    /* .feedback__container{
         display: block;
-    }
-    .leftside{
+    } */
+    /* .leftside{
         display: none;
-    }
+    } */
 
-    .feedback__textarea::-webkit-input-placeholder {
+    /* .feedback__textarea::-webkit-input-placeholder {
         color: #a1a1a1;
         font-family: "IBM_Plex_Sans", sans-serif;
         font-weight: 400;
         font-size: 1.3rem;
         line-height: 1.33;
-    }
+    } */
     
-    .check__mark {
-        width: 2rem;
-        height: 2rem;
-    }
+    /* .check__mark {
+        
+    } */
     
-    .check__text {
+    /* .check__text {
         font-size: 1.3rem;
-    }
+    } */
 
     .footer__block1 {
         width: 38%;
@@ -313,8 +312,8 @@
         padding: 2rem 0;
     }
 
-    .dropdown li{
+    /* .dropdown li{
         font-size: 2rem;
-    }
+    } */
 
     }

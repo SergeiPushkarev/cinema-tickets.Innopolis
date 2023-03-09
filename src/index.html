@@ -491,90 +491,86 @@
         </div>
       </div>
     </section>
-    <section id="feedback" class="basealign">
-      <div class="feedback__container">
-        <div class="leftside"></div>
+    <section id="feedback" class="basealign feedback">
+      <div class="leftside"></div>
         <div class="rightside">
-          <h1 class="blockname blockname__form">Обратная связь</h1>
-          <div class="feedback__form">
-            <form id="reviewForm">
-              <div class="feedback__name">
-                <label class="formlabel formlabel-focused formlabel-error" for="nameFeedback">
-                  <p class="formplaceholder">Полное имя</p>
-                  <input
-                    class="form__input"
-                    type="text"
-                    name="name"
-                    id="nameFeedback"
-                    aria-label="nameField"
-                  />
-                  <p class="formlabel__error-msg">Error</p>
-                </label>
-              </div>
-              <div class="feedback_sit">
-                <label class="formlabel formlabel-focused formlabel-error" for="sit">
-                  <p class="formplaceholder">Номер места</p>
-                  <select
-                    class="form__input"
-                    name="sit"
-                    id="sit"
-                  >
-                    <option value="0"></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
-                  <p class="formlabel__error-msg">Error</p>
-                </label>
-              </div>
-              <div class="feedback__text">
-                <textarea
-                  class="feedback__textarea"
-                  name="reviewField"
-                  id="reviewField"
-                  rows="1"
-                  placeholder="Напишите свой отзыв"
-                  aria-label="reviewField"
-                ></textarea>
-              </div>
-              <div class="feedback__check">
-                <label class="check__label" for="persData">
-                  <input
-                    class="check__input"
-                    type="checkbox"
-                    id="persData"
-                  />
-                  <span class="check__mark">
-                    <svg>
-                      <use xlink:href="#check-svg"></use>
-                    </svg>
-                  </span>
-                  <span class="check__text">
-                    Я согласен на обработку персональных данных
-                  </span>
-                </label>
-              </div>
-              <div class="button__feedback-wrap">
-                <button
-                  class="button button__form"
-                  form="reviewForm"
-                  type="submit"
-                  id="btnFeedback"
+          <h1 class="blockname">Обратная связь</h1>
+          <form id="reviewForm" class="feedback__form">
+            <div class="feedback__name">
+              <label class="formlabel formlabel-focused formlabel-error" for="nameFeedback">
+                <p class="formplaceholder">Полное имя</p>
+                <input
+                  class="form__input"
+                  type="text"
+                  name="name"
+                  id="nameFeedback"
+                  aria-label="nameField"
+                />
+                <p class="formlabel__error-msg">Error</p>
+              </label>
+            </div>
+            <div class="feedback__sit">
+              <label class="formlabel formlabel-focused formlabel-error" for="sit">
+                <p class="formplaceholder">Номер места</p>
+                <select
+                  class="form__input"
+                  name="sit"
+                  id="sit"
                 >
-                  послать
-                </button>
-              </div>
-            </form>
-          </div>
+                  <option value="0"></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+                <p class="formlabel__error-msg">Error</p>
+              </label>
+            </div>
+            <div class="feedback__text">
+              <textarea
+                class="feedback__textarea"
+                name="reviewField"
+                id="reviewField"
+                rows="1"
+                placeholder="Напишите свой отзыв"
+                aria-label="reviewField"
+              ></textarea>
+            </div>
+            <div class="feedback__check">
+              <label class="feedback__check-label" for="persData">
+                <input
+                  class="check__input"
+                  type="checkbox"
+                  id="persData"
+                />
+                <span class="check__mark">
+                  <svg>
+                    <use xlink:href="#check-svg"></use>
+                  </svg>
+                </span>
+                <span class="check__text">
+                  Я согласен на обработку персональных данных
+                </span>
+              </label>
+            </div>
+            <div class="feedback__button">
+              <button
+                class="button"
+                form="reviewForm"
+                type="submit"
+                id="btnFeedback"
+              >
+                послать
+              </button>
+            </div>
+          </form>
         </div>
-      </div>
     </section>
     <section id="location">
       <div class="location">
@@ -931,7 +927,7 @@
                 <div id="dropdown" class="dropdown hidden">
                 </div>
               </div>
-              <button class="button button__form button__city" form="city-form" type="submit">ОК</button>
+              <button class="button button__city" form="city-form" type="submit">ОК</button>
           </form>
         </div>
       </div>
