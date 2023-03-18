@@ -8,24 +8,24 @@
     <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <header class="header">
+    <header class="head">
       <div class="head__container">
-        <div class="head__row">
-          <div class="head__logo">
+        <div class="head__bar">
+          <div class="bar__logo">
             <a id="logo" target="_blank" href="http://university.innopolis.ru">
               <svg style="height: 40px; width: 90%">
                 <use xlink:href="#inno_logo"></use>
               </svg>
             </a>
           </div>
-          <nav class="head__nav">
+          <nav class="bar__nav">
             <div id="brgBtn" class="burgermenu__btn">
               <span></span>
             </div>
             <ul id="mobilemenu" class="mobilemenu">
-              <li class="head__langswitch relative">
-                <div class="head__langswitch">
-                  <a href="#" class="head__langswitch-list link__white">
+              <li class="mobilemenu__langswitch relative">
+                <div class="langswitch">
+                  <a href="#" class="langswitch__list">
                     <span>RU</span>
                     <svg
                       width="8"
@@ -42,55 +42,55 @@
                       />
                     </svg>
                   </a>
-                  <div class="head__langswitch-dropdown relative">
+                  <div class="langswitch__dropdown relative">
                     <a href="#" class="link__white">EN</a>
                     <a href="#" class="link__white">RU</a>
                   </div>
                 </div>
               </li>
-              <li class="mobilemenu__nav-item">
-                <a class="link__white underline relative" href="#timelist">
+              <li class="mobilemenu__nav">
+                <a class="underline relative" href="#timelist">
                   EVENT DETAILS</a
                 >
               </li>
-              <li class="mobilemenu__nav-item">
-                <a class="link__white underline relative" href="#chosefilm"
+              <li class="mobilemenu__nav">
+                <a class="underline relative" href="#chosefilm"
                   >SPEAKERS</a
                 >
               </li>
-              <li class="mobilemenu__nav-item">
-                <a class="link__white underline relative" href="#review"
+              <li class="mobilemenu__nav">
+                <a class="underline relative" href="#review"
                   >sponsors</a
                 >
               </li>
-              <li class="mobilemenu__nav-item">
-                <a class="link__white underline relative" href="#feedback"
+              <li class="mobilemenu__nav">
+                <a class="underline relative" href="#feedback"
                   >PAST EVENTS</a
                 >
               </li>
-              <li class="mobilemenu__nav-item">
-                <a class="link__white underline relative" href="#location"
+              <li class="mobilemenu__nav">
+                <a class="underline relative" href="#location"
                   >CONTACT</a
                 >
               </li>
-              <li class="mobilemenu__contact-item">
-                <span class="link__white underline relative">
+              <li class="mobilemenu__contact">
+                <span class="underline relative">
                   +7 (800) 355 12-56
                 </span>
               </li>
-              <li class="mobilemenu__contact-item">
+              <li class="mobilemenu__contact">
                 <a
-                  class="link__white underline relative"
+                  class="underline relative"
                   href="mailto:kino@innopolis.ru"
                   >kino@innopolis.ru</a
                 >
               </li>
-              <li class="mobilemenu__contact-item">
-                <span id="city" class="link__white underline relative"
+              <li class="mobilemenu__contact">
+                <span id="city" class="underline relative"
                   >ул.Спортивная д.1</span
                 >
               </li>
-              <li class="mobilemenu__contact-item">
+              <li class="mobilemenu__contact">
                 <a class="call__button" href="#feedback">
                   <svg
                     width="0.5rem"
@@ -111,8 +111,8 @@
           </nav>
         </div>
         <div class="head__intro">
-          <p class="head__intro-line01">Закажите билет в кино</p>
-          <p class="head__intro-line02">Всем покупателям подарок!</p>
+          <p class="line01">Закажите билет в кино</p>
+          <p class="line02">Всем покупателям подарок!</p>
         </div>
       </div>
     </header>
@@ -542,8 +542,8 @@
                 aria-label="reviewField"
               ></textarea>
             </div>
-            <div class="feedback__check">
-              <label class="feedback__check-label" for="persData">
+            <div class="check">
+              <label class="check-label" for="persData">
                 <input
                   class="check__input"
                   type="checkbox"
@@ -585,23 +585,23 @@
         </div>
       </div>
     </section>
-    <footer class="footer__container">
-      <div class="footer__wrap">
-        <div class="footer__block1">
-          <div class="footer__logo">
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer01">
+          <div class="footer01__logo">
             <a target="_blank" href="http://university.innopolis.ru">
               <svg>
                 <use xlink:href="#inno_logo"></use>
               </svg>
             </a>
           </div>
-          <div class="footer__parting">
+          <div class="footer01__descr">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam
           </div>
-          <div class="footer__sn">
-            <div class="footer__sn-item">
+          <div class="footer01__sn">
+            <div class="sn">
               <div class="sn__ico">
                 <svg
                   width="14"
@@ -617,7 +617,7 @@
                 </svg>
               </div>
             </div>
-            <div class="footer__sn-item">
+            <div class="sn">
               <div class="sn__ico">
                 <svg
                   width="16"
@@ -633,7 +633,7 @@
                 </svg>
               </div>
             </div>
-            <div class="footer__sn-item">
+            <div class="sn">
               <div class="sn__ico">
                 <svg
                   width="16"
@@ -649,7 +649,7 @@
                 </svg>
               </div>
             </div>
-            <div class="footer__sn-item">
+            <div class="sn">
               <div class="sn__ico">
                 <svg
                   width="18"
@@ -665,7 +665,7 @@
                 </svg>
               </div>
             </div>
-            <div class="footer__sn-item">
+            <div class="sn">
               <div class="sn__ico">
                 <svg
                   width="8"
@@ -682,47 +682,46 @@
               </div>
             </div>
           </div>
-          <div class="footer__copyrights">
+          <div class="footer01__copyrights">
             Copyright @ 2020 Innopolis University . All Rights Reserved.
           </div>
         </div>
-        <div class="footer__block2">
-          <div class="footer__site">
-            <div class="footer__blockname">SITE</div>
-            <ul class="footer__site-list">
-              <li class="footer__site-item">
-                <a class="link__white" href="#timelist"> EVENT DETAILS</a>
+        <div class="footer02">
+          <div class="footer02__item">
+            <div class="blockname">SITE</div>
+            <ul>
+              <li class="site">
+                <a href="#timelist"> EVENT DETAILS</a>
               </li>
-              <li class="footer__site-item">
-                <a class="link__white" href="#chosefilm">SPEAKERS</a>
+              <li class="site">
+                <a href="#chosefilm">SPEAKERS</a>
               </li>
-              <li class="footer__site-item">
-                <a class="link__white" href="#review">sponsors</a>
+              <li class="site">
+                <a href="#review">sponsors</a>
               </li>
-              <li class="footer__site-item">
-                <a class="link__white" href="#feedback">PAST EVENTS</a>
+              <li class="site">
+                <a href="#feedback">PAST EVENTS</a>
               </li>
-              <li class="footer__site-item">
-                <a class="link__white" href="#location">CONTACT</a>
+              <li class="site">
+                <a href="#location">CONTACT</a>
               </li>
             </ul>
           </div>
-          <div class="footer__contacts">
-            <div class="footer__blockname">CONTACT</div>
-            <ul class="footer__contacts-list">
-              <li class="footer__contacts-item">+7 (800) 355 12-56</li>
-              <li class="footer__contacts-item">
+          <div class="footer02__item">
+            <div class="blockname">CONTACT</div>
+            <ul>
+              <li class="contacts">+7 (800) 355 12-56</li>
+              <li class="contacts">
                 <a
-                  class="link__white footer__contacts-item"
                   href="mailto:kino@innopolis.ru"
                   >kino@innopolis.ru</a
                 >
               </li>
-              <li class="footer__contacts-item">
+              <li class="contacts">
                 420500, г. Иннополис ул.Университетская, д.1
               </li>
-              <li class="footer__contacts-item">Как добраться</li>
-              <li class="footer__contacts-item">Все контакты</li>
+              <li class="contacts">Как добраться</li>
+              <li class="contacts">Все контакты</li>
             </ul>
           </div>
         </div>
@@ -878,7 +877,7 @@
             </label>
           </div>
           <div class="popup__form-item">
-            <label class="check__label" for="persDataPrize">
+            <label class="check-label" for="persDataPrize">
               <input
                 class="check__input"
                 type="checkbox"

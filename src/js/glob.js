@@ -7,7 +7,7 @@ import "./components/city.js"
 
 import "../css/reset.css"
 import "../css/fonts.css"
-import "../css/layouts.css"
+import "../css/layouts.scss"
 import "../css/components.scss"
 import "../css/prisepopup.css"
 import "../css/media.css"
