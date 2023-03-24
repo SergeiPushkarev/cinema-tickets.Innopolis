@@ -1,8 +1,8 @@
-@media screen and (min-width:1125px) {
+/* @media screen and (min-width:1125px) {
     .basealign{
         max-width: 48.3rem;
     }
-}
+} */
 
 @media screen and (min-width:769px){
     /* .basealign__advantages {
@@ -43,22 +43,22 @@
     }
 } */
 
-@media screen and (min-width:769px) and (max-width:1124px) {
+/* @media screen and (min-width:769px) and (max-width:1124px) {
     .basealign{
         max-width: 76%;
     }
-}
+} */
 
 @media screen and (max-width:768px) {
-    html{
+    /* html{
         font-size: 1.9vw;
-    }
+    } */
 
-    .head__container {
+    /* .head__container {
         max-width: 44.6rem;
-    }
+    } */
 
-    .burgermenu__btn {
+    /* .burgermenu__btn {
         display: flex;
         top: 3rem;
         right: 3rem;
@@ -66,9 +66,9 @@
         height: 25px;
         cursor: pointer;
         z-index: 1000;
-    }
+    } */
 
-    .mobilemenu{
+    /* .mobilemenu{
         display: none;
         flex-flow: column nowrap;
         z-index: 999;
@@ -80,16 +80,16 @@
         font-size: 1.7rem;
         padding: 5.2rem 4.6rem 0 4.2rem;
         box-shadow: -10px 10px 10px rgb(185 185 185 / 37%);
-    }
+    } */
 
-    .mobilemenu-open{
+    /* .mobilemenu-open{
         display: flex;
-    }
+    } */
 
-    .mobilemenu__contact-item{
+    /* .mobilemenu__contact-item{
         flex: 0 0 0%;
         order: 0;
-    }
+    } */
     
     .mobilemenu li:first-child{
         padding-bottom: 2.2rem;
@@ -103,50 +103,50 @@
         padding-top: 3.5rem;
     }
 
-    .mobilemenu__nav-item{
+    /* .mobilemenu__nav-item{
         flex: 0 0 5%;
         text-transform: uppercase;
         order: 0;
-    }
+    } */
 
-    .mobilemenu__nav-item .link__white{
+    /* .mobilemenu__nav-item .link__white{
         color: black;
     }
 
     .mobilemenu__contact-item .link__white {
         color: #9B9B9B;
-    }
+    } */
 
-    .call__button{
+    /* .call__button{
         padding: .2rem 2rem;
         border: 3px solid #a3cc40;
         border-radius: .7rem;
-    }
+    } */
 
-    .call__button span {
+    /* .call__button span {
         color: #a3cc40;
         font-size: 1.5rem;
-    }
+    } */
 
-    .call__button svg {
+    /* .call__button svg {
         width: 1.2rem;
         height: 1.2rem;
-    }
+    } */
 
-    .call__button svg path {
+    /* .call__button svg path {
        fill: #A3CC40;
-    }
+    } */
 
-    .head__langswitch{
+    /* .head__langswitch{
         flex: 0 0 0;
         float: left;
         order: 0;
         font-size: 1.1rem;
-    }
+    } */
 
-    .head__langswitch span{
+    /* .head__langswitch span{
         color: #A3CC40;
-    }
+    } */
 
     /* .tabcheck__mark{
         width: .7rem;
@@ -155,15 +155,11 @@
 }
 
 @media screen and (max-width:551px){
-    html{
+    /* html{
         font-size: 1.9vw;
-    }
-
-    .button {
-        font-size: 2rem;
-    }
+    } */
       
-    .head__intro{
+    /* .head__intro{
         padding-left: 0;
         margin-top: 4.5rem;
     }
@@ -173,15 +169,15 @@
 
     .head__intro-line02{
         font-size: 1.9rem;
-    }
+    } */
 
     /* .greeting__box {
         display: none;
     } */
 
-    .text__description{
+    /* .text__description{
         font-size: 1rem;
-    }
+    } */
     /* .advantages__blockname {
         padding-top: 6rem;
         margin-bottom: 4.2rem;
@@ -199,9 +195,9 @@
         display: none;
     } */
 
-    .blockname{
+    /* .blockname{
         font-size: 3rem;
-    }
+    } */
 
     /* .table {
         min-width: 70rem;
@@ -234,16 +230,16 @@
         justify-content: space-around;
     } */
 
-    .formplaceholder,
+    /* .formplaceholder,
     .formlabel__error-msg{
         font-size: 1.3rem;
-    }
+    } */
 
-    .form__input,
+    /* .form__input,
     .feedback__textarea{
         font-size: 2rem;
         padding: 1rem 0.9rem;
-    }
+    } */
 
     /* .feedback__container{
         display: block;
@@ -268,19 +264,19 @@
         font-size: 1.3rem;
     } */
 
-    .footer__block1 {
+    /* .footer__block1 {
         width: 38%;
-    }
+    } */
 
-    .footer__logo svg{
+    /* .footer__logo svg{
         width: 100px;
-    }
-
+    } */
+/* 
     .footer__parting{
         display: none;
-    }
+    } */
 
-    .footer__site{
+    /* .footer__site{
         display: none;
     }
 
@@ -301,7 +297,7 @@
     .footer__contacts-item{
         flex: 1 0 50%;
         font-size: 1.2rem;
-    }
+    } */
 
     .popup-close__btn{
         width: 2.5rem;

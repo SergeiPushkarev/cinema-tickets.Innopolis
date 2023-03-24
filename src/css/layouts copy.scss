@@ -1,8 +1,5 @@
 $color-main: #a3cc40;
 html{
-    @media screen and (min-width:769px){
-        font-size: 20px;;
-    }
     font-size: 1.9vw;
 }
 
@@ -12,11 +9,9 @@ body{
 }
 
 .blockname {
+    font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 500;
-    font-size: 3rem;
-    @media screen and (min-width:551px){
-        font-size: 2.4rem;
-    }
+    font-size: 2.4rem;
     line-height: 1.33;
     color: #A3CC40;
     text-align: left;
@@ -24,12 +19,6 @@ body{
 
 .basealign{
     max-width: 84%;
-    @media screen and (min-width:769px){
-        max-width: 76%;
-    }
-    @media screen and (min-width:1125px){
-        max-width: 48.3rem;
-    }
     margin: 0 auto;
 }
 
@@ -59,11 +48,9 @@ body{
 }
 
 .text__description{
+    font-family: "IBM_Plex_Sans", sans-serif; 
     font-weight: 400;
-    font-size: 1rem;
-    @media screen and (min-width:551px){
-        font-size: .55rem;
-    }
+    font-size: .55rem;
     line-height: 1.33;
 }
 
@@ -107,11 +94,9 @@ body{
         }
     &__container {
         padding-top: 2.3rem;
-        max-width: 44.6rem;
-        @media screen and (min-width:768px){
-            max-width: 48.3rem;
-        }
+        max-width: 48.3rem;
         margin: 0 auto;
+        font-family: "IBM_Plex_Sans", sans-serif;
         font-weight: 500;
         font-size: 0.6rem;
         line-height: 1.33;
@@ -122,29 +107,9 @@ body{
         }
     &__intro {
         margin: 0 auto;
-        margin-top: 4.5rem;
+        margin-top: 6.3rem;
+        padding-left: 1rem;
         text-align: center;
-        @media screen and (min-width:551px){
-            padding-left: 1rem;
-            margin-top: 6.3rem;
-        }
-        & .line01 {
-            font-weight: 100;
-            font-size: 3.4rem;
-            @media screen and (min-width:551px){
-                font-size: 3.35rem;
-            }
-            line-height: 1.33;
-        }
-        & .line02 {
-            padding-top: 0.75rem;
-            font-weight: 400;
-            font-size: 2.05rem;
-            @media screen and (min-width:551px){
-                font-size: 1.9rem;
-            }
-            line-height: 1.33;
-        }
     }
 }
 
@@ -168,15 +133,6 @@ body{
     height: 25px;
     cursor: pointer;
     z-index: 1000;
-    @media screen and (max-width:768px){
-        display: flex;
-        top: 3rem;
-        right: 3rem;
-        width: 3.2rem;
-        height: 25px;
-        cursor: pointer;
-        z-index: 1000;
-    }
     & span, span::before, span::after {
         display: block;
         position: absolute;
@@ -212,71 +168,26 @@ body{
     flex: 0 0 1.6rem;
     z-index: 999;
     gap: .75rem 0;
-    @media screen and (max-width:768px){
-        display: none;
-        flex-flow: column nowrap;
-        z-index: 999;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        background: #fff;
-        font-size: 1.7rem;
-        padding: 5.2rem 4.6rem 0 4.2rem;
-        box-shadow: -10px 10px 10px rgb(185 185 185 / 37%);
-    }
     &__contact{
         flex: 0 0 21%;
-        @media screen and (max-width:768px){
-            color: #9B9B9B;
-            flex: 0 0 0%;
-            order: 0;
-        }
-        & a{
-            color: #FFF;
-            @media screen and (max-width:768px){
-            color: #9B9B9B;
-            }
-        }
     }
     &__nav{
         flex: 0 0 19.4%;
         text-transform: uppercase;
         order: 2;
-        @media screen and (max-width:768px){
-            flex: 0 0 5%;
-            text-transform: uppercase;
-            order: 0;
-        }
-        & a {
-            color: #FFF;
-            @media screen and (max-width:768px){
-            color: black;
-            }
-        }
     }
     &__langswitch{
         flex: 0 0 16%;
         order: 1;
-        @media screen and (max-width:768px){
-            flex: 0 0 0;
-            order: 0;
-            font-size: 1.1rem;
-        }
     }
     & a {
         text-decoration: none;
-    }
-    &-open{
-        display: flex;
+        color: #FFF;
     }
   }
 
 .langswitch{
     float: right;
-    @media screen and (max-width:768px){
-        float: left;
-    }
     &__dropdown {
         position: absolute;
         visibility: hidden;
@@ -289,13 +200,7 @@ body{
             display: table;
             padding: 0.25rem;
           }
-    }
-    & span {
-        color: #FFF;
-        @media screen and (max-width:768px){
-            color: #A3CC40
-        }
-    }
+      }
     &:hover .langswitch__dropdown {
         visibility: visible;
         opacity: 1;
@@ -313,32 +218,12 @@ body{
     border-radius: 0.3rem;
     border: 2px solid #ededed;
     text-decoration: none;
-    @media screen and (max-width:768px){
-        padding: .2rem 2rem;
-        border: 3px solid #a3cc40;
-        border-radius: .7rem;
-    }
     & span {
         padding-left: 0.25rem;
         padding-right: .35rem;
         padding-top: .1rem;
         text-decoration: none;
         color: #333333;
-        @media screen and (max-width:768px){
-            color: #a3cc40;
-            font-size: 1.5rem;
-        }
-    }
-    & svg {
-        @media screen and (max-width:768px){
-        width: 1.2rem;
-        height: 1.2rem;
-        }
-        & path {
-            @media screen and (max-width:768px){
-            fill: #A3CC40;
-            }
-        }
     }
     &:hover{
         background: #a3cc40;
@@ -352,6 +237,26 @@ body{
     }
 }
 
+.head__intro {
+    margin: 0 auto;
+    margin-top: 6.3rem;
+    padding-left: 1rem;
+    text-align: center;
+    & .line01 {
+        font-family: "IBM_Plex_Sans", sans-serif;
+        font-weight: 100;
+        font-size: 3.4rem;
+        line-height: 1.33;
+    }
+    & .line02 {
+        padding-top: 0.75rem;
+        font-family: "IBM_Plex_Sans", sans-serif;
+        font-weight: 400;
+        font-size: 2.05rem;
+        line-height: 1.33;
+    }    
+}
+
 .formlabel {
     display: block;
     position: relative;
@@ -359,14 +264,6 @@ body{
     border-radius: 5px;
     &-error{
         box-shadow: 0 0 0 0.25rem red;
-        background-color: #fff;
-        & .formplaceholder {
-            top: -28%;
-            left: 4%;
-            padding: 0 .1rem;
-            transition: .2s;
-            background-color: #FFFFFF;
-        }
     }
     &-focused {
         background-color: #fff;
@@ -385,11 +282,9 @@ body{
         top: 80%;
         left: 4%;
         background-color: #FFFFFF;
+        font-family: "IBM_Plex_Sans", sans-serif;
         font-weight: 400;
-        font-size: 1.3rem;
-        @media screen and (min-width:551px){
-            font-size: 0.75rem;
-        }
+        font-size: 0.75rem;
         line-height: 1.33;
         border-radius: .3rem
     }
@@ -402,15 +297,10 @@ body{
 .form__input {
     display: block;
     box-sizing: border-box;
-    font-size: 2rem;
-    padding: 1rem 0.9rem;
+    padding: .4rem .9rem;;
     width: 100%;
     background: transparent;
     border: transparent;
-    @media screen and (min-width:551px){
-        padding: .4rem .9rem;
-        font-size: 1rem;
-    }
 }
 
 .formplaceholder {
@@ -418,11 +308,9 @@ body{
     color: #a1a1a1;
     top: 30%;
     left: 4%;
+    font-family: "IBM_Plex_Sans", sans-serif;
     font-weight: 400;
-    font-size: 1.3rem;
-    @media screen and (min-width:551px){
-        font-size: 0.75rem;
-    }
+    font-size: 0.75rem;
     line-height: 1.33;
     z-index: 0;
     pointer-events: none;
@@ -462,6 +350,7 @@ body{
       }
     }
     &__text {
+      font-family: "IBM_Plex_Sans", sans-serif;
       font-weight: 400;
       font-size: 0.5rem;
       @media screen and (max-width:551px){
@@ -484,24 +373,18 @@ body{
     }
     &01{
         float: left;
-        width: 38%;
-        @media screen and (min-width:551px){
-            width: 47.3%;
-        }
+        width: 47.3%;
         &__logo a svg{
             height: 2.3rem;
             width: 7.8rem;
         }
         &__descr {
-            display: none;
-            @media screen and (min-width:551px){
-                display: block;
-                width: 60%;
-                padding: .6rem 0 .5rem 0;
-                font-weight: 400;
-                font-size: 0.7rem;
-                line-height: 1.33;
-            }
+            width: 60%;
+            padding: .6rem 0 .5rem 0;
+            font-family: "IBM_Plex_Sans", sans-serif;
+            font-weight: 400;
+            font-size: 0.7rem;
+            line-height: 1.33;
         }
         &__sn {
             padding-top: 0.8rem;
@@ -509,6 +392,7 @@ body{
             display: flex;
         }
         &__copyrights {
+            font-family: "IBM_Plex_Sans", sans-serif;
             font-weight: 400;
             font-size: 0.75rem;
             line-height: 1.33;
@@ -516,79 +400,42 @@ body{
     }
     &02{
         display: flex;
-        &__block{
-            &01{
-                display: none;
-                @media screen and (min-width:551px){
-                    display: block;
-                    flex: 0 0 43%;
-                }
-                & .blockname {
-                    padding-bottom: .9rem;
-                    font-weight: 700;
-                    font-size: 1rem;
-                    text-transform: uppercase;
-                    color: #FFF;
-                }
-                & .site {
-                    padding: 0.3rem 0;
-                    font-weight: 500;
-                    font-size: 0.6rem;
-                    line-height: 1.33;
-                    text-transform: uppercase;
-                    & a {
-                        text-decoration: none;
-                        color: #FFF;
-                    }
-                }
+        &__item{
+            flex: 0 0 43%;
+            & .blockname {
+                padding-bottom: .9rem;
+                font-weight: 700;
+                font-size: 1rem;
+                text-transform: uppercase;
+                color: #FFF;
             }
-            &02{
-                flex-basis: 100%;
-                display: block;
-                @media screen and (min-width:551px){
-                    flex: 0 0 43%;
-                }
-                & .blockname {
-                    padding-bottom: .9rem;
-                    font-weight: 700;
-                    font-size: 1rem;
-                    text-transform: uppercase;
+            & .site {
+                padding: 0.3rem 0;
+                font-family: "IBM_Plex_Sans", sans-serif;
+                font-weight: 500;
+                font-size: 0.6rem;
+                line-height: 1.33;
+                text-transform: uppercase;
+                & a {
+                    text-decoration: none;
                     color: #FFF;
                 }
             }
-        }
-    }
-}
-
-.block02__list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    @media screen and (min-width:551px){
-        display: block;
-    }
-    & .contacts{
-        padding-bottom: 0.6rem;
-        font-weight: 500;
-        flex: 1 0 50%;
-        font-size: 1.2rem;
-        @media screen and (min-width:551px){
-            font-size: 0.6rem;
-        }
-        line-height: 1.33;
-        color: #fff;
-        &:first-child{
-            padding-top: 0.2rem;
-        }
-        &:nth-child(1n+4){
-            display: none;
-            @media screen and (min-width:551px){
-                display: block;
+            & .contacts{
+                padding-bottom: 0.6rem;
+                font-family: "IBM_Plex_Sans", sans-serif;
+                font-weight: 500;
+                font-size: 0.6rem;
+                line-height: 1.33;
+                color: #fff;
+                &:first-child{
+                    padding-top: 0.2rem;
+                }
+                & a {
+                    text-decoration: none;
+                    color: #FFF;
+                }
             }
-        }
-        & a {
-            text-decoration: none;
-            color: #FFF;
         }
     }
 }
@@ -599,12 +446,8 @@ body{
         display: block;
         position: relative;
         box-sizing: border-box;
-        width: 2.55rem;
-        height: 2.55rem;
-        @media screen and (min-width:769px){
-            width: 1.55rem;
-            height: 1.55rem;
-        }
+        width: 1.55rem;
+        height: 1.55rem;
         background-color: #bee956;
         border-radius: 50%;
         &:hover {

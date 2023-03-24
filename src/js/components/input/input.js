@@ -31,14 +31,14 @@ export function initializeField(field) {
     clearErrorField();
     field.classList.remove(INPUT_FOCUS_CLASS);
     if (getInputType(field) === 'input') {
-            input.addEventListener('focus', function(){
+        input.addEventListener('focus', function(){
             field.classList.add(INPUT_FOCUS_CLASS)
-        });
+            });
         input.addEventListener('input', clearErrorField);
         input.addEventListener('blur', function(){
+            clearErrorField()
         if (!input.value) {
             field.classList.remove(INPUT_FOCUS_CLASS)
-            clearErrorField()
         }
     });
     } else if (getInputType(field) === 'select') {

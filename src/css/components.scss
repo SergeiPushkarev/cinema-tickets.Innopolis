@@ -9,9 +9,7 @@ $color-main: #a3cc40;
 }
 
 .greeting__box {
-  @media screen and (max-width:551px){
-    display: none;
-  }
+  display: none;
   max-width: 21.3rem;
   padding: 1.5rem 2.35rem;
   position: absolute;
@@ -21,6 +19,9 @@ $color-main: #a3cc40;
   right: -1.05rem;
   top: -8.6rem;
   box-shadow: 0 1.35rem 1.95rem rgba(163, 204, 64, 0.18);
+  @media screen and (min-width:551px){
+    display: block;
+  }
   &-head{
     display: inline-block;
     font-family: "IBM_Plex_Sans", sans-serif;
@@ -583,6 +584,12 @@ $color-main: #a3cc40;
     box-sizing: border-box;
     border: transparent;
     resize: none;
+    font-size: 2rem;
+    padding: 1rem 0.9rem;
+    @media screen and (min-width:551px){
+      padding: .4rem .9rem;
+      font-size: 1rem;
+  }
     &:hover {
       background: #fff;
       box-shadow: 0 0 0 0.25rem rgba(170, 243, 77, 0.52);
@@ -591,11 +598,12 @@ $color-main: #a3cc40;
       color: #a1a1a1;
       font-family: "IBM_Plex_Sans", sans-serif;
       font-weight: 400;
-      font-size: 0.75rem;
-      @media screen and (max-width:551px){
-        font-size: 1.3rem;
-      }
+      font-size: .75rem;
       line-height: 1.33;
+      font-size: 1.3rem;
+      @media screen and (min-width:551px){
+        font-size: 0.75rem;
+      }
     }
   }
   &__button{

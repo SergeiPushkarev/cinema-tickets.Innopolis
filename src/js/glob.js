@@ -10,7 +10,7 @@ import "../css/fonts.css"
 import "../css/layouts.scss"
 import "../css/components.scss"
 import "../css/prisepopup.css"
-import "../css/media.css"
+// import "../css/media.css"
 import "../css/owl.carousel.min.css"
 import "../css/owl.theme.default.min.css"
 
@@ -61,7 +61,7 @@ giftForm.addEventListener('submit', function(event) {
     const selectValue = selectField.getValue();
     if (!nameValue) {
         nameField.setError('Обязательно для заполнения');
-        nameField.focus();
+        // nameField.focus();
         return
     };
     if (!emailValue) {
@@ -103,7 +103,6 @@ feedbackForm.addEventListener('submit', function (event){
     const selectValue = sitFieldForm.getValue();
     if (!nameValue) {
         nameFieldForm.setError('Обязательно для заполнения');
-        nameFieldForm.focus();
         return
     };
     if (selectValue === "none"){

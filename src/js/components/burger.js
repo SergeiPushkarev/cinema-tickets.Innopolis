@@ -7,7 +7,7 @@ function menuToggle(){
 brgBtn.onclick = menuToggle;
 
 document.addEventListener('click', e=>{
-    if (!e.composedPath().includes(document.querySelector('.head__nav'))) {
+    if (!e.composedPath().includes(document.querySelector('.bar__nav'))) {
         brgBtn.classList.remove('burgermenu__btn-open');
         mobMenu.classList.remove('mobilemenu-open');
     }
