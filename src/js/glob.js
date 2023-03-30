@@ -1,16 +1,14 @@
 import "../libs/owl.carousel.min.js"
-import {initializeField} from "./components/input/input.js"
+import {initializeField} from "./components/input.js"
 import "./components/burger.js"
 import {renderTimelist} from "./components/film-table.js"
 import {getBlockFilmsData} from "./components/film-block.js"
 import "./components/city.js"
-
 import "../css/reset.css"
 import "../css/fonts.css"
 import "../css/layouts.scss"
 import "../css/components.scss"
-import "../css/prisepopup.css"
-// import "../css/media.css"
+import "../css/prisepopup.scss"
 import "../css/owl.carousel.min.css"
 import "../css/owl.theme.default.min.css"
 
@@ -94,7 +92,7 @@ giftForm.addEventListener('submit', function(event) {
 });
 //movieContainer
 const movieConteiner = document.getElementById('movie__container');
-// getBlockFilmsData(movieConteiner);
+getBlockFilmsData(movieConteiner);
 
 // feedbackform
 feedbackForm.addEventListener('submit', function (event){

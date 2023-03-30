@@ -3,12 +3,11 @@ import {getFilmById,getFilmInfo,getSimilarGenres,getGenreList} from "../js/__dat
 import "../js/components/burger.js"
 import "../css/reset.css"
 import "../css/fonts.css"
-import "../css/layouts.css"
-import "../css/media.css"
-import "./single.css"
+import "../css/layouts.scss"
+import "./single.scss"
 import "./owl.carousel.min.css"
 import "./owl.theme.default.min.css"
-const innologo = document.querySelector('.head__logo')
+const innologo = document.querySelector('.bar__logo')
 innologo.href = "/index.html"
 const filmLogo = document.getElementById('film__logo')
 const cardInfoWrap = document.getElementById('card-info')
@@ -117,6 +116,17 @@ function getOwlOther (other, i) {
             items: 6,
             nav: true,
             dots: false,
+            responsive:{
+                0:{
+                    items:3,
+                },
+                768:{
+                    items:5,
+                },
+                900:{
+                    items:6,
+                }
+            }
         });
     })
 ;}
@@ -157,11 +167,11 @@ const getFilmCardBlock = async () => {
 };
 getFilmCardBlock();
 
-$(document).ready(function(){
-    $(".other__item-films").owlCarousel({
-        loop: true,
-        items: 6,
-        nav: true,
-        dots: false,
-    });
-})
+// $(document).ready(function(){
+//     $(".other__item-films").owlCarousel({
+//         loop: true,
+//         items: 6,
+//         nav: true,
+//         dots: false,
+//     });
+// })

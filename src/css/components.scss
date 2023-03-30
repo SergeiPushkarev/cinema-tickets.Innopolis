@@ -104,11 +104,8 @@ $color-main: #a3cc40;
   }
   &__table{
     margin-bottom: 1.5rem;
-    @media screen and (min-width:769px) and (max-width:950px) {
+    @media screen and (max-width:950px) {
       overflow-x: scroll;
-    }
-    @media screen and (max-width:551px){
-      max-width: 70rem;
     }
   }
   &__blockname{
@@ -129,7 +126,10 @@ $color-main: #a3cc40;
   line-height: 1.33;
   color: #ffffff;
   margin: 0 auto;
-  width: 42.4rem;
+  width: 55.4rem;
+  @media screen and (min-width:551px){
+    width: 42.4rem;
+  }
   border-collapse: collapse;
   text-align: left;
   & th{
@@ -336,6 +336,7 @@ $color-main: #a3cc40;
 .movie__bg img {
   width: 100%;
   height: 100%;
+  object-fit: cover
 }
 
 .movie__shadow {
@@ -351,6 +352,7 @@ $color-main: #a3cc40;
 
 .movie__descr {
   @extend .movie__bg;
+  color: #FFF;
   background: rgba(144, 210, 61, 0.4);
   top: 40%;
   @media screen and (min-width:769px){
@@ -562,7 +564,10 @@ $color-main: #a3cc40;
     border-radius: inherit;
     .blockname {
         padding: 1.5rem 3.5rem 0.75rem 3.5rem;
-        font-size: 1.25rem;
+        @media screen and (min-width:551px){
+          font-size: 1.25rem;
+        }
+        font-size: 3.25rem;
     }
   }
   &__form {

@@ -30,6 +30,7 @@
 .film__logo .skeleton-img {
     width: 22.2rem;
     height: 25.5rem;
+    object-fit: contain;
 }
 
 .film__card{

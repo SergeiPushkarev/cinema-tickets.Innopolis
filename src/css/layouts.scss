@@ -1,7 +1,7 @@
 $color-main: #a3cc40;
 html{
     @media screen and (min-width:769px){
-        font-size: 20px;;
+        font-size: 20px;
     }
     font-size: 1.9vw;
 }
@@ -148,6 +148,11 @@ body{
     }
 }
 
+.header__single{
+    background: radial-gradient(at 70% 50%, #4e262e 10%, black);
+    padding-bottom: 1.6rem;
+  }
+
 .bar{
     &__logo {
         flex: 0 0 22.6%;
@@ -159,23 +164,17 @@ body{
 }
 
 .burgermenu__btn {
-    display: none;
+    display: flex;
     align-items: center;
     position: fixed;
-    top: 6.4vw;
-    right: 5.3vw;
-    width: 44.4px;
+    top: 3rem;
+    right: 3rem;
+    width: 3.2rem;
     height: 25px;
     cursor: pointer;
     z-index: 1000;
-    @media screen and (max-width:768px){
-        display: flex;
-        top: 3rem;
-        right: 3rem;
-        width: 3.2rem;
-        height: 25px;
-        cursor: pointer;
-        z-index: 1000;
+    @media screen and (min-width:768px){
+        display: none;
     }
     & span, span::before, span::after {
         display: block;
@@ -207,23 +206,28 @@ body{
     }
   }
   .mobilemenu{
-    display: flex;
-    flex-flow: row wrap;
-    flex: 0 0 1.6rem;
+    
+
+    display: none;
+    flex-flow: column nowrap;
     z-index: 999;
-    gap: .75rem 0;
-    @media screen and (max-width:768px){
-        display: none;
-        flex-flow: column nowrap;
-        z-index: 999;
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        background: #fff;
-        font-size: 1.7rem;
-        padding: 5.2rem 4.6rem 0 4.2rem;
-        box-shadow: -10px 10px 10px rgb(185 185 185 / 37%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    font-size: 1.7rem;
+    padding: 5.2rem 4.6rem 0 4.2rem;
+    box-shadow: -10px 10px 10px rgb(185 185 185 / 37%);
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-flow: row wrap;
+        position: static;
+        padding: 0;
+        background: none;
+        box-shadow: none;
+        font-size: .6rem;
+        gap: .75rem 0;
     }
     &__contact{
         flex: 0 0 21%;
@@ -267,6 +271,19 @@ body{
     & a {
         text-decoration: none;
     }
+    & li {
+        @media screen and (max-width:768px){
+        &:first-child{
+            padding-bottom: 2.2rem;
+        }
+        &:nth-child(7){
+            padding-top: 6.8rem;
+        }
+        &:last-child{
+            padding-top: 3.5rem;
+        }
+    }
+    }
     &-open{
         display: flex;
     }
@@ -286,6 +303,10 @@ body{
         bottom: .15rem;
         transform: translateY(100%);
         & a {
+            color: #FFF;
+            @media screen and (max-width:768px){
+                color: #A3CC40
+            }
             display: table;
             padding: 0.25rem;
           }
